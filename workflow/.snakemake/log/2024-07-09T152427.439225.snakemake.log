@@ -1,0 +1,322 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 37
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=20000
+Job stats:
+job           count
+----------  -------
+all               1
+fastgather       13
+tax              13
+total            27
+
+Select jobs to execute...
+
+[Tue Jul  9 15:24:30 2024]
+rule fastgather:
+    input: /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149266.sig
+    output: ../results/sourmash/fastgather/DRR149266.gtdb.csv
+    jobid: 26
+    reason: Missing output files: ../results/sourmash/fastgather/DRR149266.gtdb.csv
+    wildcards: metag=DRR149266
+    threads: 12
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 15:24:33 2024]
+rule fastgather:
+    input: /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960731.sig
+    output: ../results/sourmash/fastgather/SRR8960731.gtdb.csv
+    jobid: 16
+    reason: Missing output files: ../results/sourmash/fastgather/SRR8960731.gtdb.csv
+    wildcards: metag=SRR8960731
+    threads: 12
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 15:24:33 2024]
+rule fastgather:
+    input: /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149265.sig
+    output: ../results/sourmash/fastgather/DRR149265.gtdb.csv
+    jobid: 24
+    reason: Missing output files: ../results/sourmash/fastgather/DRR149265.gtdb.csv
+    wildcards: metag=DRR149265
+    threads: 12
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 15:32:48 2024]
+Finished job 26.
+1 of 27 steps (4%) done
+Select jobs to execute...
+
+[Tue Jul  9 15:32:48 2024]
+rule fastgather:
+    input: /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960200.sig
+    output: ../results/sourmash/fastgather/SRR8960200.gtdb.csv
+    jobid: 18
+    reason: Missing output files: ../results/sourmash/fastgather/SRR8960200.gtdb.csv
+    wildcards: metag=SRR8960200
+    threads: 12
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 15:32:48 2024]
+rule tax:
+    input: ../results/sourmash/fastgather/DRR149266.gtdb.csv
+    output: ../results/sourmash/fastgather/DRR149266.gtdb.lineages.csv
+    jobid: 25
+    reason: Missing output files: ../results/sourmash/fastgather/DRR149266.gtdb.lineages.csv; Input files updated by another job: ../results/sourmash/fastgather/DRR149266.gtdb.csv
+    wildcards: metag=DRR149266
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 15:33:42 2024]
+Finished job 25.
+2 of 27 steps (7%) done
+Select jobs to execute...
+[Tue Jul  9 15:42:28 2024]
+Finished job 24.
+3 of 27 steps (11%) done
+
+[Tue Jul  9 15:42:28 2024]
+rule tax:
+    input: ../results/sourmash/fastgather/DRR149265.gtdb.csv
+    output: ../results/sourmash/fastgather/DRR149265.gtdb.lineages.csv
+    jobid: 23
+    reason: Missing output files: ../results/sourmash/fastgather/DRR149265.gtdb.lineages.csv; Input files updated by another job: ../results/sourmash/fastgather/DRR149265.gtdb.csv
+    wildcards: metag=DRR149265
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 15:42:28 2024]
+rule fastgather:
+    input: /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960303.sig
+    output: ../results/sourmash/fastgather/SRR8960303.gtdb.csv
+    jobid: 20
+    reason: Missing output files: ../results/sourmash/fastgather/SRR8960303.gtdb.csv
+    wildcards: metag=SRR8960303
+    threads: 12
+    resources: tmpdir=/tmp
+
+Warning: the following output files of rule fastgather were not present when the DAG was created:
+{'../results/sourmash/fastgather/SRR8960303.gtdb.csv'}
+Activating conda environment: branchwater
+[Tue Jul  9 15:43:01 2024]
+Finished job 23.
+4 of 27 steps (15%) done
+Select jobs to execute...
+[Tue Jul  9 15:50:38 2024]
+Finished job 16.
+5 of 27 steps (19%) done
+
+[Tue Jul  9 15:50:38 2024]
+rule fastgather:
+    input: /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR11125655.sig
+    output: ../results/sourmash/fastgather/SRR11125655.gtdb.csv
+    jobid: 14
+    reason: Missing output files: ../results/sourmash/fastgather/SRR11125655.gtdb.csv
+    wildcards: metag=SRR11125655
+    threads: 12
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 15:50:38 2024]
+rule tax:
+    input: ../results/sourmash/fastgather/SRR8960731.gtdb.csv
+    output: ../results/sourmash/fastgather/SRR8960731.gtdb.lineages.csv
+    jobid: 15
+    reason: Missing output files: ../results/sourmash/fastgather/SRR8960731.gtdb.lineages.csv; Input files updated by another job: ../results/sourmash/fastgather/SRR8960731.gtdb.csv
+    wildcards: metag=SRR8960731
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 15:51:01 2024]
+Finished job 15.
+6 of 27 steps (22%) done
+Select jobs to execute...
+[Tue Jul  9 16:00:31 2024]
+Finished job 18.
+7 of 27 steps (26%) done
+
+[Tue Jul  9 16:00:31 2024]
+rule tax:
+    input: ../results/sourmash/fastgather/SRR8960200.gtdb.csv
+    output: ../results/sourmash/fastgather/SRR8960200.gtdb.lineages.csv
+    jobid: 17
+    reason: Missing output files: ../results/sourmash/fastgather/SRR8960200.gtdb.lineages.csv; Input files updated by another job: ../results/sourmash/fastgather/SRR8960200.gtdb.csv
+    wildcards: metag=SRR8960200
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 16:00:31 2024]
+rule fastgather:
+    input: /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960631.sig
+    output: ../results/sourmash/fastgather/SRR8960631.gtdb.csv
+    jobid: 12
+    reason: Missing output files: ../results/sourmash/fastgather/SRR8960631.gtdb.csv
+    wildcards: metag=SRR8960631
+    threads: 12
+    resources: tmpdir=/tmp
+
+Warning: the following output files of rule fastgather were not present when the DAG was created:
+{'../results/sourmash/fastgather/SRR8960631.gtdb.csv'}
+Activating conda environment: branchwater
+[Tue Jul  9 16:00:36 2024]
+Finished job 14.
+8 of 27 steps (30%) done
+Select jobs to execute...
+
+[Tue Jul  9 16:00:36 2024]
+rule fastgather:
+    input: /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174581.sig
+    output: ../results/sourmash/fastgather/DRR174581.gtdb.csv
+    jobid: 38
+    reason: Missing output files: ../results/sourmash/fastgather/DRR174581.gtdb.csv
+    wildcards: metag=DRR174581
+    threads: 12
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 16:00:50 2024]
+Finished job 17.
+9 of 27 steps (33%) done
+Select jobs to execute...
+
+[Tue Jul  9 16:00:50 2024]
+rule tax:
+    input: ../results/sourmash/fastgather/SRR11125655.gtdb.csv
+    output: ../results/sourmash/fastgather/SRR11125655.gtdb.lineages.csv
+    jobid: 13
+    reason: Missing output files: ../results/sourmash/fastgather/SRR11125655.gtdb.lineages.csv; Input files updated by another job: ../results/sourmash/fastgather/SRR11125655.gtdb.csv
+    wildcards: metag=SRR11125655
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 16:01:09 2024]
+Finished job 13.
+10 of 27 steps (37%) done
+Select jobs to execute...
+[Tue Jul  9 16:03:09 2024]
+Finished job 20.
+11 of 27 steps (41%) done
+
+[Tue Jul  9 16:03:09 2024]
+rule fastgather:
+    input: /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960915.sig
+    output: ../results/sourmash/fastgather/SRR8960915.gtdb.csv
+    jobid: 10
+    reason: Missing output files: ../results/sourmash/fastgather/SRR8960915.gtdb.csv
+    wildcards: metag=SRR8960915
+    threads: 12
+    resources: tmpdir=/tmp
+
+
+Activating conda environment: branchwater
+[Tue Jul  9 16:03:09 2024]
+rule tax:
+    input: ../results/sourmash/fastgather/SRR8960303.gtdb.csv
+    output: ../results/sourmash/fastgather/SRR8960303.gtdb.lineages.csv
+    jobid: 19
+    reason: Missing output files: ../results/sourmash/fastgather/SRR8960303.gtdb.lineages.csv; Input files updated by another job: ../results/sourmash/fastgather/SRR8960303.gtdb.csv
+    wildcards: metag=SRR8960303
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 16:03:28 2024]
+Finished job 19.
+12 of 27 steps (44%) done
+Select jobs to execute...
+[Tue Jul  9 16:06:32 2024]
+Finished job 38.
+13 of 27 steps (48%) done
+
+[Tue Jul  9 16:06:32 2024]
+rule fastgather:
+    input: /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960721.sig
+    output: ../results/sourmash/fastgather/SRR8960721.gtdb.csv
+    jobid: 6
+    reason: Missing output files: ../results/sourmash/fastgather/SRR8960721.gtdb.csv
+    wildcards: metag=SRR8960721
+    threads: 12
+    resources: tmpdir=/tmp
+
+
+Activating conda environment: branchwater
+[Tue Jul  9 16:06:32 2024]
+rule tax:
+    input: ../results/sourmash/fastgather/DRR174581.gtdb.csv
+    output: ../results/sourmash/fastgather/DRR174581.gtdb.lineages.csv
+    jobid: 37
+    reason: Missing output files: ../results/sourmash/fastgather/DRR174581.gtdb.lineages.csv; Input files updated by another job: ../results/sourmash/fastgather/DRR174581.gtdb.csv
+    wildcards: metag=DRR174581
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 16:06:53 2024]
+Finished job 37.
+14 of 27 steps (52%) done
+Select jobs to execute...
+[Tue Jul  9 16:14:17 2024]
+Finished job 12.
+15 of 27 steps (56%) done
+
+[Tue Jul  9 16:14:17 2024]
+rule tax:
+    input: ../results/sourmash/fastgather/SRR8960631.gtdb.csv
+    output: ../results/sourmash/fastgather/SRR8960631.gtdb.lineages.csv
+    jobid: 11
+    reason: Missing output files: ../results/sourmash/fastgather/SRR8960631.gtdb.lineages.csv; Input files updated by another job: ../results/sourmash/fastgather/SRR8960631.gtdb.csv
+    wildcards: metag=SRR8960631
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 16:14:17 2024]
+rule fastgather:
+    input: /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149269.sig
+    output: ../results/sourmash/fastgather/DRR149269.gtdb.csv
+    jobid: 32
+    reason: Missing output files: ../results/sourmash/fastgather/DRR149269.gtdb.csv
+    wildcards: metag=DRR149269
+    threads: 12
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 16:14:39 2024]
+Finished job 11.
+16 of 27 steps (59%) done
+Select jobs to execute...
+[Tue Jul  9 16:21:02 2024]
+Finished job 32.
+17 of 27 steps (63%) done
+
+[Tue Jul  9 16:21:02 2024]
+rule fastgather:
+    input: /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174579.sig
+    output: ../results/sourmash/fastgather/DRR174579.gtdb.csv
+    jobid: 34
+    reason: Missing output files: ../results/sourmash/fastgather/DRR174579.gtdb.csv
+    wildcards: metag=DRR174579
+    threads: 12
+    resources: tmpdir=/tmp
+
+
+Activating conda environment: branchwater
+[Tue Jul  9 16:21:02 2024]
+rule tax:
+    input: ../results/sourmash/fastgather/DRR149269.gtdb.csv
+    output: ../results/sourmash/fastgather/DRR149269.gtdb.lineages.csv
+    jobid: 31
+    reason: Missing output files: ../results/sourmash/fastgather/DRR149269.gtdb.lineages.csv; Input files updated by another job: ../results/sourmash/fastgather/DRR149269.gtdb.csv
+    wildcards: metag=DRR149269
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater

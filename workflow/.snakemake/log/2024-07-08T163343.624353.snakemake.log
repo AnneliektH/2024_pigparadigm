@@ -1,0 +1,90 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=20000
+Job stats:
+job         count
+--------  -------
+all             1
+classify        3
+total           4
+
+Select jobs to execute...
+
+[Mon Jul  8 16:33:45 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR21986389.sig
+    output: ../results/microbial_pangenomic_test/classify/bariatricusxSRR21986389.txt
+    jobid: 13
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/bariatricusxSRR21986389.txt
+    wildcards: ident=bariatricus, metag=SRR21986389
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Mon Jul  8 16:33:46 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR21986389.sig
+    output: ../results/microbial_pangenomic_test/classify/lamylovorusxSRR21986389.txt
+    jobid: 39
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/lamylovorusxSRR21986389.txt
+    wildcards: ident=lamylovorus, metag=SRR21986389
+    resources: tmpdir=/tmp
+
+
+[Mon Jul  8 16:33:46 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR21986389.sig
+    output: ../results/microbial_pangenomic_test/classify/RUG472xSRR21986389.txt
+    jobid: 65
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/RUG472xSRR21986389.txt
+    wildcards: ident=RUG472, metag=SRR21986389
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+Activating conda environment: branchwater
+[Mon Jul  8 16:33:52 2024]
+Error in rule classify:
+    jobid: 39
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR21986389.sig
+    output: ../results/microbial_pangenomic_test/classify/lamylovorusxSRR21986389.txt
+    conda-env: branchwater
+    shell:
+         
+        sourmash scripts pangenome_classify         /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR21986389.sig ../results/microbial_pangenomic_test/lamylovorus.rankt.csv -k 21  > ../results/microbial_pangenomic_test/classify/lamylovorusxSRR21986389.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job classify since they might be corrupted:
+../results/microbial_pangenomic_test/classify/lamylovorusxSRR21986389.txt
+[Mon Jul  8 16:33:52 2024]
+Error in rule classify:
+    jobid: 65
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR21986389.sig
+    output: ../results/microbial_pangenomic_test/classify/RUG472xSRR21986389.txt
+    conda-env: branchwater
+    shell:
+         
+        sourmash scripts pangenome_classify         /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR21986389.sig ../results/microbial_pangenomic_test/RUG472.rankt.csv -k 21  > ../results/microbial_pangenomic_test/classify/RUG472xSRR21986389.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job classify since they might be corrupted:
+../results/microbial_pangenomic_test/classify/RUG472xSRR21986389.txt
+[Mon Jul  8 16:33:52 2024]
+Error in rule classify:
+    jobid: 13
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR21986389.sig
+    output: ../results/microbial_pangenomic_test/classify/bariatricusxSRR21986389.txt
+    conda-env: branchwater
+    shell:
+         
+        sourmash scripts pangenome_classify         /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR21986389.sig ../results/microbial_pangenomic_test/bariatricus.rankt.csv -k 21  > ../results/microbial_pangenomic_test/classify/bariatricusxSRR21986389.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job classify since they might be corrupted:
+../results/microbial_pangenomic_test/classify/bariatricusxSRR21986389.txt
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-07-08T163343.624353.snakemake.log

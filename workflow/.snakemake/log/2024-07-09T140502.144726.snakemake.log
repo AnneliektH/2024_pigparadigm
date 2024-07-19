@@ -1,0 +1,1450 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=20000
+Job stats:
+job                   count
+------------------  -------
+all                       1
+calc_hash_presence      100
+total                   101
+
+Select jobs to execute...
+
+[Tue Jul  9 14:05:05 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149268.sig
+    output: ../results/compare_human/dmp/RUG472xDRR149268.dump
+    jobid: 60
+    reason: Missing output files: ../results/compare_human/dmp/RUG472xDRR149268.dump
+    wildcards: ident=RUG472, metag=DRR149268
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:06 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR11125655.sig
+    output: ../results/compare_human/dmp/bariatricusxSRR11125655.dump
+    jobid: 72
+    reason: Missing output files: ../results/compare_human/dmp/bariatricusxSRR11125655.dump
+    wildcards: ident=bariatricus, metag=SRR11125655
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:06 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR11125655.sig
+    output: ../results/compare_human/dmp/ecolixSRR11125655.dump
+    jobid: 102
+    reason: Missing output files: ../results/compare_human/dmp/ecolixSRR11125655.dump
+    wildcards: ident=ecoli, metag=SRR11125655
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:06 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960440.sig
+    output: ../results/compare_human/dmp/lamylovorusxSRR8960440.dump
+    jobid: 87
+    reason: Missing output files: ../results/compare_human/dmp/lamylovorusxSRR8960440.dump
+    wildcards: ident=lamylovorus, metag=SRR8960440
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:06 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149269.sig
+    output: ../results/compare_human/dmp/ecolixDRR149269.dump
+    jobid: 48
+    reason: Missing output files: ../results/compare_human/dmp/ecolixDRR149269.dump
+    wildcards: ident=ecoli, metag=DRR149269
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:06 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149265.sig
+    output: ../results/compare_human/dmp/RUG472xDRR149265.dump
+    jobid: 57
+    reason: Missing output files: ../results/compare_human/dmp/RUG472xDRR149265.dump
+    wildcards: ident=RUG472, metag=DRR149265
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:06 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149269.sig
+    output: ../results/compare_human/dmp/bariatricusxDRR149269.dump
+    jobid: 9
+    reason: Missing output files: ../results/compare_human/dmp/bariatricusxDRR149269.dump
+    wildcards: ident=bariatricus, metag=DRR149269
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:06 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149266.sig
+    output: ../results/compare_human/dmp/lamylovorusxDRR149266.dump
+    jobid: 32
+    reason: Missing output files: ../results/compare_human/dmp/lamylovorusxDRR149266.dump
+    wildcards: ident=lamylovorus, metag=DRR149266
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:06 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174579.sig
+    output: ../results/compare_human/dmp/lreuterixDRR174579.dump
+    jobid: 23
+    reason: Missing output files: ../results/compare_human/dmp/lreuterixDRR174579.dump
+    wildcards: ident=lreuteri, metag=DRR174579
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:06 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149267.sig
+    output: ../results/compare_human/dmp/bariatricusxDRR149267.dump
+    jobid: 7
+    reason: Missing output files: ../results/compare_human/dmp/bariatricusxDRR149267.dump
+    wildcards: ident=bariatricus, metag=DRR149267
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:06 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149264.sig
+    output: ../results/compare_human/dmp/ecolixDRR149264.dump
+    jobid: 40
+    reason: Missing output files: ../results/compare_human/dmp/ecolixDRR149264.dump
+    wildcards: ident=ecoli, metag=DRR149264
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:07 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149266.sig
+    output: ../results/compare_human/dmp/RUG472xDRR149266.dump
+    jobid: 58
+    reason: Missing output files: ../results/compare_human/dmp/RUG472xDRR149266.dump
+    wildcards: ident=RUG472, metag=DRR149266
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:07 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960731.sig
+    output: ../results/compare_human/dmp/bariatricusxSRR8960731.dump
+    jobid: 73
+    reason: Missing output files: ../results/compare_human/dmp/bariatricusxSRR8960731.dump
+    wildcards: ident=bariatricus, metag=SRR8960731
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:07 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960721.sig
+    output: ../results/compare_human/dmp/lamylovorusxSRR8960721.dump
+    jobid: 88
+    reason: Missing output files: ../results/compare_human/dmp/lamylovorusxSRR8960721.dump
+    wildcards: ident=lamylovorus, metag=SRR8960721
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:07 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960731.sig
+    output: ../results/compare_human/dmp/ecolixSRR8960731.dump
+    jobid: 103
+    reason: Missing output files: ../results/compare_human/dmp/ecolixSRR8960731.dump
+    wildcards: ident=ecoli, metag=SRR8960731
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:07 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174580.sig
+    output: ../results/compare_human/dmp/lreuterixDRR174580.dump
+    jobid: 24
+    reason: Missing output files: ../results/compare_human/dmp/lreuterixDRR174580.dump
+    wildcards: ident=lreuteri, metag=DRR174580
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:07 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149268.sig
+    output: ../results/compare_human/dmp/bariatricusxDRR149268.dump
+    jobid: 8
+    reason: Missing output files: ../results/compare_human/dmp/bariatricusxDRR149268.dump
+    wildcards: ident=bariatricus, metag=DRR149268
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:07 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960200.sig
+    output: ../results/compare_human/dmp/bariatricusxSRR8960200.dump
+    jobid: 74
+    reason: Missing output files: ../results/compare_human/dmp/bariatricusxSRR8960200.dump
+    wildcards: ident=bariatricus, metag=SRR8960200
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:07 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149267.sig
+    output: ../results/compare_human/dmp/RUG472xDRR149267.dump
+    jobid: 59
+    reason: Missing output files: ../results/compare_human/dmp/RUG472xDRR149267.dump
+    wildcards: ident=RUG472, metag=DRR149267
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:07 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960326.sig
+    output: ../results/compare_human/dmp/lamylovorusxSRR8960326.dump
+    jobid: 89
+    reason: Missing output files: ../results/compare_human/dmp/lamylovorusxSRR8960326.dump
+    wildcards: ident=lamylovorus, metag=SRR8960326
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:07 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960200.sig
+    output: ../results/compare_human/dmp/ecolixSRR8960200.dump
+    jobid: 104
+    reason: Missing output files: ../results/compare_human/dmp/ecolixSRR8960200.dump
+    wildcards: ident=ecoli, metag=SRR8960200
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:07 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174581.sig
+    output: ../results/compare_human/dmp/lreuterixDRR174581.dump
+    jobid: 25
+    reason: Missing output files: ../results/compare_human/dmp/lreuterixDRR174581.dump
+    wildcards: ident=lreuteri, metag=DRR174581
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:07 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960303.sig
+    output: ../results/compare_human/dmp/bariatricusxSRR8960303.dump
+    jobid: 75
+    reason: Missing output files: ../results/compare_human/dmp/bariatricusxSRR8960303.dump
+    wildcards: ident=bariatricus, metag=SRR8960303
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:07 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960915.sig
+    output: ../results/compare_human/dmp/lamylovorusxSRR8960915.dump
+    jobid: 90
+    reason: Missing output files: ../results/compare_human/dmp/lamylovorusxSRR8960915.dump
+    wildcards: ident=lamylovorus, metag=SRR8960915
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:18 2024]
+Finished job 32.
+1 of 101 steps (1%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:19 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960915.sig
+    output: ../results/compare_human/dmp/lreuterixSRR8960915.dump
+    jobid: 80
+    reason: Missing output files: ../results/compare_human/dmp/lreuterixSRR8960915.dump
+    wildcards: ident=lreuteri, metag=SRR8960915
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:19 2024]
+Finished job 58.
+2 of 101 steps (2%) done
+[Tue Jul  9 14:05:19 2024]
+Finished job 25.
+3 of 101 steps (3%) done
+[Tue Jul  9 14:05:19 2024]
+Finished job 9.
+4 of 101 steps (4%) done
+[Tue Jul  9 14:05:19 2024]
+Finished job 24.
+5 of 101 steps (5%) done
+[Tue Jul  9 14:05:19 2024]
+Finished job 23.
+6 of 101 steps (6%) done
+[Tue Jul  9 14:05:19 2024]
+Finished job 7.
+7 of 101 steps (7%) done
+[Tue Jul  9 14:05:19 2024]
+Finished job 59.
+8 of 101 steps (8%) done
+[Tue Jul  9 14:05:19 2024]
+Finished job 8.
+9 of 101 steps (9%) done
+[Tue Jul  9 14:05:19 2024]
+Finished job 72.
+10 of 101 steps (10%) done
+[Tue Jul  9 14:05:19 2024]
+Finished job 57.
+11 of 101 steps (11%) done
+[Tue Jul  9 14:05:19 2024]
+Finished job 60.
+12 of 101 steps (12%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:19 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174580.sig
+    output: ../results/compare_human/dmp/RUG472xDRR174580.dump
+    jobid: 63
+    reason: Missing output files: ../results/compare_human/dmp/RUG472xDRR174580.dump
+    wildcards: ident=RUG472, metag=DRR174580
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:19 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149268.sig
+    output: ../results/compare_human/dmp/lreuterixDRR149268.dump
+    jobid: 21
+    reason: Missing output files: ../results/compare_human/dmp/lreuterixDRR149268.dump
+    wildcards: ident=lreuteri, metag=DRR149268
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:19 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149269.sig
+    output: ../results/compare_human/dmp/lreuterixDRR149269.dump
+    jobid: 22
+    reason: Missing output files: ../results/compare_human/dmp/lreuterixDRR149269.dump
+    wildcards: ident=lreuteri, metag=DRR149269
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:19 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960915.sig
+    output: ../results/compare_human/dmp/ecolixSRR8960915.dump
+    jobid: 100
+    reason: Missing output files: ../results/compare_human/dmp/ecolixSRR8960915.dump
+    wildcards: ident=ecoli, metag=SRR8960915
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:19 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960915.sig
+    output: ../results/compare_human/dmp/bariatricusxSRR8960915.dump
+    jobid: 70
+    reason: Missing output files: ../results/compare_human/dmp/bariatricusxSRR8960915.dump
+    wildcards: ident=bariatricus, metag=SRR8960915
+    resources: tmpdir=/tmp
+
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:19 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960303.sig
+    output: ../results/compare_human/dmp/lreuterixSRR8960303.dump
+    jobid: 85
+    reason: Missing output files: ../results/compare_human/dmp/lreuterixSRR8960303.dump
+    wildcards: ident=lreuteri, metag=SRR8960303
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:19 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174580.sig
+    output: ../results/compare_human/dmp/lamylovorusxDRR174580.dump
+    jobid: 37
+    reason: Missing output files: ../results/compare_human/dmp/lamylovorusxDRR174580.dump
+    wildcards: ident=lamylovorus, metag=DRR174580
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:19 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960303.sig
+    output: ../results/compare_human/dmp/RUG472xSRR8960303.dump
+    jobid: 115
+    reason: Missing output files: ../results/compare_human/dmp/RUG472xSRR8960303.dump
+    wildcards: ident=RUG472, metag=SRR8960303
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:19 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960721.sig
+    output: ../results/compare_human/dmp/lreuterixSRR8960721.dump
+    jobid: 78
+    reason: Missing output files: ../results/compare_human/dmp/lreuterixSRR8960721.dump
+    wildcards: ident=lreuteri, metag=SRR8960721
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:19 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174580.sig
+    output: ../results/compare_human/dmp/ecolixDRR174580.dump
+    jobid: 50
+    reason: Missing output files: ../results/compare_human/dmp/ecolixDRR174580.dump
+    wildcards: ident=ecoli, metag=DRR174580
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:19 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174581.sig
+    output: ../results/compare_human/dmp/bariatricusxDRR174581.dump
+    jobid: 12
+    reason: Missing output files: ../results/compare_human/dmp/bariatricusxDRR174581.dump
+    wildcards: ident=bariatricus, metag=DRR174581
+    resources: tmpdir=/tmp
+
+Select jobs to execute...
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:19 2024]
+Finished job 75.
+13 of 101 steps (13%) done
+
+[Tue Jul  9 14:05:19 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960440.sig
+    output: ../results/compare_human/dmp/lreuterixSRR8960440.dump
+    jobid: 77
+    reason: Missing output files: ../results/compare_human/dmp/lreuterixSRR8960440.dump
+    wildcards: ident=lreuteri, metag=SRR8960440
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:19 2024]
+Finished job 74.
+14 of 101 steps (14%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:19 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960440.sig
+    output: ../results/compare_human/dmp/RUG472xSRR8960440.dump
+    jobid: 107
+    reason: Missing output files: ../results/compare_human/dmp/RUG472xSRR8960440.dump
+    wildcards: ident=RUG472, metag=SRR8960440
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:20 2024]
+Finished job 90.
+15 of 101 steps (15%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:20 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174580.sig
+    output: ../results/compare_human/dmp/bariatricusxDRR174580.dump
+    jobid: 11
+    reason: Missing output files: ../results/compare_human/dmp/bariatricusxDRR174580.dump
+    wildcards: ident=bariatricus, metag=DRR174580
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:20 2024]
+Finished job 88.
+16 of 101 steps (16%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:20 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174579.sig
+    output: ../results/compare_human/dmp/RUG472xDRR174579.dump
+    jobid: 62
+    reason: Missing output files: ../results/compare_human/dmp/RUG472xDRR174579.dump
+    wildcards: ident=RUG472, metag=DRR174579
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:20 2024]
+Finished job 73.
+17 of 101 steps (17%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:20 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174579.sig
+    output: ../results/compare_human/dmp/ecolixDRR174579.dump
+    jobid: 49
+    reason: Missing output files: ../results/compare_human/dmp/ecolixDRR174579.dump
+    wildcards: ident=ecoli, metag=DRR174579
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:20 2024]
+Finished job 48.
+18 of 101 steps (18%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:20 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR11125655.sig
+    output: ../results/compare_human/dmp/lamylovorusxSRR11125655.dump
+    jobid: 92
+    reason: Missing output files: ../results/compare_human/dmp/lamylovorusxSRR11125655.dump
+    wildcards: ident=lamylovorus, metag=SRR11125655
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:20 2024]
+Finished job 89.
+19 of 101 steps (19%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:20 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149264.sig
+    output: ../results/compare_human/dmp/bariatricusxDRR149264.dump
+    jobid: 1
+    reason: Missing output files: ../results/compare_human/dmp/bariatricusxDRR149264.dump
+    wildcards: ident=bariatricus, metag=DRR149264
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:20 2024]
+Finished job 40.
+20 of 101 steps (20%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:20 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149267.sig
+    output: ../results/compare_human/dmp/lreuterixDRR149267.dump
+    jobid: 20
+    reason: Missing output files: ../results/compare_human/dmp/lreuterixDRR149267.dump
+    wildcards: ident=lreuteri, metag=DRR149267
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:20 2024]
+Finished job 87.
+21 of 101 steps (21%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:20 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149264.sig
+    output: ../results/compare_human/dmp/lamylovorusxDRR149264.dump
+    jobid: 27
+    reason: Missing output files: ../results/compare_human/dmp/lamylovorusxDRR149264.dump
+    wildcards: ident=lamylovorus, metag=DRR149264
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:22 2024]
+Finished job 102.
+22 of 101 steps (22%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:22 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149264.sig
+    output: ../results/compare_human/dmp/RUG472xDRR149264.dump
+    jobid: 53
+    reason: Missing output files: ../results/compare_human/dmp/RUG472xDRR149264.dump
+    wildcards: ident=RUG472, metag=DRR149264
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:23 2024]
+Finished job 104.
+23 of 101 steps (23%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:23 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960200.sig
+    output: ../results/compare_human/dmp/RUG472xSRR8960200.dump
+    jobid: 114
+    reason: Missing output files: ../results/compare_human/dmp/RUG472xSRR8960200.dump
+    wildcards: ident=RUG472, metag=SRR8960200
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:23 2024]
+Finished job 103.
+24 of 101 steps (24%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:23 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149267.sig
+    output: ../results/compare_human/dmp/lamylovorusxDRR149267.dump
+    jobid: 33
+    reason: Missing output files: ../results/compare_human/dmp/lamylovorusxDRR149267.dump
+    wildcards: ident=lamylovorus, metag=DRR149267
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:26 2024]
+Finished job 12.
+25 of 101 steps (25%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:26 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960326.sig
+    output: ../results/compare_human/dmp/ecolixSRR8960326.dump
+    jobid: 99
+    reason: Missing output files: ../results/compare_human/dmp/ecolixSRR8960326.dump
+    wildcards: ident=ecoli, metag=SRR8960326
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:27 2024]
+Finished job 22.
+26 of 101 steps (26%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:27 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960980.sig
+    output: ../results/compare_human/dmp/bariatricusxSRR8960980.dump
+    jobid: 66
+    reason: Missing output files: ../results/compare_human/dmp/bariatricusxSRR8960980.dump
+    wildcards: ident=bariatricus, metag=SRR8960980
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:27 2024]
+Finished job 37.
+27 of 101 steps (27%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:27 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960200.sig
+    output: ../results/compare_human/dmp/lreuterixSRR8960200.dump
+    jobid: 84
+    reason: Missing output files: ../results/compare_human/dmp/lreuterixSRR8960200.dump
+    wildcards: ident=lreuteri, metag=SRR8960200
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:27 2024]
+Finished job 11.
+28 of 101 steps (28%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:27 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960980.sig
+    output: ../results/compare_human/dmp/ecolixSRR8960980.dump
+    jobid: 96
+    reason: Missing output files: ../results/compare_human/dmp/ecolixSRR8960980.dump
+    wildcards: ident=ecoli, metag=SRR8960980
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:27 2024]
+Finished job 63.
+29 of 101 steps (29%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:27 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174582.sig
+    output: ../results/compare_human/dmp/bariatricusxDRR174582.dump
+    jobid: 13
+    reason: Missing output files: ../results/compare_human/dmp/bariatricusxDRR174582.dump
+    wildcards: ident=bariatricus, metag=DRR174582
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:27 2024]
+Finished job 62.
+30 of 101 steps (30%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:27 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174581.sig
+    output: ../results/compare_human/dmp/RUG472xDRR174581.dump
+    jobid: 64
+    reason: Missing output files: ../results/compare_human/dmp/RUG472xDRR174581.dump
+    wildcards: ident=RUG472, metag=DRR174581
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:28 2024]
+Finished job 21.
+31 of 101 steps (31%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:28 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960631.sig
+    output: ../results/compare_human/dmp/RUG472xSRR8960631.dump
+    jobid: 111
+    reason: Missing output files: ../results/compare_human/dmp/RUG472xSRR8960631.dump
+    wildcards: ident=RUG472, metag=SRR8960631
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:29 2024]
+Finished job 1.
+32 of 101 steps (32%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:29 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149267.sig
+    output: ../results/compare_human/dmp/ecolixDRR149267.dump
+    jobid: 46
+    reason: Missing output files: ../results/compare_human/dmp/ecolixDRR149267.dump
+    wildcards: ident=ecoli, metag=DRR149267
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:29 2024]
+Finished job 92.
+33 of 101 steps (33%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:29 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960631.sig
+    output: ../results/compare_human/dmp/lreuterixSRR8960631.dump
+    jobid: 81
+    reason: Missing output files: ../results/compare_human/dmp/lreuterixSRR8960631.dump
+    wildcards: ident=lreuteri, metag=SRR8960631
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:29 2024]
+Finished job 20.
+34 of 101 steps (34%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:29 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960721.sig
+    output: ../results/compare_human/dmp/RUG472xSRR8960721.dump
+    jobid: 108
+    reason: Missing output files: ../results/compare_human/dmp/RUG472xSRR8960721.dump
+    wildcards: ident=RUG472, metag=SRR8960721
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:29 2024]
+Finished job 27.
+35 of 101 steps (35%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:29 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149266.sig
+    output: ../results/compare_human/dmp/ecolixDRR149266.dump
+    jobid: 45
+    reason: Missing output files: ../results/compare_human/dmp/ecolixDRR149266.dump
+    wildcards: ident=ecoli, metag=DRR149266
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:30 2024]
+Finished job 53.
+36 of 101 steps (36%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:30 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960731.sig
+    output: ../results/compare_human/dmp/lamylovorusxSRR8960731.dump
+    jobid: 93
+    reason: Missing output files: ../results/compare_human/dmp/lamylovorusxSRR8960731.dump
+    wildcards: ident=lamylovorus, metag=SRR8960731
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:31 2024]
+Finished job 70.
+37 of 101 steps (37%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:31 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960326.sig
+    output: ../results/compare_human/dmp/bariatricusxSRR8960326.dump
+    jobid: 69
+    reason: Missing output files: ../results/compare_human/dmp/bariatricusxSRR8960326.dump
+    wildcards: ident=bariatricus, metag=SRR8960326
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:31 2024]
+Finished job 77.
+38 of 101 steps (38%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:31 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149268.sig
+    output: ../results/compare_human/dmp/lamylovorusxDRR149268.dump
+    jobid: 34
+    reason: Missing output files: ../results/compare_human/dmp/lamylovorusxDRR149268.dump
+    wildcards: ident=lamylovorus, metag=DRR149268
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:31 2024]
+Finished job 115.
+39 of 101 steps (39%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:31 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174579.sig
+    output: ../results/compare_human/dmp/lamylovorusxDRR174579.dump
+    jobid: 36
+    reason: Missing output files: ../results/compare_human/dmp/lamylovorusxDRR174579.dump
+    wildcards: ident=lamylovorus, metag=DRR174579
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:32 2024]
+Finished job 33.
+40 of 101 steps (40%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:32 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960440.sig
+    output: ../results/compare_human/dmp/bariatricusxSRR8960440.dump
+    jobid: 67
+    reason: Missing output files: ../results/compare_human/dmp/bariatricusxSRR8960440.dump
+    wildcards: ident=bariatricus, metag=SRR8960440
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:32 2024]
+Finished job 107.
+41 of 101 steps (41%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:32 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149265.sig
+    output: ../results/compare_human/dmp/lreuterixDRR149265.dump
+    jobid: 18
+    reason: Missing output files: ../results/compare_human/dmp/lreuterixDRR149265.dump
+    wildcards: ident=lreuteri, metag=DRR149265
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:32 2024]
+Finished job 50.
+42 of 101 steps (42%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:32 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960440.sig
+    output: ../results/compare_human/dmp/ecolixSRR8960440.dump
+    jobid: 97
+    reason: Missing output files: ../results/compare_human/dmp/ecolixSRR8960440.dump
+    wildcards: ident=ecoli, metag=SRR8960440
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:32 2024]
+Finished job 78.
+43 of 101 steps (43%) done
+[Tue Jul  9 14:05:32 2024]
+Finished job 80.
+44 of 101 steps (44%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:32 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960303.sig
+    output: ../results/compare_human/dmp/ecolixSRR8960303.dump
+    jobid: 105
+    reason: Missing output files: ../results/compare_human/dmp/ecolixSRR8960303.dump
+    wildcards: ident=ecoli, metag=SRR8960303
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:05:32 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR11125655.sig
+    output: ../results/compare_human/dmp/RUG472xSRR11125655.dump
+    jobid: 112
+    reason: Missing output files: ../results/compare_human/dmp/RUG472xSRR11125655.dump
+    wildcards: ident=RUG472, metag=SRR11125655
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:32 2024]
+Finished job 85.
+45 of 101 steps (45%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:32 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149265.sig
+    output: ../results/compare_human/dmp/lamylovorusxDRR149265.dump
+    jobid: 31
+    reason: Missing output files: ../results/compare_human/dmp/lamylovorusxDRR149265.dump
+    wildcards: ident=lamylovorus, metag=DRR149265
+    resources: tmpdir=/tmp
+
+Select jobs to execute...
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:32 2024]
+Finished job 49.
+46 of 101 steps (46%) done
+
+[Tue Jul  9 14:05:32 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960326.sig
+    output: ../results/compare_human/dmp/lreuterixSRR8960326.dump
+    jobid: 79
+    reason: Missing output files: ../results/compare_human/dmp/lreuterixSRR8960326.dump
+    wildcards: ident=lreuteri, metag=SRR8960326
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:34 2024]
+Finished job 13.
+47 of 101 steps (47%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:34 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960326.sig
+    output: ../results/compare_human/dmp/RUG472xSRR8960326.dump
+    jobid: 109
+    reason: Missing output files: ../results/compare_human/dmp/RUG472xSRR8960326.dump
+    wildcards: ident=RUG472, metag=SRR8960326
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:34 2024]
+Finished job 64.
+48 of 101 steps (48%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:34 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149265.sig
+    output: ../results/compare_human/dmp/ecolixDRR149265.dump
+    jobid: 44
+    reason: Missing output files: ../results/compare_human/dmp/ecolixDRR149265.dump
+    wildcards: ident=ecoli, metag=DRR149265
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:34 2024]
+Finished job 66.
+49 of 101 steps (49%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:34 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149269.sig
+    output: ../results/compare_human/dmp/lamylovorusxDRR149269.dump
+    jobid: 35
+    reason: Missing output files: ../results/compare_human/dmp/lamylovorusxDRR149269.dump
+    wildcards: ident=lamylovorus, metag=DRR149269
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:35 2024]
+Finished job 100.
+50 of 101 steps (50%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:35 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960721.sig
+    output: ../results/compare_human/dmp/bariatricusxSRR8960721.dump
+    jobid: 68
+    reason: Missing output files: ../results/compare_human/dmp/bariatricusxSRR8960721.dump
+    wildcards: ident=bariatricus, metag=SRR8960721
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:36 2024]
+Finished job 114.
+51 of 101 steps (50%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:36 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960721.sig
+    output: ../results/compare_human/dmp/ecolixSRR8960721.dump
+    jobid: 98
+    reason: Missing output files: ../results/compare_human/dmp/ecolixSRR8960721.dump
+    wildcards: ident=ecoli, metag=SRR8960721
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:39 2024]
+Finished job 36.
+52 of 101 steps (51%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:39 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174582.sig
+    output: ../results/compare_human/dmp/lreuterixDRR174582.dump
+    jobid: 26
+    reason: Missing output files: ../results/compare_human/dmp/lreuterixDRR174582.dump
+    wildcards: ident=lreuteri, metag=DRR174582
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:39 2024]
+Finished job 45.
+53 of 101 steps (52%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:39 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960731.sig
+    output: ../results/compare_human/dmp/lreuterixSRR8960731.dump
+    jobid: 83
+    reason: Missing output files: ../results/compare_human/dmp/lreuterixSRR8960731.dump
+    wildcards: ident=lreuteri, metag=SRR8960731
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:40 2024]
+Finished job 96.
+54 of 101 steps (53%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:40 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960731.sig
+    output: ../results/compare_human/dmp/RUG472xSRR8960731.dump
+    jobid: 113
+    reason: Missing output files: ../results/compare_human/dmp/RUG472xSRR8960731.dump
+    wildcards: ident=RUG472, metag=SRR8960731
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:40 2024]
+Finished job 34.
+55 of 101 steps (54%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:40 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149266.sig
+    output: ../results/compare_human/dmp/bariatricusxDRR149266.dump
+    jobid: 6
+    reason: Missing output files: ../results/compare_human/dmp/bariatricusxDRR149266.dump
+    wildcards: ident=bariatricus, metag=DRR149266
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:41 2024]
+Finished job 84.
+56 of 101 steps (55%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:41 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174582.sig
+    output: ../results/compare_human/dmp/lamylovorusxDRR174582.dump
+    jobid: 39
+    reason: Missing output files: ../results/compare_human/dmp/lamylovorusxDRR174582.dump
+    wildcards: ident=lamylovorus, metag=DRR174582
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:41 2024]
+Finished job 111.
+57 of 101 steps (56%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:41 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960980.sig
+    output: ../results/compare_human/dmp/RUG472xSRR8960980.dump
+    jobid: 106
+    reason: Missing output files: ../results/compare_human/dmp/RUG472xSRR8960980.dump
+    wildcards: ident=RUG472, metag=SRR8960980
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:41 2024]
+Finished job 112.
+58 of 101 steps (57%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:41 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174579.sig
+    output: ../results/compare_human/dmp/bariatricusxDRR174579.dump
+    jobid: 10
+    reason: Missing output files: ../results/compare_human/dmp/bariatricusxDRR174579.dump
+    wildcards: ident=bariatricus, metag=DRR174579
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:41 2024]
+Finished job 81.
+59 of 101 steps (58%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:41 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174582.sig
+    output: ../results/compare_human/dmp/RUG472xDRR174582.dump
+    jobid: 65
+    reason: Missing output files: ../results/compare_human/dmp/RUG472xDRR174582.dump
+    wildcards: ident=RUG472, metag=DRR174582
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:42 2024]
+Finished job 46.
+60 of 101 steps (59%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:42 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960303.sig
+    output: ../results/compare_human/dmp/lamylovorusxSRR8960303.dump
+    jobid: 95
+    reason: Missing output files: ../results/compare_human/dmp/lamylovorusxSRR8960303.dump
+    wildcards: ident=lamylovorus, metag=SRR8960303
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:42 2024]
+Finished job 108.
+61 of 101 steps (60%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:42 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960915.sig
+    output: ../results/compare_human/dmp/RUG472xSRR8960915.dump
+    jobid: 110
+    reason: Missing output files: ../results/compare_human/dmp/RUG472xSRR8960915.dump
+    wildcards: ident=RUG472, metag=SRR8960915
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:42 2024]
+Finished job 18.
+62 of 101 steps (61%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:42 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174582.sig
+    output: ../results/compare_human/dmp/ecolixDRR174582.dump
+    jobid: 52
+    reason: Missing output files: ../results/compare_human/dmp/ecolixDRR174582.dump
+    wildcards: ident=ecoli, metag=DRR174582
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:42 2024]
+Finished job 31.
+63 of 101 steps (62%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:42 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960631.sig
+    output: ../results/compare_human/dmp/lamylovorusxSRR8960631.dump
+    jobid: 91
+    reason: Missing output files: ../results/compare_human/dmp/lamylovorusxSRR8960631.dump
+    wildcards: ident=lamylovorus, metag=SRR8960631
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:42 2024]
+Finished job 35.
+64 of 101 steps (63%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:42 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960980.sig
+    output: ../results/compare_human/dmp/lreuterixSRR8960980.dump
+    jobid: 76
+    reason: Missing output files: ../results/compare_human/dmp/lreuterixSRR8960980.dump
+    wildcards: ident=lreuteri, metag=SRR8960980
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:43 2024]
+Finished job 93.
+65 of 101 steps (64%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:43 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174581.sig
+    output: ../results/compare_human/dmp/ecolixDRR174581.dump
+    jobid: 51
+    reason: Missing output files: ../results/compare_human/dmp/ecolixDRR174581.dump
+    wildcards: ident=ecoli, metag=DRR174581
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Tue Jul  9 14:05:43 2024]
+Finished job 67.
+66 of 101 steps (65%) done
+Select jobs to execute...
+
+[Tue Jul  9 14:05:43 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149269.sig
+    output: ../results/compare_human/dmp/RUG472xDRR149269.dump
+    jobid: 61
+    reason: Missing output files: ../results/compare_human/dmp/RUG472xDRR149269.dump
+    wildcards: ident=RUG472, metag=DRR149269
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+Terminating processes on user request, this might take some time.
+[Tue Jul  9 14:05:44 2024]
+Error in rule calc_hash_presence:
+    jobid: 110
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960915.sig
+    output: ../results/compare_human/dmp/RUG472xSRR8960915.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/RUG472.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960915.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/RUG472xSRR8960915.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:05:44 2024]
+Error in rule calc_hash_presence:
+    jobid: 65
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174582.sig
+    output: ../results/compare_human/dmp/RUG472xDRR174582.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/RUG472.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174582.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/RUG472xDRR174582.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:05:44 2024]
+Error in rule calc_hash_presence:
+    jobid: 95
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960303.sig
+    output: ../results/compare_human/dmp/lamylovorusxSRR8960303.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/lamylovorus.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960303.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/lamylovorusxSRR8960303.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:05:44 2024]
+[Tue Jul  9 14:05:44 2024]
+Error in rule calc_hash_presence:
+    jobid: 52
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174582.sig
+    output: ../results/compare_human/dmp/ecolixDRR174582.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/ecoli.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174582.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/ecolixDRR174582.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:05:44 2024]
+Error in rule calc_hash_presence:
+    jobid: 76
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960980.sig
+    output: ../results/compare_human/dmp/lreuterixSRR8960980.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/lreuteri.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960980.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/lreuterixSRR8960980.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calc_hash_presence:
+    jobid: 91
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960631.sig
+    output: ../results/compare_human/dmp/lamylovorusxSRR8960631.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/lamylovorus.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960631.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/lamylovorusxSRR8960631.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:05:44 2024]
+Error in rule calc_hash_presence:
+    jobid: 10
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174579.sig
+    output: ../results/compare_human/dmp/bariatricusxDRR174579.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/bariatricus.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174579.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/bariatricusxDRR174579.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:05:44 2024]
+Error in rule calc_hash_presence:
+    jobid: 106
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960980.sig
+    output: ../results/compare_human/dmp/RUG472xSRR8960980.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/RUG472.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960980.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/RUG472xSRR8960980.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:05:44 2024]
+Error in rule calc_hash_presence:
+    jobid: 113
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960731.sig
+    output: ../results/compare_human/dmp/RUG472xSRR8960731.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/RUG472.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960731.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/RUG472xSRR8960731.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:05:44 2024]
+Error in rule calc_hash_presence:
+    jobid: 6
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149266.sig
+    output: ../results/compare_human/dmp/bariatricusxDRR149266.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/bariatricus.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149266.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/bariatricusxDRR149266.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:05:44 2024]
+Error in rule calc_hash_presence:
+    jobid: 39
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174582.sig
+    output: ../results/compare_human/dmp/lamylovorusxDRR174582.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/lamylovorus.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174582.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/lamylovorusxDRR174582.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:05:44 2024]
+Error in rule calc_hash_presence:
+    jobid: 61
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149269.sig
+    output: ../results/compare_human/dmp/RUG472xDRR149269.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/RUG472.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149269.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/RUG472xDRR149269.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:05:44 2024]
+Error in rule calc_hash_presence:
+    jobid: 69
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960326.sig
+    output: ../results/compare_human/dmp/bariatricusxSRR8960326.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/bariatricus.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960326.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/bariatricusxSRR8960326.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:05:44 2024]
+Error in rule calc_hash_presence:
+    jobid: 99
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960326.sig
+    output: ../results/compare_human/dmp/ecolixSRR8960326.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/ecoli.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960326.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/ecolixSRR8960326.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:05:44 2024]
+Error in rule calc_hash_presence:
+    jobid: 51
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174581.sig
+    output: ../results/compare_human/dmp/ecolixDRR174581.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/ecoli.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174581.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/ecolixDRR174581.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:05:44 2024]
+Error in rule calc_hash_presence:
+    jobid: 97
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960440.sig
+    output: ../results/compare_human/dmp/ecolixSRR8960440.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/ecoli.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960440.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/ecolixSRR8960440.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Cancelling snakemake on user request.

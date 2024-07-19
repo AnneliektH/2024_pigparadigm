@@ -1,0 +1,331 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=20000
+Job stats:
+job           count
+----------  -------
+all               1
+pang_merge       10
+sketch           10
+total            21
+
+Select jobs to execute...
+
+[Wed Jul  3 15:22:11 2024]
+rule sketch:
+    input: ../results/viral_pangenomic_test/Cluster_325.fa
+    output: ../results/viral_pangenomic_test/Cluster_325.sig.gz
+    jobid: 26
+    reason: Missing output files: ../results/viral_pangenomic_test/Cluster_325.sig.gz
+    wildcards: ident=Cluster_325
+    resources: tmpdir=/tmp
+
+
+[Wed Jul  3 15:22:14 2024]
+rule sketch:
+    input: ../results/viral_pangenomic_test/Cluster_2.fa
+    output: ../results/viral_pangenomic_test/Cluster_2.sig.gz
+    jobid: 17
+    reason: Missing output files: ../results/viral_pangenomic_test/Cluster_2.sig.gz
+    wildcards: ident=Cluster_2
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Wed Jul  3 15:22:14 2024]
+Activating conda environment: branchwater
+rule sketch:
+    input: ../results/viral_pangenomic_test/Cluster_980.fa
+    output: ../results/viral_pangenomic_test/Cluster_980.sig.gz
+    jobid: 5
+    reason: Missing output files: ../results/viral_pangenomic_test/Cluster_980.sig.gz
+    wildcards: ident=Cluster_980
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Wed Jul  3 15:22:14 2024]
+rule sketch:
+    input: ../results/viral_pangenomic_test/Cluster_4249.fa
+    output: ../results/viral_pangenomic_test/Cluster_4249.sig.gz
+    jobid: 8
+    reason: Missing output files: ../results/viral_pangenomic_test/Cluster_4249.sig.gz
+    wildcards: ident=Cluster_4249
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Wed Jul  3 15:22:29 2024]
+Finished job 26.
+1 of 21 steps (5%) done
+Select jobs to execute...
+
+[Wed Jul  3 15:22:29 2024]
+rule sketch:
+    input: ../results/viral_pangenomic_test/Cluster_5352.fa
+    output: ../results/viral_pangenomic_test/Cluster_5352.sig.gz
+    jobid: 20
+    reason: Missing output files: ../results/viral_pangenomic_test/Cluster_5352.sig.gz
+    wildcards: ident=Cluster_5352
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Wed Jul  3 15:22:29 2024]
+Finished job 8.
+2 of 21 steps (10%) done
+[Wed Jul  3 15:22:29 2024]
+Finished job 5.
+3 of 21 steps (14%) done
+[Wed Jul  3 15:22:29 2024]
+Finished job 17.
+4 of 21 steps (19%) done
+Select jobs to execute...
+
+[Wed Jul  3 15:22:29 2024]
+rule sketch:
+    input: ../results/viral_pangenomic_test/Cluster_1919.fa
+    output: ../results/viral_pangenomic_test/Cluster_1919.sig.gz
+    jobid: 11
+    reason: Missing output files: ../results/viral_pangenomic_test/Cluster_1919.sig.gz
+    wildcards: ident=Cluster_1919
+    resources: tmpdir=/tmp
+
+
+Activating conda environment: branchwater
+[Wed Jul  3 15:22:29 2024]
+rule sketch:
+    input: ../results/viral_pangenomic_test/Cluster_265.fa
+    output: ../results/viral_pangenomic_test/Cluster_265.sig.gz
+    jobid: 23
+    reason: Missing output files: ../results/viral_pangenomic_test/Cluster_265.sig.gz
+    wildcards: ident=Cluster_265
+    resources: tmpdir=/tmp
+
+
+[Wed Jul  3 15:22:29 2024]
+Activating conda environment: branchwater
+rule sketch:
+    input: ../results/viral_pangenomic_test/Cluster_29.fa
+    output: ../results/viral_pangenomic_test/Cluster_29.sig.gz
+    jobid: 14
+    reason: Missing output files: ../results/viral_pangenomic_test/Cluster_29.sig.gz
+    wildcards: ident=Cluster_29
+    resources: tmpdir=/tmp
+
+Select jobs to execute...
+Activating conda environment: branchwater
+[Wed Jul  3 15:22:36 2024]
+Finished job 11.
+5 of 21 steps (24%) done
+
+[Wed Jul  3 15:22:36 2024]
+rule sketch:
+    input: ../results/viral_pangenomic_test/Cluster_1570.fa
+    output: ../results/viral_pangenomic_test/Cluster_1570.sig.gz
+    jobid: 2
+    reason: Missing output files: ../results/viral_pangenomic_test/Cluster_1570.sig.gz
+    wildcards: ident=Cluster_1570
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Wed Jul  3 15:22:36 2024]
+Finished job 20.
+6 of 21 steps (29%) done
+Select jobs to execute...
+
+[Wed Jul  3 15:22:36 2024]
+rule sketch:
+    input: ../results/viral_pangenomic_test/Cluster_13353.fa
+    output: ../results/viral_pangenomic_test/Cluster_13353.sig.gz
+    jobid: 29
+    reason: Missing output files: ../results/viral_pangenomic_test/Cluster_13353.sig.gz
+    wildcards: ident=Cluster_13353
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Wed Jul  3 15:22:36 2024]
+Finished job 23.
+7 of 21 steps (33%) done
+Select jobs to execute...
+[Wed Jul  3 15:22:36 2024]
+Finished job 14.
+8 of 21 steps (38%) done
+[Wed Jul  3 15:22:43 2024]
+Finished job 29.
+9 of 21 steps (43%) done
+[Wed Jul  3 15:22:44 2024]
+Finished job 2.
+10 of 21 steps (48%) done
+
+[Wed Jul  3 15:22:44 2024]
+rule pang_merge:
+    input: ../results/viral_pangenomic_test/Cluster_5352.sig.gz
+    output: ../results/viral_pangenomic_test/Cluster_5352.pang.sig.gz
+    jobid: 19
+    reason: Missing output files: ../results/viral_pangenomic_test/Cluster_5352.pang.sig.gz; Input files updated by another job: ../results/viral_pangenomic_test/Cluster_5352.sig.gz
+    wildcards: ident=Cluster_5352
+    threads: 4
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Wed Jul  3 15:22:50 2024]
+Finished job 19.
+11 of 21 steps (52%) done
+Select jobs to execute...
+
+[Wed Jul  3 15:22:50 2024]
+rule pang_merge:
+    input: ../results/viral_pangenomic_test/Cluster_13353.sig.gz
+    output: ../results/viral_pangenomic_test/Cluster_13353.pang.sig.gz
+    jobid: 28
+    reason: Missing output files: ../results/viral_pangenomic_test/Cluster_13353.pang.sig.gz; Input files updated by another job: ../results/viral_pangenomic_test/Cluster_13353.sig.gz
+    wildcards: ident=Cluster_13353
+    threads: 4
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Wed Jul  3 15:22:55 2024]
+Finished job 28.
+12 of 21 steps (57%) done
+Select jobs to execute...
+
+[Wed Jul  3 15:22:55 2024]
+rule pang_merge:
+    input: ../results/viral_pangenomic_test/Cluster_1919.sig.gz
+    output: ../results/viral_pangenomic_test/Cluster_1919.pang.sig.gz
+    jobid: 10
+    reason: Missing output files: ../results/viral_pangenomic_test/Cluster_1919.pang.sig.gz; Input files updated by another job: ../results/viral_pangenomic_test/Cluster_1919.sig.gz
+    wildcards: ident=Cluster_1919
+    threads: 4
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Wed Jul  3 15:23:01 2024]
+Finished job 10.
+13 of 21 steps (62%) done
+Select jobs to execute...
+
+[Wed Jul  3 15:23:01 2024]
+rule pang_merge:
+    input: ../results/viral_pangenomic_test/Cluster_265.sig.gz
+    output: ../results/viral_pangenomic_test/Cluster_265.pang.sig.gz
+    jobid: 22
+    reason: Missing output files: ../results/viral_pangenomic_test/Cluster_265.pang.sig.gz; Input files updated by another job: ../results/viral_pangenomic_test/Cluster_265.sig.gz
+    wildcards: ident=Cluster_265
+    threads: 4
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Wed Jul  3 15:23:07 2024]
+Finished job 22.
+14 of 21 steps (67%) done
+Select jobs to execute...
+
+[Wed Jul  3 15:23:07 2024]
+rule pang_merge:
+    input: ../results/viral_pangenomic_test/Cluster_980.sig.gz
+    output: ../results/viral_pangenomic_test/Cluster_980.pang.sig.gz
+    jobid: 4
+    reason: Missing output files: ../results/viral_pangenomic_test/Cluster_980.pang.sig.gz; Input files updated by another job: ../results/viral_pangenomic_test/Cluster_980.sig.gz
+    wildcards: ident=Cluster_980
+    threads: 4
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Wed Jul  3 15:23:14 2024]
+Finished job 4.
+15 of 21 steps (71%) done
+Select jobs to execute...
+
+[Wed Jul  3 15:23:14 2024]
+rule pang_merge:
+    input: ../results/viral_pangenomic_test/Cluster_29.sig.gz
+    output: ../results/viral_pangenomic_test/Cluster_29.pang.sig.gz
+    jobid: 13
+    reason: Missing output files: ../results/viral_pangenomic_test/Cluster_29.pang.sig.gz; Input files updated by another job: ../results/viral_pangenomic_test/Cluster_29.sig.gz
+    wildcards: ident=Cluster_29
+    threads: 4
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Wed Jul  3 15:23:21 2024]
+Finished job 13.
+16 of 21 steps (76%) done
+Select jobs to execute...
+
+[Wed Jul  3 15:23:21 2024]
+rule pang_merge:
+    input: ../results/viral_pangenomic_test/Cluster_325.sig.gz
+    output: ../results/viral_pangenomic_test/Cluster_325.pang.sig.gz
+    jobid: 25
+    reason: Missing output files: ../results/viral_pangenomic_test/Cluster_325.pang.sig.gz; Input files updated by another job: ../results/viral_pangenomic_test/Cluster_325.sig.gz
+    wildcards: ident=Cluster_325
+    threads: 4
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Wed Jul  3 15:23:27 2024]
+Finished job 25.
+17 of 21 steps (81%) done
+Select jobs to execute...
+
+[Wed Jul  3 15:23:27 2024]
+rule pang_merge:
+    input: ../results/viral_pangenomic_test/Cluster_4249.sig.gz
+    output: ../results/viral_pangenomic_test/Cluster_4249.pang.sig.gz
+    jobid: 7
+    reason: Missing output files: ../results/viral_pangenomic_test/Cluster_4249.pang.sig.gz; Input files updated by another job: ../results/viral_pangenomic_test/Cluster_4249.sig.gz
+    wildcards: ident=Cluster_4249
+    threads: 4
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Wed Jul  3 15:23:32 2024]
+Finished job 7.
+18 of 21 steps (86%) done
+Select jobs to execute...
+
+[Wed Jul  3 15:23:32 2024]
+rule pang_merge:
+    input: ../results/viral_pangenomic_test/Cluster_2.sig.gz
+    output: ../results/viral_pangenomic_test/Cluster_2.pang.sig.gz
+    jobid: 16
+    reason: Missing output files: ../results/viral_pangenomic_test/Cluster_2.pang.sig.gz; Input files updated by another job: ../results/viral_pangenomic_test/Cluster_2.sig.gz
+    wildcards: ident=Cluster_2
+    threads: 4
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Wed Jul  3 15:23:40 2024]
+Finished job 16.
+19 of 21 steps (90%) done
+Select jobs to execute...
+
+[Wed Jul  3 15:23:40 2024]
+rule pang_merge:
+    input: ../results/viral_pangenomic_test/Cluster_1570.sig.gz
+    output: ../results/viral_pangenomic_test/Cluster_1570.pang.sig.gz
+    jobid: 1
+    reason: Missing output files: ../results/viral_pangenomic_test/Cluster_1570.pang.sig.gz; Input files updated by another job: ../results/viral_pangenomic_test/Cluster_1570.sig.gz
+    wildcards: ident=Cluster_1570
+    threads: 4
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Wed Jul  3 15:23:47 2024]
+Finished job 1.
+20 of 21 steps (95%) done
+Select jobs to execute...
+
+[Wed Jul  3 15:23:47 2024]
+localrule all:
+    input: ../results/viral_pangenomic_test/Cluster_1570.pang.sig.gz, ../results/viral_pangenomic_test/Cluster_980.pang.sig.gz, ../results/viral_pangenomic_test/Cluster_4249.pang.sig.gz, ../results/viral_pangenomic_test/Cluster_1919.pang.sig.gz, ../results/viral_pangenomic_test/Cluster_29.pang.sig.gz, ../results/viral_pangenomic_test/Cluster_2.pang.sig.gz, ../results/viral_pangenomic_test/Cluster_5352.pang.sig.gz, ../results/viral_pangenomic_test/Cluster_265.pang.sig.gz, ../results/viral_pangenomic_test/Cluster_325.pang.sig.gz, ../results/viral_pangenomic_test/Cluster_13353.pang.sig.gz
+    jobid: 0
+    reason: Input files updated by another job: ../results/viral_pangenomic_test/Cluster_325.pang.sig.gz, ../results/viral_pangenomic_test/Cluster_13353.pang.sig.gz, ../results/viral_pangenomic_test/Cluster_980.pang.sig.gz, ../results/viral_pangenomic_test/Cluster_2.pang.sig.gz, ../results/viral_pangenomic_test/Cluster_29.pang.sig.gz, ../results/viral_pangenomic_test/Cluster_1570.pang.sig.gz, ../results/viral_pangenomic_test/Cluster_5352.pang.sig.gz, ../results/viral_pangenomic_test/Cluster_1919.pang.sig.gz, ../results/viral_pangenomic_test/Cluster_265.pang.sig.gz, ../results/viral_pangenomic_test/Cluster_4249.pang.sig.gz
+    resources: tmpdir=/tmp
+
+[Wed Jul  3 15:23:47 2024]
+Finished job 0.
+21 of 21 steps (100%) done
+Complete log: .snakemake/log/2024-07-03T152209.893999.snakemake.log

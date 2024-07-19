@@ -1,0 +1,34 @@
+import os
+import pandas as pd
+
+# gtdb paths
+GTDB = '/group/ctbrowngrp/sourmash-db/gtdb-rs214/gtdb-rs214-reps.k21.zip'
+GTDB_TAX  = '/group/ctbrowngrp/sourmash-db/gtdb-rs214/gtdb-rs214.lineages.csv'
+
+# set configfile
+configfile: "../config/config.yaml"
+# Set samples for human and pig
+metadata_human = pd.read_csv(config['human_SRA'], usecols=['acc'])
+metadata_pig = pd.read_csv(config['pig_SRA'], usecols=['acc'])
+# Create a list of run ids
+samples_human = metadata_human['acc'].tolist()
+samples_pig = metadata_pig['acc'].tolist()
+# Define samples
+HUMAN_METAG = config.get('samples', samples_human)
+PIG_METAG = config.get('samples', samples_pig)
+
+
+# include snakefiles
+include: "rules/fastgather.smk"
+include: "rules/sourmash_tax.smk"
+
+
+rule all:
+    input:
+        expand('../results/sourmash/fastgather/tax/check/{metag_p}.pig.tax', metag_p=PIG_METAG),
+        expand('../results/sourmash/fastgather/tax/check/{metag_h}.human.tax', metag_h=HUMAN_METAG),
+
+
+
+
+

@@ -1,0 +1,1012 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=20000
+Job stats:
+job              count
+-------------  -------
+all                  1
+classify            50
+classify_pang        5
+pang_merge           5
+pick_contigs         1
+ranktable            5
+total               67
+
+Select jobs to execute...
+
+[Fri Jul  5 09:52:33 2024]
+rule pick_contigs:
+    input: ../results/microbial_pangenomic_test/s__ecoli.csv
+    output: ../results/microbial_pangenomic_test/ecoli.zip
+    jobid: 43
+    reason: Forced execution
+    wildcards: ident=ecoli
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Fri Jul  5 09:52:35 2024]
+rule pang_merge:
+    input: ../results/microbial_pangenomic_test/lreuteri.zip
+    output: ../results/microbial_pangenomic_test/lreuteri.pang.sig.gz
+    jobid: 16
+    reason: Missing output files: ../results/microbial_pangenomic_test/lreuteri.pang.sig.gz
+    wildcards: ident=lreuteri
+    resources: tmpdir=/tmp
+
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:52:35 2024]
+rule pang_merge:
+    input: ../results/microbial_pangenomic_test/lamylovorus.zip
+    output: ../results/microbial_pangenomic_test/lamylovorus.pang.sig.gz
+    jobid: 29
+    reason: Missing output files: ../results/microbial_pangenomic_test/lamylovorus.pang.sig.gz
+    wildcards: ident=lamylovorus
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Fri Jul  5 09:52:35 2024]
+rule pang_merge:
+    input: ../results/microbial_pangenomic_test/RUG472.zip
+    output: ../results/microbial_pangenomic_test/RUG472.pang.sig.gz
+    jobid: 55
+    reason: Missing output files: ../results/microbial_pangenomic_test/RUG472.pang.sig.gz
+    wildcards: ident=RUG472
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:52:45 2024]
+Finished job 55.
+1 of 67 steps (1%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:52:45 2024]
+rule ranktable:
+    input: ../results/microbial_pangenomic_test/RUG472.pang.sig.gz
+    output: ../results/microbial_pangenomic_test/RUG472.rankt.csv
+    jobid: 54
+    reason: Missing output files: ../results/microbial_pangenomic_test/RUG472.rankt.csv; Input files updated by another job: ../results/microbial_pangenomic_test/RUG472.pang.sig.gz
+    wildcards: ident=RUG472
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:52:45 2024]
+Finished job 29.
+2 of 67 steps (3%) done
+[Fri Jul  5 09:52:45 2024]
+Finished job 16.
+3 of 67 steps (4%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:52:45 2024]
+rule ranktable:
+    input: ../results/microbial_pangenomic_test/lreuteri.pang.sig.gz
+    output: ../results/microbial_pangenomic_test/lreuteri.rankt.csv
+    jobid: 15
+    reason: Missing output files: ../results/microbial_pangenomic_test/lreuteri.rankt.csv; Input files updated by another job: ../results/microbial_pangenomic_test/lreuteri.pang.sig.gz
+    wildcards: ident=lreuteri
+    resources: tmpdir=/tmp
+
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:52:45 2024]
+rule ranktable:
+    input: ../results/microbial_pangenomic_test/lamylovorus.pang.sig.gz
+    output: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv
+    jobid: 28
+    reason: Missing output files: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv; Input files updated by another job: ../results/microbial_pangenomic_test/lamylovorus.pang.sig.gz
+    wildcards: ident=lamylovorus
+    resources: tmpdir=/tmp
+
+Select jobs to execute...
+Activating conda environment: branchwater
+[Fri Jul  5 09:52:51 2024]
+Finished job 28.
+4 of 67 steps (6%) done
+
+[Fri Jul  5 09:52:51 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960980.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960980.txt
+    jobid: 27
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960980.txt; Input files updated by another job: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv
+    wildcards: ident=lamylovorus, metag=SRR8960980
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:52:51 2024]
+Finished job 54.
+5 of 67 steps (7%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:52:51 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960915.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/RUG472xSRR8960915.txt
+    jobid: 60
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/RUG472xSRR8960915.txt; Input files updated by another job: ../results/microbial_pangenomic_test/RUG472.rankt.csv
+    wildcards: ident=RUG472, metag=SRR8960915
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:52:51 2024]
+Finished job 15.
+6 of 67 steps (9%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:52:51 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960731.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960731.txt
+    jobid: 37
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960731.txt; Input files updated by another job: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv
+    wildcards: ident=lamylovorus, metag=SRR8960731
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:53:15 2024]
+Finished job 27.
+7 of 67 steps (10%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:53:15 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960631.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/lreuterixSRR8960631.txt
+    jobid: 22
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/lreuterixSRR8960631.txt; Input files updated by another job: ../results/microbial_pangenomic_test/lreuteri.rankt.csv
+    wildcards: ident=lreuteri, metag=SRR8960631
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:53:42 2024]
+Finished job 60.
+8 of 67 steps (12%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:53:42 2024]
+rule classify_pang:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, ../results/microbial_pangenomic_test/lamylovorus.pang.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/lamylovorus.pang.txt
+    jobid: 68
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/lamylovorus.pang.txt; Input files updated by another job: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, ../results/microbial_pangenomic_test/lamylovorus.pang.sig.gz
+    wildcards: ident=lamylovorus
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:53:44 2024]
+Finished job 37.
+9 of 67 steps (13%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:53:44 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960980.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/RUG472xSRR8960980.txt
+    jobid: 53
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/RUG472xSRR8960980.txt; Input files updated by another job: ../results/microbial_pangenomic_test/RUG472.rankt.csv
+    wildcards: ident=RUG472, metag=SRR8960980
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:53:48 2024]
+Finished job 68.
+10 of 67 steps (15%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:53:48 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960200.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960200.txt
+    jobid: 38
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960200.txt; Input files updated by another job: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv
+    wildcards: ident=lamylovorus, metag=SRR8960200
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:54:02 2024]
+Finished job 22.
+11 of 67 steps (16%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:54:02 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, ../results/sourmash/sketches/read_s100/SRR11125655.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/lreuterixSRR11125655.txt
+    jobid: 23
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/lreuterixSRR11125655.txt; Input files updated by another job: ../results/microbial_pangenomic_test/lreuteri.rankt.csv
+    wildcards: ident=lreuteri, metag=SRR11125655
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:54:07 2024]
+Finished job 53.
+12 of 67 steps (18%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:54:07 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960631.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/RUG472xSRR8960631.txt
+    jobid: 61
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/RUG472xSRR8960631.txt; Input files updated by another job: ../results/microbial_pangenomic_test/RUG472.rankt.csv
+    wildcards: ident=RUG472, metag=SRR8960631
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:54:36 2024]
+Finished job 23.
+13 of 67 steps (19%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:54:36 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960440.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960440.txt
+    jobid: 31
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960440.txt; Input files updated by another job: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv
+    wildcards: ident=lamylovorus, metag=SRR8960440
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:54:43 2024]
+Finished job 38.
+14 of 67 steps (21%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:54:43 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960303.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960303.txt
+    jobid: 39
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960303.txt; Input files updated by another job: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv
+    wildcards: ident=lamylovorus, metag=SRR8960303
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:54:56 2024]
+Finished job 61.
+15 of 67 steps (22%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:54:56 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960731.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/lreuterixSRR8960731.txt
+    jobid: 24
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/lreuterixSRR8960731.txt; Input files updated by another job: ../results/microbial_pangenomic_test/lreuteri.rankt.csv
+    wildcards: ident=lreuteri, metag=SRR8960731
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:55:26 2024]
+Finished job 31.
+16 of 67 steps (24%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:55:26 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, ../results/sourmash/sketches/read_s100/SRR11125655.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/RUG472xSRR11125655.txt
+    jobid: 62
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/RUG472xSRR11125655.txt; Input files updated by another job: ../results/microbial_pangenomic_test/RUG472.rankt.csv
+    wildcards: ident=RUG472, metag=SRR11125655
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:55:35 2024]
+Finished job 39.
+17 of 67 steps (25%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:55:35 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960721.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960721.txt
+    jobid: 32
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960721.txt; Input files updated by another job: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv
+    wildcards: ident=lamylovorus, metag=SRR8960721
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:55:49 2024]
+Finished job 24.
+18 of 67 steps (27%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:55:49 2024]
+rule classify_pang:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, ../results/microbial_pangenomic_test/RUG472.pang.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/RUG472.pang.txt
+    jobid: 70
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/RUG472.pang.txt; Input files updated by another job: ../results/microbial_pangenomic_test/RUG472.rankt.csv, ../results/microbial_pangenomic_test/RUG472.pang.sig.gz
+    wildcards: ident=RUG472
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:55:55 2024]
+Finished job 70.
+19 of 67 steps (28%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:55:55 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960200.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/lreuterixSRR8960200.txt
+    jobid: 25
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/lreuterixSRR8960200.txt; Input files updated by another job: ../results/microbial_pangenomic_test/lreuteri.rankt.csv
+    wildcards: ident=lreuteri, metag=SRR8960200
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:55:57 2024]
+Finished job 62.
+20 of 67 steps (30%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:55:57 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960631.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960631.txt
+    jobid: 35
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960631.txt; Input files updated by another job: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv
+    wildcards: ident=lamylovorus, metag=SRR8960631
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:56:30 2024]
+Finished job 32.
+21 of 67 steps (31%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:56:30 2024]
+rule pang_merge:
+    input: ../results/microbial_pangenomic_test/bariatricus.zip
+    output: ../results/microbial_pangenomic_test/bariatricus.pang.sig.gz
+    jobid: 3
+    reason: Missing output files: ../results/microbial_pangenomic_test/bariatricus.pang.sig.gz
+    wildcards: ident=bariatricus
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:56:35 2024]
+Finished job 3.
+22 of 67 steps (33%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:56:35 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960303.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/lreuterixSRR8960303.txt
+    jobid: 26
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/lreuterixSRR8960303.txt; Input files updated by another job: ../results/microbial_pangenomic_test/lreuteri.rankt.csv
+    wildcards: ident=lreuteri, metag=SRR8960303
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:56:46 2024]
+Finished job 35.
+23 of 67 steps (34%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:56:46 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960721.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/RUG472xSRR8960721.txt
+    jobid: 58
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/RUG472xSRR8960721.txt; Input files updated by another job: ../results/microbial_pangenomic_test/RUG472.rankt.csv
+    wildcards: ident=RUG472, metag=SRR8960721
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:56:50 2024]
+Finished job 25.
+24 of 67 steps (36%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:56:50 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960980.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/lreuterixSRR8960980.txt
+    jobid: 14
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/lreuterixSRR8960980.txt; Input files updated by another job: ../results/microbial_pangenomic_test/lreuteri.rankt.csv
+    wildcards: ident=lreuteri, metag=SRR8960980
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:57:15 2024]
+Finished job 14.
+25 of 67 steps (37%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:57:15 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960326.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/RUG472xSRR8960326.txt
+    jobid: 59
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/RUG472xSRR8960326.txt; Input files updated by another job: ../results/microbial_pangenomic_test/RUG472.rankt.csv
+    wildcards: ident=RUG472, metag=SRR8960326
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:57:29 2024]
+Finished job 26.
+26 of 67 steps (39%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:57:29 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960440.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/lreuterixSRR8960440.txt
+    jobid: 18
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/lreuterixSRR8960440.txt; Input files updated by another job: ../results/microbial_pangenomic_test/lreuteri.rankt.csv
+    wildcards: ident=lreuteri, metag=SRR8960440
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:57:39 2024]
+Finished job 58.
+27 of 67 steps (40%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:57:39 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960731.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/RUG472xSRR8960731.txt
+    jobid: 63
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/RUG472xSRR8960731.txt; Input files updated by another job: ../results/microbial_pangenomic_test/RUG472.rankt.csv
+    wildcards: ident=RUG472, metag=SRR8960731
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:58:13 2024]
+Finished job 59.
+28 of 67 steps (42%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:58:13 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960326.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/lreuterixSRR8960326.txt
+    jobid: 20
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/lreuterixSRR8960326.txt; Input files updated by another job: ../results/microbial_pangenomic_test/lreuteri.rankt.csv
+    wildcards: ident=lreuteri, metag=SRR8960326
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:58:16 2024]
+Finished job 18.
+29 of 67 steps (43%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:58:16 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960326.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960326.txt
+    jobid: 33
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960326.txt; Input files updated by another job: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv
+    wildcards: ident=lamylovorus, metag=SRR8960326
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:58:30 2024]
+Finished job 63.
+30 of 67 steps (45%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:58:30 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960303.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/RUG472xSRR8960303.txt
+    jobid: 65
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/RUG472xSRR8960303.txt; Input files updated by another job: ../results/microbial_pangenomic_test/RUG472.rankt.csv
+    wildcards: ident=RUG472, metag=SRR8960303
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:59:11 2024]
+Finished job 20.
+31 of 67 steps (46%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:59:11 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960440.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/RUG472xSRR8960440.txt
+    jobid: 57
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/RUG472xSRR8960440.txt; Input files updated by another job: ../results/microbial_pangenomic_test/RUG472.rankt.csv
+    wildcards: ident=RUG472, metag=SRR8960440
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:59:15 2024]
+Finished job 33.
+32 of 67 steps (48%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:59:15 2024]
+rule ranktable:
+    input: ../results/microbial_pangenomic_test/bariatricus.pang.sig.gz
+    output: ../results/microbial_pangenomic_test/bariatricus.rankt.csv
+    jobid: 2
+    reason: Missing output files: ../results/microbial_pangenomic_test/bariatricus.rankt.csv; Input files updated by another job: ../results/microbial_pangenomic_test/bariatricus.pang.sig.gz
+    wildcards: ident=bariatricus
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:59:21 2024]
+Finished job 2.
+33 of 67 steps (49%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:59:21 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960326.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960326.txt
+    jobid: 7
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960326.txt; Input files updated by another job: ../results/microbial_pangenomic_test/bariatricus.rankt.csv
+    wildcards: ident=bariatricus, metag=SRR8960326
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 09:59:24 2024]
+Finished job 65.
+34 of 67 steps (51%) done
+Select jobs to execute...
+
+[Fri Jul  5 09:59:24 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960631.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960631.txt
+    jobid: 9
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960631.txt; Input files updated by another job: ../results/microbial_pangenomic_test/bariatricus.rankt.csv
+    wildcards: ident=bariatricus, metag=SRR8960631
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:00:00 2024]
+Finished job 57.
+35 of 67 steps (52%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:00:00 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960915.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960915.txt
+    jobid: 8
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960915.txt; Input files updated by another job: ../results/microbial_pangenomic_test/bariatricus.rankt.csv
+    wildcards: ident=bariatricus, metag=SRR8960915
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:00:14 2024]
+Finished job 9.
+36 of 67 steps (54%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:00:14 2024]
+rule classify_pang:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, ../results/microbial_pangenomic_test/bariatricus.pang.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/bariatricus.pang.txt
+    jobid: 66
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/bariatricus.pang.txt; Input files updated by another job: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, ../results/microbial_pangenomic_test/bariatricus.pang.sig.gz
+    wildcards: ident=bariatricus
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:00:19 2024]
+Finished job 7.
+37 of 67 steps (55%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:00:19 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, ../results/sourmash/sketches/read_s100/SRR11125655.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/lamylovorusxSRR11125655.txt
+    jobid: 36
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/lamylovorusxSRR11125655.txt; Input files updated by another job: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv
+    wildcards: ident=lamylovorus, metag=SRR11125655
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:00:19 2024]
+Finished job 66.
+38 of 67 steps (57%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:00:19 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, ../results/sourmash/sketches/read_s100/SRR11125655.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/bariatricusxSRR11125655.txt
+    jobid: 10
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/bariatricusxSRR11125655.txt; Input files updated by another job: ../results/microbial_pangenomic_test/bariatricus.rankt.csv
+    wildcards: ident=bariatricus, metag=SRR11125655
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:00:41 2024]
+Finished job 43.
+39 of 67 steps (58%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:00:41 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960200.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960200.txt
+    jobid: 12
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960200.txt; Input files updated by another job: ../results/microbial_pangenomic_test/bariatricus.rankt.csv
+    wildcards: ident=bariatricus, metag=SRR8960200
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:00:52 2024]
+Finished job 10.
+40 of 67 steps (60%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:00:52 2024]
+rule pang_merge:
+    input: ../results/microbial_pangenomic_test/ecoli.zip
+    output: ../results/microbial_pangenomic_test/ecoli.pang.sig.gz
+    jobid: 42
+    reason: Missing output files: ../results/microbial_pangenomic_test/ecoli.pang.sig.gz; Input files updated by another job: ../results/microbial_pangenomic_test/ecoli.zip
+    wildcards: ident=ecoli
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:00:53 2024]
+Finished job 8.
+41 of 67 steps (61%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:00:53 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960440.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960440.txt
+    jobid: 5
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960440.txt; Input files updated by another job: ../results/microbial_pangenomic_test/bariatricus.rankt.csv
+    wildcards: ident=bariatricus, metag=SRR8960440
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:00:53 2024]
+Finished job 36.
+42 of 67 steps (63%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:00:53 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960721.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960721.txt
+    jobid: 6
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960721.txt; Input files updated by another job: ../results/microbial_pangenomic_test/bariatricus.rankt.csv
+    wildcards: ident=bariatricus, metag=SRR8960721
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:01:36 2024]
+Finished job 12.
+43 of 67 steps (64%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:01:36 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960915.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960915.txt
+    jobid: 34
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960915.txt; Input files updated by another job: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv
+    wildcards: ident=lamylovorus, metag=SRR8960915
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:01:41 2024]
+Finished job 5.
+44 of 67 steps (66%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:01:41 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960915.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/lreuterixSRR8960915.txt
+    jobid: 21
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/lreuterixSRR8960915.txt; Input files updated by another job: ../results/microbial_pangenomic_test/lreuteri.rankt.csv
+    wildcards: ident=lreuteri, metag=SRR8960915
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:01:49 2024]
+Finished job 6.
+45 of 67 steps (67%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:01:49 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960200.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/RUG472xSRR8960200.txt
+    jobid: 64
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/RUG472xSRR8960200.txt; Input files updated by another job: ../results/microbial_pangenomic_test/RUG472.rankt.csv
+    wildcards: ident=RUG472, metag=SRR8960200
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:02:28 2024]
+Finished job 34.
+46 of 67 steps (69%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:02:28 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960721.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/lreuterixSRR8960721.txt
+    jobid: 19
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/lreuterixSRR8960721.txt; Input files updated by another job: ../results/microbial_pangenomic_test/lreuteri.rankt.csv
+    wildcards: ident=lreuteri, metag=SRR8960721
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:02:34 2024]
+Finished job 21.
+47 of 67 steps (70%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:02:34 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960303.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960303.txt
+    jobid: 13
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960303.txt; Input files updated by another job: ../results/microbial_pangenomic_test/bariatricus.rankt.csv
+    wildcards: ident=bariatricus, metag=SRR8960303
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:02:44 2024]
+Finished job 64.
+48 of 67 steps (72%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:02:44 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960731.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960731.txt
+    jobid: 11
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960731.txt; Input files updated by another job: ../results/microbial_pangenomic_test/bariatricus.rankt.csv
+    wildcards: ident=bariatricus, metag=SRR8960731
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:03:25 2024]
+Finished job 19.
+49 of 67 steps (73%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:03:25 2024]
+rule classify_pang:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, ../results/microbial_pangenomic_test/lreuteri.pang.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/lreuteri.pang.txt
+    jobid: 67
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/lreuteri.pang.txt; Input files updated by another job: ../results/microbial_pangenomic_test/lreuteri.pang.sig.gz, ../results/microbial_pangenomic_test/lreuteri.rankt.csv
+    wildcards: ident=lreuteri
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:03:26 2024]
+Finished job 13.
+50 of 67 steps (75%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:03:26 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960980.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960980.txt
+    jobid: 1
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960980.txt; Input files updated by another job: ../results/microbial_pangenomic_test/bariatricus.rankt.csv
+    wildcards: ident=bariatricus, metag=SRR8960980
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:03:31 2024]
+Finished job 67.
+51 of 67 steps (76%) done
+[Fri Jul  5 10:03:37 2024]
+Finished job 11.
+52 of 67 steps (78%) done
+[Fri Jul  5 10:03:46 2024]
+Finished job 1.
+53 of 67 steps (79%) done
+[Fri Jul  5 10:07:12 2024]
+Finished job 42.
+54 of 67 steps (81%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:07:12 2024]
+rule ranktable:
+    input: ../results/microbial_pangenomic_test/ecoli.pang.sig.gz
+    output: ../results/microbial_pangenomic_test/ecoli.rankt.csv
+    jobid: 41
+    reason: Missing output files: ../results/microbial_pangenomic_test/ecoli.rankt.csv; Input files updated by another job: ../results/microbial_pangenomic_test/ecoli.pang.sig.gz
+    wildcards: ident=ecoli
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:07:18 2024]
+Finished job 41.
+55 of 67 steps (82%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:07:18 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960731.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/ecolixSRR8960731.txt
+    jobid: 50
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/ecolixSRR8960731.txt; Input files updated by another job: ../results/microbial_pangenomic_test/ecoli.rankt.csv
+    wildcards: ident=ecoli, metag=SRR8960731
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Fri Jul  5 10:07:18 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960303.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/ecolixSRR8960303.txt
+    jobid: 52
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/ecolixSRR8960303.txt; Input files updated by another job: ../results/microbial_pangenomic_test/ecoli.rankt.csv
+    wildcards: ident=ecoli, metag=SRR8960303
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Fri Jul  5 10:07:18 2024]
+rule classify_pang:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, ../results/microbial_pangenomic_test/ecoli.pang.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/ecoli.pang.txt
+    jobid: 69
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/ecoli.pang.txt; Input files updated by another job: ../results/microbial_pangenomic_test/ecoli.pang.sig.gz, ../results/microbial_pangenomic_test/ecoli.rankt.csv
+    wildcards: ident=ecoli
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Fri Jul  5 10:07:18 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960631.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/ecolixSRR8960631.txt
+    jobid: 48
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/ecolixSRR8960631.txt; Input files updated by another job: ../results/microbial_pangenomic_test/ecoli.rankt.csv
+    wildcards: ident=ecoli, metag=SRR8960631
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:07:26 2024]
+Finished job 69.
+56 of 67 steps (84%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:07:26 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960326.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/ecolixSRR8960326.txt
+    jobid: 46
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/ecolixSRR8960326.txt; Input files updated by another job: ../results/microbial_pangenomic_test/ecoli.rankt.csv
+    wildcards: ident=ecoli, metag=SRR8960326
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:08:11 2024]
+Finished job 48.
+57 of 67 steps (85%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:08:11 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960440.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/ecolixSRR8960440.txt
+    jobid: 44
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/ecolixSRR8960440.txt; Input files updated by another job: ../results/microbial_pangenomic_test/ecoli.rankt.csv
+    wildcards: ident=ecoli, metag=SRR8960440
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:08:14 2024]
+Finished job 52.
+58 of 67 steps (87%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:08:14 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960980.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/ecolixSRR8960980.txt
+    jobid: 40
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/ecolixSRR8960980.txt; Input files updated by another job: ../results/microbial_pangenomic_test/ecoli.rankt.csv
+    wildcards: ident=ecoli, metag=SRR8960980
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:08:16 2024]
+Finished job 50.
+59 of 67 steps (88%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:08:16 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, ../results/sourmash/sketches/read_s100/SRR11125655.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/ecolixSRR11125655.txt
+    jobid: 49
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/ecolixSRR11125655.txt; Input files updated by another job: ../results/microbial_pangenomic_test/ecoli.rankt.csv
+    wildcards: ident=ecoli, metag=SRR11125655
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:08:25 2024]
+Finished job 46.
+60 of 67 steps (90%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:08:25 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960915.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/ecolixSRR8960915.txt
+    jobid: 47
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/ecolixSRR8960915.txt; Input files updated by another job: ../results/microbial_pangenomic_test/ecoli.rankt.csv
+    wildcards: ident=ecoli, metag=SRR8960915
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:08:39 2024]
+Finished job 40.
+61 of 67 steps (91%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:08:40 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960200.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/ecolixSRR8960200.txt
+    jobid: 51
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/ecolixSRR8960200.txt; Input files updated by another job: ../results/microbial_pangenomic_test/ecoli.rankt.csv
+    wildcards: ident=ecoli, metag=SRR8960200
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:08:50 2024]
+Finished job 49.
+62 of 67 steps (93%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:08:50 2024]
+rule classify:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, ../results/sourmash/sketches/read_s100/SRR8960721.sig.gz
+    output: ../results/microbial_pangenomic_test/classify/ecolixSRR8960721.txt
+    jobid: 45
+    reason: Missing output files: ../results/microbial_pangenomic_test/classify/ecolixSRR8960721.txt; Input files updated by another job: ../results/microbial_pangenomic_test/ecoli.rankt.csv
+    wildcards: ident=ecoli, metag=SRR8960721
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul  5 10:09:01 2024]
+Finished job 44.
+63 of 67 steps (94%) done
+[Fri Jul  5 10:09:18 2024]
+Finished job 47.
+64 of 67 steps (96%) done
+[Fri Jul  5 10:09:26 2024]
+Finished job 51.
+65 of 67 steps (97%) done
+[Fri Jul  5 10:09:37 2024]
+Finished job 45.
+66 of 67 steps (99%) done
+Select jobs to execute...
+
+[Fri Jul  5 10:09:37 2024]
+localrule all:
+    input: ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960980.txt, ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960440.txt, ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960721.txt, ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960326.txt, ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960915.txt, ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960631.txt, ../results/microbial_pangenomic_test/classify/bariatricusxSRR11125655.txt, ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960731.txt, ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960200.txt, ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960303.txt, ../results/microbial_pangenomic_test/classify/lreuterixSRR8960980.txt, ../results/microbial_pangenomic_test/classify/lreuterixSRR8960440.txt, ../results/microbial_pangenomic_test/classify/lreuterixSRR8960721.txt, ../results/microbial_pangenomic_test/classify/lreuterixSRR8960326.txt, ../results/microbial_pangenomic_test/classify/lreuterixSRR8960915.txt, ../results/microbial_pangenomic_test/classify/lreuterixSRR8960631.txt, ../results/microbial_pangenomic_test/classify/lreuterixSRR11125655.txt, ../results/microbial_pangenomic_test/classify/lreuterixSRR8960731.txt, ../results/microbial_pangenomic_test/classify/lreuterixSRR8960200.txt, ../results/microbial_pangenomic_test/classify/lreuterixSRR8960303.txt, ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960980.txt, ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960440.txt, ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960721.txt, ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960326.txt, ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960915.txt, ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960631.txt, ../results/microbial_pangenomic_test/classify/lamylovorusxSRR11125655.txt, ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960731.txt, ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960200.txt, ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960303.txt, ../results/microbial_pangenomic_test/classify/ecolixSRR8960980.txt, ../results/microbial_pangenomic_test/classify/ecolixSRR8960440.txt, ../results/microbial_pangenomic_test/classify/ecolixSRR8960721.txt, ../results/microbial_pangenomic_test/classify/ecolixSRR8960326.txt, ../results/microbial_pangenomic_test/classify/ecolixSRR8960915.txt, ../results/microbial_pangenomic_test/classify/ecolixSRR8960631.txt, ../results/microbial_pangenomic_test/classify/ecolixSRR11125655.txt, ../results/microbial_pangenomic_test/classify/ecolixSRR8960731.txt, ../results/microbial_pangenomic_test/classify/ecolixSRR8960200.txt, ../results/microbial_pangenomic_test/classify/ecolixSRR8960303.txt, ../results/microbial_pangenomic_test/classify/RUG472xSRR8960980.txt, ../results/microbial_pangenomic_test/classify/RUG472xSRR8960440.txt, ../results/microbial_pangenomic_test/classify/RUG472xSRR8960721.txt, ../results/microbial_pangenomic_test/classify/RUG472xSRR8960326.txt, ../results/microbial_pangenomic_test/classify/RUG472xSRR8960915.txt, ../results/microbial_pangenomic_test/classify/RUG472xSRR8960631.txt, ../results/microbial_pangenomic_test/classify/RUG472xSRR11125655.txt, ../results/microbial_pangenomic_test/classify/RUG472xSRR8960731.txt, ../results/microbial_pangenomic_test/classify/RUG472xSRR8960200.txt, ../results/microbial_pangenomic_test/classify/RUG472xSRR8960303.txt, ../results/microbial_pangenomic_test/classify/bariatricus.pang.txt, ../results/microbial_pangenomic_test/classify/lreuteri.pang.txt, ../results/microbial_pangenomic_test/classify/lamylovorus.pang.txt, ../results/microbial_pangenomic_test/classify/ecoli.pang.txt, ../results/microbial_pangenomic_test/classify/RUG472.pang.txt
+    jobid: 0
+    reason: Input files updated by another job: ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960326.txt, ../results/microbial_pangenomic_test/classify/ecolixSRR8960731.txt, ../results/microbial_pangenomic_test/classify/ecolixSRR8960200.txt, ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960721.txt, ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960631.txt, ../results/microbial_pangenomic_test/classify/ecolixSRR8960915.txt, ../results/microbial_pangenomic_test/classify/lreuterixSRR8960631.txt, ../results/microbial_pangenomic_test/classify/lreuterixSRR8960200.txt, ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960631.txt, ../results/microbial_pangenomic_test/classify/RUG472xSRR8960980.txt, ../results/microbial_pangenomic_test/classify/ecolixSRR8960721.txt, ../results/microbial_pangenomic_test/classify/RUG472xSRR8960631.txt, ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960440.txt, ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960440.txt, ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960915.txt, ../results/microbial_pangenomic_test/classify/lamylovorusxSRR11125655.txt, ../results/microbial_pangenomic_test/classify/lreuterixSRR8960980.txt, ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960303.txt, ../results/microbial_pangenomic_test/classify/ecolixSRR8960440.txt, ../results/microbial_pangenomic_test/classify/lreuterixSRR8960326.txt, ../results/microbial_pangenomic_test/classify/RUG472xSRR8960303.txt, ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960915.txt, ../results/microbial_pangenomic_test/classify/RUG472xSRR8960721.txt, ../results/microbial_pangenomic_test/classify/RUG472xSRR8960731.txt, ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960326.txt, ../results/microbial_pangenomic_test/classify/RUG472.pang.txt, ../results/microbial_pangenomic_test/classify/lreuteri.pang.txt, ../results/microbial_pangenomic_test/classify/RUG472xSRR11125655.txt, ../results/microbial_pangenomic_test/classify/lreuterixSRR8960721.txt, ../results/microbial_pangenomic_test/classify/lreuterixSRR8960303.txt, ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960200.txt, ../results/microbial_pangenomic_test/classify/bariatricus.pang.txt, ../results/microbial_pangenomic_test/classify/bariatricusxSRR11125655.txt, ../results/microbial_pangenomic_test/classify/lreuterixSRR11125655.txt, ../results/microbial_pangenomic_test/classify/RUG472xSRR8960440.txt, ../results/microbial_pangenomic_test/classify/lreuterixSRR8960731.txt, ../results/microbial_pangenomic_test/classify/lreuterixSRR8960915.txt, ../results/microbial_pangenomic_test/classify/ecolixSRR8960631.txt, ../results/microbial_pangenomic_test/classify/ecolixSRR8960980.txt, ../results/microbial_pangenomic_test/classify/ecolixSRR11125655.txt, ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960731.txt, ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960980.txt, ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960200.txt, ../results/microbial_pangenomic_test/classify/lreuterixSRR8960440.txt, ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960303.txt, ../results/microbial_pangenomic_test/classify/RUG472xSRR8960915.txt, ../results/microbial_pangenomic_test/classify/RUG472xSRR8960200.txt, ../results/microbial_pangenomic_test/classify/RUG472xSRR8960326.txt, ../results/microbial_pangenomic_test/classify/ecolixSRR8960326.txt, ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960980.txt, ../results/microbial_pangenomic_test/classify/bariatricusxSRR8960721.txt, ../results/microbial_pangenomic_test/classify/lamylovorus.pang.txt, ../results/microbial_pangenomic_test/classify/ecoli.pang.txt, ../results/microbial_pangenomic_test/classify/lamylovorusxSRR8960731.txt, ../results/microbial_pangenomic_test/classify/ecolixSRR8960303.txt
+    resources: tmpdir=/tmp
+
+[Fri Jul  5 10:09:37 2024]
+Finished job 0.
+67 of 67 steps (100%) done
+Complete log: .snakemake/log/2024-07-05T095232.313243.snakemake.log

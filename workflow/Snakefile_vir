@@ -1,0 +1,110 @@
+import os
+import pandas as pd
+
+# Define samples
+CLUSTERS, = glob_wildcards('../results/viral_pangenomic_test/clusters/{ident}.txt')
+METAGS = ['SRR8960980', 'SRR8960440', 'SRR8960721', 'SRR8960326', 'SRR8960915', 'SRR8960631', 'SRR11125655', 'SRR8960731', 'SRR8960200', 'SRR8960303']
+
+VIR_CONTIGS = '/group/ctbrowngrp2/scratch/annie/2024-pigparadigm/results/vOTUs/hq_virseqs.sort.fa'
+
+
+wildcard_constraints:
+    sample='\w+',
+
+rule all:
+    input:
+        expand('../results/viral_pangenomic_test/classify/{ident}x{metag}.txt', ident=CLUSTERS, metag=METAGS),
+        expand('../results/viral_pangenomic_test/classify/{ident}.pang.txt', ident=CLUSTERS),
+
+
+# filter contigs per cluster
+rule subset_vircontigs:
+    input: 
+        list_contig = "../results/viral_pangenomic_test/clusters/{ident}.txt"
+    output: 
+        contigs = "../results/viral_pangenomic_test/{ident}.fa"
+    conda: 
+        "bbmap"
+    shell:
+        """
+        filterbyname.sh in={VIR_CONTIGS} \
+        out={output.contigs} names={input.list_contig} \
+        include=t
+        """
+
+# sketch individually
+rule sketch:
+    input:
+        fa = '../results/viral_pangenomic_test/{ident}.fa'
+    output:
+        sig = "../results/viral_pangenomic_test/{ident}.sig.gz",
+    conda: 
+        "branchwater"
+    threads: 1
+    shell:
+        """ 
+        sourmash sketch dna {input.fa} \
+        -p k=21,scaled=1,abund \
+        --singleton \
+        -o {output.sig}
+        """
+
+# merge sketches into pangenome
+rule pang_merge:
+    input:
+       sig='../results/viral_pangenomic_test/{ident}.sig.gz',
+    output:
+        pang = "../results/viral_pangenomic_test/{ident}.pang.sig.gz",
+    conda: 
+        "branchwater"
+    threads: 1
+    shell:
+        """ 
+        sourmash scripts pangenome_merge \
+        {input.sig} -o {output.pang} -k 21
+        """
+
+# create a ranktable
+rule ranktable:
+    input:
+       sig='../results/viral_pangenomic_test/{ident}.pang.sig.gz',
+    output:
+        rankt = "../results/viral_pangenomic_test/{ident}.rankt.csv",
+    conda: 
+        "branchwater"
+    threads: 1
+    shell:
+        """ 
+        sourmash scripts pangenome_ranktable {input.sig} \
+        -o {output.rankt} -k 21
+        """
+
+# Now do the pangenome classify for 10 metagenomes
+rule classify:
+    input:
+       rankt = "../results/viral_pangenomic_test/{ident}.rankt.csv",
+       metag = "../results/sourmash/sketches/read_s100/{metag}.sig.gz" 
+    output:
+        txt = "../results/viral_pangenomic_test/classify/{ident}x{metag}.txt",
+    conda: 
+        "branchwater"
+    threads: 1
+    shell:
+        """ 
+        sourmash scripts pangenome_classify \
+        {input.metag} {input.rankt} -k 21 --scaled 100 > {output.txt}
+        """
+rule classify_pang:
+    input:
+       rankt = "../results/viral_pangenomic_test/{ident}.rankt.csv",
+       sig = "../results/viral_pangenomic_test/{ident}.pang.sig.gz" 
+    output:
+        txt = "../results/viral_pangenomic_test/classify/{ident}.pang.txt",
+    conda: 
+        "branchwater"
+    threads: 1
+    shell:
+        """ 
+        sourmash scripts pangenome_classify \
+        {input.sig} {input.rankt} -k 21 --scaled 100 > {output.txt}
+        """

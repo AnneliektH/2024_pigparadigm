@@ -1,0 +1,38 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=20000
+Job stats:
+job                   count
+------------------  -------
+all                       1
+calc_hash_presence        5
+total                     6
+
+Select jobs to execute...
+
+[Wed Jul 10 14:39:14 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, input_files.txt
+    output: ../results/compare_human/dmp/lreuteri.x.pig.dump
+    jobid: 5
+    reason: Missing output files: ../results/compare_human/dmp/lreuteri.x.pig.dump
+    wildcards: ident=lreuteri
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+Terminating processes on user request, this might take some time.
+[Wed Jul 10 14:39:16 2024]
+Error in rule calc_hash_presence:
+    jobid: 5
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, input_files.txt
+    output: ../results/compare_human/dmp/lreuteri.x.pig.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/lreuteri.rankt.csv input_files.txt --scaled=1000 -k 21 -o ../results/compare_human/dmp/lreuteri.x.pig.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: .snakemake/log/2024-07-10T143912.938565.snakemake.log

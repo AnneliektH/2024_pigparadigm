@@ -1,0 +1,3 @@
+ValueError in file /group/ctbrowngrp2/scratch/annie/2024-pigparadigm/workflow/Snakefile, line 6:
+too many values to unpack (expected 1)
+  File "/group/ctbrowngrp2/scratch/annie/2024-pigparadigm/workflow/Snakefile", line 6, in <module>

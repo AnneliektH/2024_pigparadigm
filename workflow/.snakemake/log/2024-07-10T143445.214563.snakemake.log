@@ -1,0 +1,7 @@
+Building DAG of jobs...
+MissingInputException in rule calc_hash_presence in file /group/ctbrowngrp2/scratch/annie/2024-pigparadigm/workflow/Snakefile_comphuman, line 126:
+Missing input files for rule calc_hash_presence:
+    output: ../results/compare_human/dmp/bariatricus.x.human.dump
+    wildcards: ident=bariatricus
+    affected files:
+        input_files.txt

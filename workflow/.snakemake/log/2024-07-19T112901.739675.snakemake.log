@@ -1,0 +1,70 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job             count
+------------  -------
+all                 1
+pick_species        3
+total               4
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 11:29:05 2024]
+localrule pick_species:
+    output: ../results/pangenome/Dorea_formicigenerans.csv
+    jobid: 7
+    reason: Missing output files: ../results/pangenome/Dorea_formicigenerans.csv
+    wildcards: species=Dorea_formicigenerans
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 11:29:23 2024]
+Finished job 7.
+1 of 4 steps (25%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 11:29:23 2024]
+localrule pick_species:
+    output: ../results/pangenome/Faecalibacterium_prausnitzii_E.csv
+    jobid: 6
+    reason: Missing output files: ../results/pangenome/Faecalibacterium_prausnitzii_E.csv
+    wildcards: species=Faecalibacterium_prausnitzii_E
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 11:29:38 2024]
+Finished job 6.
+2 of 4 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 11:29:38 2024]
+localrule pick_species:
+    output: ../results/pangenome/Anaerobutyricum_soehngenii.csv
+    jobid: 8
+    reason: Missing output files: ../results/pangenome/Anaerobutyricum_soehngenii.csv
+    wildcards: species=Anaerobutyricum_soehngenii
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 11:29:53 2024]
+Finished job 8.
+3 of 4 steps (75%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 11:29:53 2024]
+localrule all:
+    input: ../results/pangenome/Dysosmobacter_sp019417795.csv, ../results/pangenome/Onthomonas_sp900758315.csv, ../results/pangenome/Escherichia_coli.csv, ../results/pangenome/Gemmiger_formicilis.csv, ../results/pangenome/Blautia_A_sp003471165.csv, ../results/pangenome/Faecalibacterium_prausnitzii_E.csv, ../results/pangenome/Dorea_formicigenerans.csv, ../results/pangenome/Anaerobutyricum_soehngenii.csv
+    jobid: 0
+    reason: Input files updated by another job: ../results/pangenome/Dorea_formicigenerans.csv, ../results/pangenome/Anaerobutyricum_soehngenii.csv, ../results/pangenome/Faecalibacterium_prausnitzii_E.csv
+    resources: tmpdir=/tmp
+
+[Fri Jul 19 11:29:53 2024]
+Finished job 0.
+4 of 4 steps (100%) done
+Complete log: .snakemake/log/2024-07-19T112901.739675.snakemake.log

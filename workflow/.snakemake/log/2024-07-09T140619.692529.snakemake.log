@@ -1,0 +1,567 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=20000
+Job stats:
+job                   count
+------------------  -------
+all                       1
+calc_hash_presence      100
+total                   101
+
+Select jobs to execute...
+
+[Tue Jul  9 14:06:21 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR11125655.sig
+    output: ../results/compare_human/dmp/bariatricusxSRR11125655.dump
+    jobid: 72
+    reason: Missing output files: ../results/compare_human/dmp/bariatricusxSRR11125655.dump
+    wildcards: ident=bariatricus, metag=SRR11125655
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:06:22 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR11125655.sig
+    output: ../results/compare_human/dmp/ecolixSRR11125655.dump
+    jobid: 102
+    reason: Missing output files: ../results/compare_human/dmp/ecolixSRR11125655.dump
+    wildcards: ident=ecoli, metag=SRR11125655
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:06:22 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149265.sig
+    output: ../results/compare_human/dmp/RUG472xDRR149265.dump
+    jobid: 57
+    reason: Missing output files: ../results/compare_human/dmp/RUG472xDRR149265.dump
+    wildcards: ident=RUG472, metag=DRR149265
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:06:22 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149269.sig
+    output: ../results/compare_human/dmp/ecolixDRR149269.dump
+    jobid: 48
+    reason: Missing output files: ../results/compare_human/dmp/ecolixDRR149269.dump
+    wildcards: ident=ecoli, metag=DRR149269
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:06:22 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960440.sig
+    output: ../results/compare_human/dmp/lamylovorusxSRR8960440.dump
+    jobid: 87
+    reason: Missing output files: ../results/compare_human/dmp/lamylovorusxSRR8960440.dump
+    wildcards: ident=lamylovorus, metag=SRR8960440
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:06:23 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149266.sig
+    output: ../results/compare_human/dmp/lamylovorusxDRR149266.dump
+    jobid: 32
+    reason: Missing output files: ../results/compare_human/dmp/lamylovorusxDRR149266.dump
+    wildcards: ident=lamylovorus, metag=DRR149266
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:06:23 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174579.sig
+    output: ../results/compare_human/dmp/lreuterixDRR174579.dump
+    jobid: 23
+    reason: Missing output files: ../results/compare_human/dmp/lreuterixDRR174579.dump
+    wildcards: ident=lreuteri, metag=DRR174579
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:06:23 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149267.sig
+    output: ../results/compare_human/dmp/bariatricusxDRR149267.dump
+    jobid: 7
+    reason: Missing output files: ../results/compare_human/dmp/bariatricusxDRR149267.dump
+    wildcards: ident=bariatricus, metag=DRR149267
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:06:23 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149264.sig
+    output: ../results/compare_human/dmp/ecolixDRR149264.dump
+    jobid: 40
+    reason: Missing output files: ../results/compare_human/dmp/ecolixDRR149264.dump
+    wildcards: ident=ecoli, metag=DRR149264
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:06:23 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149266.sig
+    output: ../results/compare_human/dmp/RUG472xDRR149266.dump
+    jobid: 58
+    reason: Missing output files: ../results/compare_human/dmp/RUG472xDRR149266.dump
+    wildcards: ident=RUG472, metag=DRR149266
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:06:23 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960731.sig
+    output: ../results/compare_human/dmp/bariatricusxSRR8960731.dump
+    jobid: 73
+    reason: Missing output files: ../results/compare_human/dmp/bariatricusxSRR8960731.dump
+    wildcards: ident=bariatricus, metag=SRR8960731
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:06:23 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960721.sig
+    output: ../results/compare_human/dmp/lamylovorusxSRR8960721.dump
+    jobid: 88
+    reason: Missing output files: ../results/compare_human/dmp/lamylovorusxSRR8960721.dump
+    wildcards: ident=lamylovorus, metag=SRR8960721
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:06:23 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960731.sig
+    output: ../results/compare_human/dmp/ecolixSRR8960731.dump
+    jobid: 103
+    reason: Missing output files: ../results/compare_human/dmp/ecolixSRR8960731.dump
+    wildcards: ident=ecoli, metag=SRR8960731
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:06:23 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174580.sig
+    output: ../results/compare_human/dmp/lreuterixDRR174580.dump
+    jobid: 24
+    reason: Missing output files: ../results/compare_human/dmp/lreuterixDRR174580.dump
+    wildcards: ident=lreuteri, metag=DRR174580
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:06:23 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149268.sig
+    output: ../results/compare_human/dmp/RUG472xDRR149268.dump
+    jobid: 60
+    reason: Missing output files: ../results/compare_human/dmp/RUG472xDRR149268.dump
+    wildcards: ident=RUG472, metag=DRR149268
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:06:23 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149269.sig
+    output: ../results/compare_human/dmp/bariatricusxDRR149269.dump
+    jobid: 9
+    reason: Missing output files: ../results/compare_human/dmp/bariatricusxDRR149269.dump
+    wildcards: ident=bariatricus, metag=DRR149269
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:06:23 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149268.sig
+    output: ../results/compare_human/dmp/bariatricusxDRR149268.dump
+    jobid: 8
+    reason: Missing output files: ../results/compare_human/dmp/bariatricusxDRR149268.dump
+    wildcards: ident=bariatricus, metag=DRR149268
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:06:23 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960200.sig
+    output: ../results/compare_human/dmp/bariatricusxSRR8960200.dump
+    jobid: 74
+    reason: Missing output files: ../results/compare_human/dmp/bariatricusxSRR8960200.dump
+    wildcards: ident=bariatricus, metag=SRR8960200
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:06:23 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149267.sig
+    output: ../results/compare_human/dmp/RUG472xDRR149267.dump
+    jobid: 59
+    reason: Missing output files: ../results/compare_human/dmp/RUG472xDRR149267.dump
+    wildcards: ident=RUG472, metag=DRR149267
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:06:23 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960326.sig
+    output: ../results/compare_human/dmp/lamylovorusxSRR8960326.dump
+    jobid: 89
+    reason: Missing output files: ../results/compare_human/dmp/lamylovorusxSRR8960326.dump
+    wildcards: ident=lamylovorus, metag=SRR8960326
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:06:23 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960200.sig
+    output: ../results/compare_human/dmp/ecolixSRR8960200.dump
+    jobid: 104
+    reason: Missing output files: ../results/compare_human/dmp/ecolixSRR8960200.dump
+    wildcards: ident=ecoli, metag=SRR8960200
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:06:23 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174581.sig
+    output: ../results/compare_human/dmp/lreuterixDRR174581.dump
+    jobid: 25
+    reason: Missing output files: ../results/compare_human/dmp/lreuterixDRR174581.dump
+    wildcards: ident=lreuteri, metag=DRR174581
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:06:23 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960303.sig
+    output: ../results/compare_human/dmp/bariatricusxSRR8960303.dump
+    jobid: 75
+    reason: Missing output files: ../results/compare_human/dmp/bariatricusxSRR8960303.dump
+    wildcards: ident=bariatricus, metag=SRR8960303
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+
+[Tue Jul  9 14:06:23 2024]
+rule calc_hash_presence:
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960915.sig
+    output: ../results/compare_human/dmp/lamylovorusxSRR8960915.dump
+    jobid: 90
+    reason: Missing output files: ../results/compare_human/dmp/lamylovorusxSRR8960915.dump
+    wildcards: ident=lamylovorus, metag=SRR8960915
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+Terminating processes on user request, this might take some time.
+[Tue Jul  9 14:06:23 2024]
+Error in rule calc_hash_presence:
+    jobid: 75
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960303.sig
+    output: ../results/compare_human/dmp/bariatricusxSRR8960303.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/bariatricus.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960303.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/bariatricusxSRR8960303.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:06:23 2024]
+Error in rule calc_hash_presence:
+    jobid: 89
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960326.sig
+    output: ../results/compare_human/dmp/lamylovorusxSRR8960326.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/lamylovorus.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960326.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/lamylovorusxSRR8960326.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:06:23 2024]
+Error in rule calc_hash_presence:
+    jobid: 58
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149266.sig
+    output: ../results/compare_human/dmp/RUG472xDRR149266.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/RUG472.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149266.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/RUG472xDRR149266.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:06:23 2024]
+Error in rule calc_hash_presence:
+    jobid: 48
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149269.sig
+    output: ../results/compare_human/dmp/ecolixDRR149269.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/ecoli.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149269.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/ecolixDRR149269.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:06:23 2024]
+Error in rule calc_hash_presence:
+    jobid: 40
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149264.sig
+    output: ../results/compare_human/dmp/ecolixDRR149264.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/ecoli.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149264.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/ecolixDRR149264.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:06:23 2024]
+Error in rule calc_hash_presence:
+    jobid: 104
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960200.sig
+    output: ../results/compare_human/dmp/ecolixSRR8960200.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/ecoli.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960200.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/ecolixSRR8960200.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:06:23 2024]
+Error in rule calc_hash_presence:
+    jobid: 57
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149265.sig
+    output: ../results/compare_human/dmp/RUG472xDRR149265.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/RUG472.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149265.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/RUG472xDRR149265.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:06:23 2024]
+Error in rule calc_hash_presence:
+    jobid: 90
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960915.sig
+    output: ../results/compare_human/dmp/lamylovorusxSRR8960915.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/lamylovorus.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960915.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/lamylovorusxSRR8960915.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:06:23 2024]
+Error in rule calc_hash_presence:
+    jobid: 25
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174581.sig
+    output: ../results/compare_human/dmp/lreuterixDRR174581.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/lreuteri.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174581.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/lreuterixDRR174581.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:06:23 2024]
+Error in rule calc_hash_presence:
+    jobid: 87
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960440.sig
+    output: ../results/compare_human/dmp/lamylovorusxSRR8960440.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/lamylovorus.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960440.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/lamylovorusxSRR8960440.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:06:23 2024]
+Error in rule calc_hash_presence:
+    jobid: 88
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960721.sig
+    output: ../results/compare_human/dmp/lamylovorusxSRR8960721.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/lamylovorus.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960721.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/lamylovorusxSRR8960721.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:06:23 2024]
+Error in rule calc_hash_presence:
+    jobid: 74
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960200.sig
+    output: ../results/compare_human/dmp/bariatricusxSRR8960200.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/bariatricus.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960200.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/bariatricusxSRR8960200.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:06:23 2024]
+Error in rule calc_hash_presence:
+    jobid: 7
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149267.sig
+    output: ../results/compare_human/dmp/bariatricusxDRR149267.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/bariatricus.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149267.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/bariatricusxDRR149267.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:06:23 2024]
+Error in rule calc_hash_presence:
+    jobid: 102
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR11125655.sig
+    output: ../results/compare_human/dmp/ecolixSRR11125655.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/ecoli.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR11125655.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/ecolixSRR11125655.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:06:23 2024]
+Error in rule calc_hash_presence:
+    jobid: 59
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149267.sig
+    output: ../results/compare_human/dmp/RUG472xDRR149267.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/RUG472.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149267.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/RUG472xDRR149267.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:06:23 2024]
+Error in rule calc_hash_presence:
+    jobid: 8
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149268.sig
+    output: ../results/compare_human/dmp/bariatricusxDRR149268.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/bariatricus.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149268.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/bariatricusxDRR149268.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:06:23 2024]
+Error in rule calc_hash_presence:
+    jobid: 103
+    input: ../results/microbial_pangenomic_test/ecoli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960731.sig
+    output: ../results/compare_human/dmp/ecolixSRR8960731.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/ecoli.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960731.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/ecolixSRR8960731.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:06:23 2024]
+Error in rule calc_hash_presence:
+    jobid: 32
+    input: ../results/microbial_pangenomic_test/lamylovorus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149266.sig
+    output: ../results/compare_human/dmp/lamylovorusxDRR149266.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/lamylovorus.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149266.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/lamylovorusxDRR149266.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:06:23 2024]
+Error in rule calc_hash_presence:
+    jobid: 72
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR11125655.sig
+    output: ../results/compare_human/dmp/bariatricusxSRR11125655.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/bariatricus.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR11125655.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/bariatricusxSRR11125655.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:06:23 2024]
+Error in rule calc_hash_presence:
+    jobid: 73
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960731.sig
+    output: ../results/compare_human/dmp/bariatricusxSRR8960731.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/bariatricus.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR8960731.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/bariatricusxSRR8960731.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:06:23 2024]
+Error in rule calc_hash_presence:
+    jobid: 23
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174579.sig
+    output: ../results/compare_human/dmp/lreuterixDRR174579.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/lreuteri.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174579.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/lreuterixDRR174579.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:06:23 2024]
+Error in rule calc_hash_presence:
+    jobid: 9
+    input: ../results/microbial_pangenomic_test/bariatricus.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149269.sig
+    output: ../results/compare_human/dmp/bariatricusxDRR149269.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/bariatricus.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149269.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/bariatricusxDRR149269.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:06:23 2024]
+Error in rule calc_hash_presence:
+    jobid: 24
+    input: ../results/microbial_pangenomic_test/lreuteri.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174580.sig
+    output: ../results/compare_human/dmp/lreuterixDRR174580.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/lreuteri.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174580.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/lreuterixDRR174580.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  9 14:06:23 2024]
+Error in rule calc_hash_presence:
+    jobid: 60
+    input: ../results/microbial_pangenomic_test/RUG472.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149268.sig
+    output: ../results/compare_human/dmp/RUG472xDRR149268.dump
+    conda-env: branchwater
+    shell:
+         
+        python scripts/calc-hash-presence.py         ../results/microbial_pangenomic_test/RUG472.rankt.csv /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149268.sig --scaled=1000 -k 21 -o ../results/compare_human/dmp/RUG472xDRR149268.dump
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: .snakemake/log/2024-07-09T140619.692529.snakemake.log
