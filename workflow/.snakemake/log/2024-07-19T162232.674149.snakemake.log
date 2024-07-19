@@ -3256,3 +3256,3047 @@ localrule classify:
     resources: tmpdir=/tmp
 
 Activating conda environment: branchwater
+[Fri Jul 19 16:34:05 2024]
+Finished job 1903.
+197 of 1051 steps (19%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:34:05 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499589.sig
+    output: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR10499589.txt
+    jobid: 1107
+    reason: Missing output files: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR10499589.txt
+    wildcards: folder_species=compare_pig, species=Blautia_A_sp003471165, metag=SRR10499589
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:34:09 2024]
+Finished job 883.
+198 of 1051 steps (19%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:34:09 2024]
+localrule classify:
+    input: ../results/pangenome/Faecalibacterium_prausnitzii_E.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499512.sig
+    output: ../results/pangenome/compare_pig/Faecalibacterium_prausnitzii_ExSRR10499512.txt
+    jobid: 1452
+    reason: Missing output files: ../results/pangenome/compare_pig/Faecalibacterium_prausnitzii_ExSRR10499512.txt
+    wildcards: folder_species=compare_pig, species=Faecalibacterium_prausnitzii_E, metag=SRR10499512
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:34:14 2024]
+Finished job 1407.
+199 of 1051 steps (19%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:34:14 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499512.sig
+    output: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR10499512.txt
+    jobid: 2052
+    reason: Missing output files: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR10499512.txt
+    wildcards: folder_species=compare_human, species=Anaerobutyricum_soehngenii, metag=SRR10499512
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:34:17 2024]
+Finished job 1107.
+200 of 1051 steps (19%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:34:17 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499581.sig
+    output: ../results/pangenome/compare_pig/Escherichia_colixSRR10499581.txt
+    jobid: 282
+    reason: Missing output files: ../results/pangenome/compare_pig/Escherichia_colixSRR10499581.txt
+    wildcards: folder_species=compare_pig, species=Escherichia_coli, metag=SRR10499581
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:34:22 2024]
+Finished job 1452.
+201 of 1051 steps (19%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:34:23 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11125405.sig.gz
+    output: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR11125405.txt
+    jobid: 732
+    reason: Missing output files: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR11125405.txt
+    wildcards: folder_species=compare_pig, species=Gemmiger_formicilis, metag=SRR11125405
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:34:25 2024]
+Finished job 387.
+202 of 1051 steps (19%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:34:25 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149269.sig
+    output: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixDRR149269.txt
+    jobid: 2067
+    reason: Missing output files: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixDRR149269.txt
+    wildcards: folder_species=compare_human, species=Anaerobutyricum_soehngenii, metag=DRR149269
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:34:25 2024]
+Finished job 282.
+203 of 1051 steps (19%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:34:25 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/ERR3211894.sig.gz
+    output: ../results/pangenome/compare_human/Escherichia_colixERR3211894.txt
+    jobid: 117
+    reason: Missing output files: ../results/pangenome/compare_human/Escherichia_colixERR3211894.txt
+    wildcards: folder_species=compare_human, species=Escherichia_coli, metag=ERR3211894
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:34:26 2024]
+Finished job 2052.
+204 of 1051 steps (19%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:34:26 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499443.sig
+    output: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR10499443.txt
+    jobid: 417
+    reason: Missing output files: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR10499443.txt
+    wildcards: folder_species=compare_human, species=Gemmiger_formicilis, metag=SRR10499443
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:34:32 2024]
+Finished job 2067.
+205 of 1051 steps (20%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:34:32 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR8960486.sig.gz
+    output: ../results/pangenome/compare_human/Escherichia_colixSRR8960486.txt
+    jobid: 192
+    reason: Missing output files: ../results/pangenome/compare_human/Escherichia_colixSRR8960486.txt
+    wildcards: folder_species=compare_human, species=Escherichia_coli, metag=SRR8960486
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:34:34 2024]
+Finished job 417.
+206 of 1051 steps (20%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:34:34 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11124973.sig.gz
+    output: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR11124973.txt
+    jobid: 927
+    reason: Missing output files: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR11124973.txt
+    wildcards: folder_species=compare_human, species=Blautia_A_sp003471165, metag=SRR11124973
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:34:36 2024]
+Finished job 1971.
+207 of 1051 steps (20%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:34:37 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174608.sig
+    output: ../results/pangenome/compare_pig/Escherichia_colixDRR174608.txt
+    jobid: 297
+    reason: Missing output files: ../results/pangenome/compare_pig/Escherichia_colixDRR174608.txt
+    wildcards: folder_species=compare_pig, species=Escherichia_coli, metag=DRR174608
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:34:43 2024]
+Finished job 770.
+208 of 1051 steps (20%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:34:43 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499652.sig
+    output: ../results/pangenome/compare_human/Escherichia_colixSRR10499652.txt
+    jobid: 87
+    reason: Missing output files: ../results/pangenome/compare_human/Escherichia_colixSRR10499652.txt
+    wildcards: folder_species=compare_human, species=Escherichia_coli, metag=SRR10499652
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:34:43 2024]
+Finished job 732.
+209 of 1051 steps (20%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:34:43 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR8960633.sig.gz
+    output: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR8960633.txt
+    jobid: 2397
+    reason: Missing output files: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR8960633.txt
+    wildcards: folder_species=compare_pig, species=Anaerobutyricum_soehngenii, metag=SRR8960633
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:34:45 2024]
+Finished job 297.
+210 of 1051 steps (20%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:34:45 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11183717.sig.gz
+    output: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR11183717.txt
+    jobid: 2352
+    reason: Missing output files: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR11183717.txt
+    wildcards: folder_species=compare_pig, species=Anaerobutyricum_soehngenii, metag=SRR11183717
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:34:54 2024]
+Finished job 87.
+211 of 1051 steps (20%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:34:54 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149269.sig
+    output: ../results/pangenome/compare_human/Blautia_A_sp003471165xDRR149269.txt
+    jobid: 867
+    reason: Missing output files: ../results/pangenome/compare_human/Blautia_A_sp003471165xDRR149269.txt
+    wildcards: folder_species=compare_human, species=Blautia_A_sp003471165, metag=DRR149269
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:01 2024]
+Finished job 867.
+212 of 1051 steps (20%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:02 2024]
+localrule classify:
+    input: ../results/pangenome/Faecalibacterium_prausnitzii_E.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11489792.sig.gz
+    output: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExSRR11489792.txt
+    jobid: 1357
+    reason: Missing output files: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExSRR11489792.txt
+    wildcards: folder_species=compare_human, species=Faecalibacterium_prausnitzii_E, metag=SRR11489792
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:02 2024]
+Finished job 1974.
+213 of 1051 steps (20%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:03 2024]
+localrule classify:
+    input: ../results/pangenome/Faecalibacterium_prausnitzii_E.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499624.sig
+    output: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExSRR10499624.txt
+    jobid: 1227
+    reason: Missing output files: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExSRR10499624.txt
+    wildcards: folder_species=compare_human, species=Faecalibacterium_prausnitzii_E, metag=SRR10499624
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:05 2024]
+Finished job 2382.
+214 of 1051 steps (20%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:05 2024]
+localrule classify:
+    input: ../results/pangenome/Faecalibacterium_prausnitzii_E.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499488.sig
+    output: ../results/pangenome/compare_pig/Faecalibacterium_prausnitzii_ExSRR10499488.txt
+    jobid: 1477
+    reason: Missing output files: ../results/pangenome/compare_pig/Faecalibacterium_prausnitzii_ExSRR10499488.txt
+    wildcards: folder_species=compare_pig, species=Faecalibacterium_prausnitzii_E, metag=SRR10499488
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:08 2024]
+Finished job 927.
+215 of 1051 steps (20%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:08 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11124760.sig.gz
+    output: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR11124760.txt
+    jobid: 526
+    reason: Missing output files: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR11124760.txt
+    wildcards: folder_species=compare_human, species=Gemmiger_formicilis, metag=SRR11124760
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:09 2024]
+Finished job 1722.
+216 of 1051 steps (21%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:09 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149266.sig
+    output: ../results/pangenome/compare_pig/Blautia_A_sp003471165xDRR149266.txt
+    jobid: 1036
+    reason: Missing output files: ../results/pangenome/compare_pig/Blautia_A_sp003471165xDRR149266.txt
+    wildcards: folder_species=compare_pig, species=Blautia_A_sp003471165, metag=DRR149266
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:11 2024]
+Finished job 1227.
+217 of 1051 steps (21%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:11 2024]
+localrule classify:
+    input: ../results/pangenome/Faecalibacterium_prausnitzii_E.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499438.sig
+    output: ../results/pangenome/compare_pig/Faecalibacterium_prausnitzii_ExSRR10499438.txt
+    jobid: 1446
+    reason: Missing output files: ../results/pangenome/compare_pig/Faecalibacterium_prausnitzii_ExSRR10499438.txt
+    wildcards: folder_species=compare_pig, species=Faecalibacterium_prausnitzii_E, metag=SRR10499438
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:12 2024]
+Finished job 2352.
+218 of 1051 steps (21%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:12 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499541.sig
+    output: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR10499541.txt
+    jobid: 2056
+    reason: Missing output files: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR10499541.txt
+    wildcards: folder_species=compare_human, species=Anaerobutyricum_soehngenii, metag=SRR10499541
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:12 2024]
+Finished job 1477.
+219 of 1051 steps (21%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:12 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499685.sig
+    output: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR10499685.txt
+    jobid: 2066
+    reason: Missing output files: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR10499685.txt
+    wildcards: folder_species=compare_human, species=Anaerobutyricum_soehngenii, metag=SRR10499685
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:14 2024]
+Finished job 1036.
+220 of 1051 steps (21%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:14 2024]
+localrule classify:
+    input: ../results/pangenome/Faecalibacterium_prausnitzii_E.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499508.sig
+    output: ../results/pangenome/compare_pig/Faecalibacterium_prausnitzii_ExSRR10499508.txt
+    jobid: 1480
+    reason: Missing output files: ../results/pangenome/compare_pig/Faecalibacterium_prausnitzii_ExSRR10499508.txt
+    wildcards: folder_species=compare_pig, species=Faecalibacterium_prausnitzii_E, metag=SRR10499508
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:17 2024]
+Finished job 1446.
+221 of 1051 steps (21%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:17 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499649.sig
+    output: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR10499649.txt
+    jobid: 2063
+    reason: Missing output files: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR10499649.txt
+    wildcards: folder_species=compare_human, species=Anaerobutyricum_soehngenii, metag=SRR10499649
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:21 2024]
+Finished job 2056.
+222 of 1051 steps (21%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:21 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11125084.sig.gz
+    output: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR11125084.txt
+    jobid: 529
+    reason: Missing output files: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR11125084.txt
+    wildcards: folder_species=compare_human, species=Gemmiger_formicilis, metag=SRR11125084
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:21 2024]
+Finished job 1480.
+223 of 1051 steps (21%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:21 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR11047671.sig
+    output: ../results/pangenome/compare_pig/Escherichia_colixSRR11047671.txt
+    jobid: 274
+    reason: Missing output files: ../results/pangenome/compare_pig/Escherichia_colixSRR11047671.txt
+    wildcards: folder_species=compare_pig, species=Escherichia_coli, metag=SRR11047671
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:22 2024]
+Finished job 2066.
+224 of 1051 steps (21%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:22 2024]
+localrule classify:
+    input: ../results/pangenome/Faecalibacterium_prausnitzii_E.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499735.sig
+    output: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExSRR10499735.txt
+    jobid: 1294
+    reason: Missing output files: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExSRR10499735.txt
+    wildcards: folder_species=compare_human, species=Faecalibacterium_prausnitzii_E, metag=SRR10499735
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:22 2024]
+Finished job 117.
+225 of 1051 steps (21%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:23 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499728.sig
+    output: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR10499728.txt
+    jobid: 493
+    reason: Missing output files: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR10499728.txt
+    wildcards: folder_species=compare_human, species=Gemmiger_formicilis, metag=SRR10499728
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:24 2024]
+Finished job 2063.
+226 of 1051 steps (22%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:24 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499517.sig
+    output: ../results/pangenome/compare_pig/Escherichia_colixSRR10499517.txt
+    jobid: 223
+    reason: Missing output files: ../results/pangenome/compare_pig/Escherichia_colixSRR10499517.txt
+    wildcards: folder_species=compare_pig, species=Escherichia_coli, metag=SRR10499517
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:26 2024]
+Finished job 526.
+227 of 1051 steps (22%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:27 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499722.sig
+    output: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR10499722.txt
+    jobid: 1033
+    reason: Missing output files: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR10499722.txt
+    wildcards: folder_species=compare_pig, species=Blautia_A_sp003471165, metag=SRR10499722
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:29 2024]
+Finished job 493.
+228 of 1051 steps (22%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:29 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499514.sig
+    output: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR10499514.txt
+    jobid: 2053
+    reason: Missing output files: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR10499514.txt
+    wildcards: folder_species=compare_human, species=Anaerobutyricum_soehngenii, metag=SRR10499514
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:29 2024]
+Finished job 274.
+229 of 1051 steps (22%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:30 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499592.sig
+    output: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR10499592.txt
+    jobid: 2059
+    reason: Missing output files: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR10499592.txt
+    wildcards: folder_species=compare_human, species=Anaerobutyricum_soehngenii, metag=SRR10499592
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:30 2024]
+Finished job 192.
+230 of 1051 steps (22%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:30 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR14369259.sig.gz
+    output: ../results/pangenome/compare_human/Escherichia_colixSRR14369259.txt
+    jobid: 164
+    reason: Missing output files: ../results/pangenome/compare_human/Escherichia_colixSRR14369259.txt
+    wildcards: folder_species=compare_human, species=Escherichia_coli, metag=SRR14369259
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:32 2024]
+Finished job 1033.
+231 of 1051 steps (22%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:32 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499685.sig
+    output: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR10499685.txt
+    jobid: 666
+    reason: Missing output files: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR10499685.txt
+    wildcards: folder_species=compare_pig, species=Gemmiger_formicilis, metag=SRR10499685
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:34 2024]
+Finished job 223.
+232 of 1051 steps (22%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:34 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499541.sig
+    output: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR10499541.txt
+    jobid: 1056
+    reason: Missing output files: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR10499541.txt
+    wildcards: folder_species=compare_pig, species=Blautia_A_sp003471165, metag=SRR10499541
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:36 2024]
+Finished job 2053.
+233 of 1051 steps (22%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:36 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499629.sig
+    output: ../results/pangenome/compare_pig/Escherichia_colixSRR10499629.txt
+    jobid: 261
+    reason: Missing output files: ../results/pangenome/compare_pig/Escherichia_colixSRR10499629.txt
+    wildcards: folder_species=compare_pig, species=Escherichia_coli, metag=SRR10499629
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:40 2024]
+Finished job 2059.
+234 of 1051 steps (22%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:40 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11125685.sig.gz
+    output: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR11125685.txt
+    jobid: 936
+    reason: Missing output files: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR11125685.txt
+    wildcards: folder_species=compare_human, species=Blautia_A_sp003471165, metag=SRR11125685
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:42 2024]
+Finished job 666.
+235 of 1051 steps (22%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:42 2024]
+localrule classify:
+    input: ../results/pangenome/Dorea_formicigenerans.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11489770.sig.gz
+    output: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR11489770.txt
+    jobid: 1956
+    reason: Missing output files: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR11489770.txt
+    wildcards: folder_species=compare_pig, species=Dorea_formicigenerans, metag=SRR11489770
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:42 2024]
+Finished job 261.
+236 of 1051 steps (22%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:42 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR8960624.sig.gz
+    output: ../results/pangenome/compare_pig/Escherichia_colixSRR8960624.txt
+    jobid: 396
+    reason: Missing output files: ../results/pangenome/compare_pig/Escherichia_colixSRR8960624.txt
+    wildcards: folder_species=compare_pig, species=Escherichia_coli, metag=SRR8960624
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:43 2024]
+Finished job 2397.
+237 of 1051 steps (23%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:43 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499518.sig
+    output: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR10499518.txt
+    jobid: 681
+    reason: Missing output files: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR10499518.txt
+    wildcards: folder_species=compare_pig, species=Gemmiger_formicilis, metag=SRR10499518
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:43 2024]
+Finished job 529.
+238 of 1051 steps (23%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:43 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499473.sig
+    output: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR10499473.txt
+    jobid: 876
+    reason: Missing output files: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR10499473.txt
+    wildcards: folder_species=compare_human, species=Blautia_A_sp003471165, metag=SRR10499473
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:43 2024]
+Finished job 1294.
+239 of 1051 steps (23%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:43 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499614.sig
+    output: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR10499614.txt
+    jobid: 2286
+    reason: Missing output files: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR10499614.txt
+    wildcards: folder_species=compare_pig, species=Anaerobutyricum_soehngenii, metag=SRR10499614
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:44 2024]
+Finished job 1056.
+240 of 1051 steps (23%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:44 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR16235699.sig.gz
+    output: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR16235699.txt
+    jobid: 2166
+    reason: Missing output files: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR16235699.txt
+    wildcards: folder_species=compare_human, species=Anaerobutyricum_soehngenii, metag=SRR16235699
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:44 2024]
+Finished job 2367.
+241 of 1051 steps (23%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:44 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR17241681.sig.gz
+    output: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR17241681.txt
+    jobid: 771
+    reason: Missing output files: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR17241681.txt
+    wildcards: folder_species=compare_pig, species=Gemmiger_formicilis, metag=SRR17241681
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:48 2024]
+Finished job 2286.
+242 of 1051 steps (23%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:48 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499585.sig
+    output: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR10499585.txt
+    jobid: 1026
+    reason: Missing output files: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR10499585.txt
+    wildcards: folder_species=compare_pig, species=Blautia_A_sp003471165, metag=SRR10499585
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:52 2024]
+Finished job 681.
+243 of 1051 steps (23%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:52 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11183424.sig.gz
+    output: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR11183424.txt
+    jobid: 1146
+    reason: Missing output files: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR11183424.txt
+    wildcards: folder_species=compare_pig, species=Blautia_A_sp003471165, metag=SRR11183424
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:53 2024]
+Finished job 876.
+244 of 1051 steps (23%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:53 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499396.sig
+    output: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR10499396.txt
+    jobid: 1041
+    reason: Missing output files: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR10499396.txt
+    wildcards: folder_species=compare_pig, species=Blautia_A_sp003471165, metag=SRR10499396
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:57 2024]
+Finished job 1026.
+245 of 1051 steps (23%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:57 2024]
+localrule classify:
+    input: ../results/pangenome/Dorea_formicigenerans.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR8960473.sig.gz
+    output: ../results/pangenome/compare_human/Dorea_formicigeneransxSRR8960473.txt
+    jobid: 1791
+    reason: Missing output files: ../results/pangenome/compare_human/Dorea_formicigeneransxSRR8960473.txt
+    wildcards: folder_species=compare_human, species=Dorea_formicigenerans, metag=SRR8960473
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:35:58 2024]
+Finished job 1041.
+246 of 1051 steps (23%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:35:58 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499585.sig
+    output: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR10499585.txt
+    jobid: 2226
+    reason: Missing output files: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR10499585.txt
+    wildcards: folder_species=compare_pig, species=Anaerobutyricum_soehngenii, metag=SRR10499585
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:36:02 2024]
+Finished job 936.
+247 of 1051 steps (24%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:36:02 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499712.sig
+    output: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR10499712.txt
+    jobid: 831
+    reason: Missing output files: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR10499712.txt
+    wildcards: folder_species=compare_human, species=Blautia_A_sp003471165, metag=SRR10499712
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:36:05 2024]
+Finished job 2226.
+248 of 1051 steps (24%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:36:05 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499574.sig
+    output: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR10499574.txt
+    jobid: 2106
+    reason: Missing output files: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR10499574.txt
+    wildcards: folder_species=compare_human, species=Anaerobutyricum_soehngenii, metag=SRR10499574
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:36:10 2024]
+Finished job 1146.
+249 of 1051 steps (24%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:36:10 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499504.sig
+    output: ../results/pangenome/compare_human/Escherichia_colixSRR10499504.txt
+    jobid: 51
+    reason: Missing output files: ../results/pangenome/compare_human/Escherichia_colixSRR10499504.txt
+    wildcards: folder_species=compare_human, species=Escherichia_coli, metag=SRR10499504
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:36:10 2024]
+Finished job 831.
+250 of 1051 steps (24%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:36:10 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499631.sig
+    output: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR10499631.txt
+    jobid: 711
+    reason: Missing output files: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR10499631.txt
+    wildcards: folder_species=compare_pig, species=Gemmiger_formicilis, metag=SRR10499631
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:36:15 2024]
+Finished job 711.
+251 of 1051 steps (24%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:36:16 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR8960721.sig.gz
+    output: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR8960721.txt
+    jobid: 801
+    reason: Missing output files: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR8960721.txt
+    wildcards: folder_species=compare_pig, species=Gemmiger_formicilis, metag=SRR8960721
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:36:17 2024]
+Finished job 2106.
+252 of 1051 steps (24%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:36:17 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR16235699.sig.gz
+    output: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR16235699.txt
+    jobid: 966
+    reason: Missing output files: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR16235699.txt
+    wildcards: folder_species=compare_human, species=Blautia_A_sp003471165, metag=SRR16235699
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:36:25 2024]
+Finished job 51.
+253 of 1051 steps (24%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:36:25 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11489770.sig.gz
+    output: ../results/pangenome/compare_human/Escherichia_colixSRR11489770.txt
+    jobid: 156
+    reason: Missing output files: ../results/pangenome/compare_human/Escherichia_colixSRR11489770.txt
+    wildcards: folder_species=compare_human, species=Escherichia_coli, metag=SRR11489770
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:36:26 2024]
+Finished job 396.
+254 of 1051 steps (24%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:36:26 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174592.sig
+    output: ../results/pangenome/compare_pig/Escherichia_colixDRR174592.txt
+    jobid: 271
+    reason: Missing output files: ../results/pangenome/compare_pig/Escherichia_colixDRR174592.txt
+    wildcards: folder_species=compare_pig, species=Escherichia_coli, metag=DRR174592
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:36:26 2024]
+Finished job 1791.
+255 of 1051 steps (24%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:36:26 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499541.sig
+    output: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR10499541.txt
+    jobid: 456
+    reason: Missing output files: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR10499541.txt
+    wildcards: folder_species=compare_human, species=Gemmiger_formicilis, metag=SRR10499541
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:36:33 2024]
+Finished job 271.
+256 of 1051 steps (24%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:36:33 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499438.sig
+    output: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR10499438.txt
+    jobid: 846
+    reason: Missing output files: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR10499438.txt
+    wildcards: folder_species=compare_human, species=Blautia_A_sp003471165, metag=SRR10499438
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:36:35 2024]
+Finished job 456.
+257 of 1051 steps (24%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:36:35 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499602.sig
+    output: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR10499602.txt
+    jobid: 2308
+    reason: Missing output files: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR10499602.txt
+    wildcards: folder_species=compare_pig, species=Anaerobutyricum_soehngenii, metag=SRR10499602
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:36:35 2024]
+Finished job 2166.
+258 of 1051 steps (25%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:36:35 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR8960502.sig.gz
+    output: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR8960502.txt
+    jobid: 793
+    reason: Missing output files: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR8960502.txt
+    wildcards: folder_species=compare_pig, species=Gemmiger_formicilis, metag=SRR8960502
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:36:39 2024]
+Finished job 846.
+259 of 1051 steps (25%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:36:40 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/ERR3211766.sig.gz
+    output: ../results/pangenome/compare_human/Blautia_A_sp003471165xERR3211766.txt
+    jobid: 913
+    reason: Missing output files: ../results/pangenome/compare_human/Blautia_A_sp003471165xERR3211766.txt
+    wildcards: folder_species=compare_human, species=Blautia_A_sp003471165, metag=ERR3211766
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:36:42 2024]
+Finished job 2308.
+260 of 1051 steps (25%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:36:42 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11125785.sig.gz
+    output: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR11125785.txt
+    jobid: 538
+    reason: Missing output files: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR11125785.txt
+    wildcards: folder_species=compare_human, species=Gemmiger_formicilis, metag=SRR11125785
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:36:44 2024]
+Finished job 164.
+261 of 1051 steps (25%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:36:44 2024]
+localrule classify:
+    input: ../results/pangenome/Dorea_formicigenerans.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499685.sig
+    output: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR10499685.txt
+    jobid: 1866
+    reason: Missing output files: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR10499685.txt
+    wildcards: folder_species=compare_pig, species=Dorea_formicigenerans, metag=SRR10499685
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:36:53 2024]
+Finished job 1866.
+262 of 1051 steps (25%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:36:53 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/ERR3211834.sig.gz
+    output: ../results/pangenome/compare_pig/Blautia_A_sp003471165xERR3211834.txt
+    jobid: 1116
+    reason: Missing output files: ../results/pangenome/compare_pig/Blautia_A_sp003471165xERR3211834.txt
+    wildcards: folder_species=compare_pig, species=Blautia_A_sp003471165, metag=ERR3211834
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:37:11 2024]
+Finished job 966.
+263 of 1051 steps (25%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:37:11 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11124760.sig.gz
+    output: ../results/pangenome/compare_human/Escherichia_colixSRR11124760.txt
+    jobid: 126
+    reason: Missing output files: ../results/pangenome/compare_human/Escherichia_colixSRR11124760.txt
+    wildcards: folder_species=compare_human, species=Escherichia_coli, metag=SRR11124760
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:37:12 2024]
+Finished job 801.
+264 of 1051 steps (25%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:37:13 2024]
+localrule classify:
+    input: ../results/pangenome/Faecalibacterium_prausnitzii_E.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149266.sig
+    output: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExDRR149266.txt
+    jobid: 1236
+    reason: Missing output files: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExDRR149266.txt
+    wildcards: folder_species=compare_human, species=Faecalibacterium_prausnitzii_E, metag=DRR149266
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:37:13 2024]
+Finished job 538.
+265 of 1051 steps (25%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:37:13 2024]
+localrule classify:
+    input: ../results/pangenome/Dorea_formicigenerans.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR11047671.sig
+    output: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR11047671.txt
+    jobid: 1874
+    reason: Missing output files: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR11047671.txt
+    wildcards: folder_species=compare_pig, species=Dorea_formicigenerans, metag=SRR11047671
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:37:13 2024]
+Finished job 1357.
+266 of 1051 steps (25%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:37:14 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174592.sig
+    output: ../results/pangenome/compare_human/Gemmiger_formicilisxDRR174592.txt
+    jobid: 471
+    reason: Missing output files: ../results/pangenome/compare_human/Gemmiger_formicilisxDRR174592.txt
+    wildcards: folder_species=compare_human, species=Gemmiger_formicilis, metag=DRR174592
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:37:17 2024]
+Finished job 771.
+267 of 1051 steps (25%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:37:18 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11126381.sig.gz
+    output: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR11126381.txt
+    jobid: 2343
+    reason: Missing output files: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR11126381.txt
+    wildcards: folder_species=compare_pig, species=Anaerobutyricum_soehngenii, metag=SRR11126381
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:37:18 2024]
+Finished job 1236.
+268 of 1051 steps (25%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:37:18 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR5241532.sig.gz
+    output: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR5241532.txt
+    jobid: 981
+    reason: Missing output files: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR5241532.txt
+    wildcards: folder_species=compare_human, species=Blautia_A_sp003471165, metag=SRR5241532
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:37:20 2024]
+Finished job 471.
+269 of 1051 steps (26%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:37:20 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11125911.sig.gz
+    output: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR11125911.txt
+    jobid: 2340
+    reason: Missing output files: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR11125911.txt
+    wildcards: folder_species=compare_pig, species=Anaerobutyricum_soehngenii, metag=SRR11125911
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:37:20 2024]
+Finished job 1874.
+270 of 1051 steps (26%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:37:21 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11125685.sig.gz
+    output: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR11125685.txt
+    jobid: 2136
+    reason: Missing output files: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR11125685.txt
+    wildcards: folder_species=compare_human, species=Anaerobutyricum_soehngenii, metag=SRR11125685
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:37:22 2024]
+Finished job 793.
+271 of 1051 steps (26%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:37:22 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11126077.sig.gz
+    output: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR11126077.txt
+    jobid: 741
+    reason: Missing output files: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR11126077.txt
+    wildcards: folder_species=compare_pig, species=Gemmiger_formicilis, metag=SRR11126077
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:37:28 2024]
+Finished job 913.
+272 of 1051 steps (26%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:37:28 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR8960624.sig.gz
+    output: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR8960624.txt
+    jobid: 996
+    reason: Missing output files: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR8960624.txt
+    wildcards: folder_species=compare_human, species=Blautia_A_sp003471165, metag=SRR8960624
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:37:29 2024]
+Finished job 1116.
+273 of 1051 steps (26%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:37:29 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR8960486.sig.gz
+    output: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR8960486.txt
+    jobid: 2192
+    reason: Missing output files: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR8960486.txt
+    wildcards: folder_species=compare_human, species=Anaerobutyricum_soehngenii, metag=SRR8960486
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:37:31 2024]
+Finished job 126.
+274 of 1051 steps (26%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:37:31 2024]
+localrule classify:
+    input: ../results/pangenome/Faecalibacterium_prausnitzii_E.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499574.sig
+    output: ../results/pangenome/compare_pig/Faecalibacterium_prausnitzii_ExSRR10499574.txt
+    jobid: 1506
+    reason: Missing output files: ../results/pangenome/compare_pig/Faecalibacterium_prausnitzii_ExSRR10499574.txt
+    wildcards: folder_species=compare_pig, species=Faecalibacterium_prausnitzii_E, metag=SRR10499574
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:37:37 2024]
+Finished job 2343.
+275 of 1051 steps (26%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:37:38 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR11047670.sig
+    output: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR11047670.txt
+    jobid: 499
+    reason: Missing output files: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR11047670.txt
+    wildcards: folder_species=compare_human, species=Gemmiger_formicilis, metag=SRR11047670
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:37:39 2024]
+Finished job 1956.
+276 of 1051 steps (26%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:37:39 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR149266.sig
+    output: ../results/pangenome/compare_human/Escherichia_colixDRR149266.txt
+    jobid: 36
+    reason: Missing output files: ../results/pangenome/compare_human/Escherichia_colixDRR149266.txt
+    wildcards: folder_species=compare_human, species=Escherichia_coli, metag=DRR149266
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:37:42 2024]
+Finished job 1506.
+277 of 1051 steps (26%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:37:42 2024]
+localrule classify:
+    input: ../results/pangenome/Faecalibacterium_prausnitzii_E.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499494.sig
+    output: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExSRR10499494.txt
+    jobid: 1279
+    reason: Missing output files: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExSRR10499494.txt
+    wildcards: folder_species=compare_human, species=Faecalibacterium_prausnitzii_E, metag=SRR10499494
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:37:43 2024]
+Finished job 2340.
+278 of 1051 steps (26%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:37:44 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR5241532.sig.gz
+    output: ../results/pangenome/compare_pig/Escherichia_colixSRR5241532.txt
+    jobid: 381
+    reason: Missing output files: ../results/pangenome/compare_pig/Escherichia_colixSRR5241532.txt
+    wildcards: folder_species=compare_pig, species=Escherichia_coli, metag=SRR5241532
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:37:44 2024]
+Finished job 499.
+279 of 1051 steps (27%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:37:44 2024]
+localrule classify:
+    input: ../results/pangenome/Faecalibacterium_prausnitzii_E.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR8960440.sig.gz
+    output: ../results/pangenome/compare_pig/Faecalibacterium_prausnitzii_ExSRR8960440.txt
+    jobid: 1590
+    reason: Forced execution
+    wildcards: folder_species=compare_pig, species=Faecalibacterium_prausnitzii_E, metag=SRR8960440
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:37:45 2024]
+Finished job 36.
+280 of 1051 steps (27%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:37:45 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR11047638.sig
+    output: ../results/pangenome/compare_human/Escherichia_colixSRR11047638.txt
+    jobid: 39
+    reason: Missing output files: ../results/pangenome/compare_human/Escherichia_colixSRR11047638.txt
+    wildcards: folder_species=compare_human, species=Escherichia_coli, metag=SRR11047638
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:37:45 2024]
+Finished job 2136.
+281 of 1051 steps (27%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:37:45 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499702.sig
+    output: ../results/pangenome/compare_pig/Escherichia_colixSRR10499702.txt
+    jobid: 229
+    reason: Missing output files: ../results/pangenome/compare_pig/Escherichia_colixSRR10499702.txt
+    wildcards: folder_species=compare_pig, species=Escherichia_coli, metag=SRR10499702
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:37:46 2024]
+Finished job 741.
+282 of 1051 steps (27%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:37:46 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR11047638.sig
+    output: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR11047638.txt
+    jobid: 2239
+    reason: Missing output files: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR11047638.txt
+    wildcards: folder_species=compare_pig, species=Anaerobutyricum_soehngenii, metag=SRR11047638
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:37:52 2024]
+Finished job 1279.
+283 of 1051 steps (27%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:37:52 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR14369259.sig.gz
+    output: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR14369259.txt
+    jobid: 964
+    reason: Missing output files: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR14369259.txt
+    wildcards: folder_species=compare_human, species=Blautia_A_sp003471165, metag=SRR14369259
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:37:52 2024]
+Finished job 2239.
+284 of 1051 steps (27%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:37:52 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR8960668.sig.gz
+    output: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR8960668.txt
+    jobid: 799
+    reason: Missing output files: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR8960668.txt
+    wildcards: folder_species=compare_pig, species=Gemmiger_formicilis, metag=SRR8960668
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:37:52 2024]
+Finished job 39.
+285 of 1051 steps (27%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:37:52 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR11047671.sig
+    output: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR11047671.txt
+    jobid: 874
+    reason: Missing output files: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR11047671.txt
+    wildcards: folder_species=compare_human, species=Blautia_A_sp003471165, metag=SRR11047671
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:37:54 2024]
+Finished job 229.
+286 of 1051 steps (27%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:37:54 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/ERR3211942.sig.gz
+    output: ../results/pangenome/compare_human/Blautia_A_sp003471165xERR3211942.txt
+    jobid: 919
+    reason: Missing output files: ../results/pangenome/compare_human/Blautia_A_sp003471165xERR3211942.txt
+    wildcards: folder_species=compare_human, species=Blautia_A_sp003471165, metag=ERR3211942
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:38:00 2024]
+Finished job 874.
+287 of 1051 steps (27%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:38:00 2024]
+localrule classify:
+    input: ../results/pangenome/Dorea_formicigenerans.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11125890.sig.gz
+    output: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR11125890.txt
+    jobid: 1939
+    reason: Missing output files: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR11125890.txt
+    wildcards: folder_species=compare_pig, species=Dorea_formicigenerans, metag=SRR11125890
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:38:02 2024]
+Finished job 981.
+288 of 1051 steps (27%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:38:03 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499672.sig
+    output: ../results/pangenome/compare_pig/Escherichia_colixSRR10499672.txt
+    jobid: 289
+    reason: Missing output files: ../results/pangenome/compare_pig/Escherichia_colixSRR10499672.txt
+    wildcards: folder_species=compare_pig, species=Escherichia_coli, metag=SRR10499672
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:38:10 2024]
+Finished job 996.
+289 of 1051 steps (27%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:38:10 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499709.sig
+    output: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR10499709.txt
+    jobid: 2292
+    reason: Missing output files: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR10499709.txt
+    wildcards: folder_species=compare_pig, species=Anaerobutyricum_soehngenii, metag=SRR10499709
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:38:15 2024]
+Finished job 289.
+290 of 1051 steps (28%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:38:15 2024]
+localrule classify:
+    input: ../results/pangenome/Faecalibacterium_prausnitzii_E.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499450.sig
+    output: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExSRR10499450.txt
+    jobid: 1303
+    reason: Missing output files: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExSRR10499450.txt
+    wildcards: folder_species=compare_human, species=Faecalibacterium_prausnitzii_E, metag=SRR10499450
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:38:20 2024]
+Finished job 2292.
+291 of 1051 steps (28%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:38:20 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR10209687.sig.gz
+    output: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR10209687.txt
+    jobid: 2323
+    reason: Missing output files: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR10209687.txt
+    wildcards: folder_species=compare_pig, species=Anaerobutyricum_soehngenii, metag=SRR10209687
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:38:20 2024]
+Finished job 156.
+292 of 1051 steps (28%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:38:20 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR8960192.sig.gz
+    output: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR8960192.txt
+    jobid: 1183
+    reason: Missing output files: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR8960192.txt
+    wildcards: folder_species=compare_pig, species=Blautia_A_sp003471165, metag=SRR8960192
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:38:22 2024]
+Finished job 1939.
+293 of 1051 steps (28%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:38:22 2024]
+localrule classify:
+    input: ../results/pangenome/Dorea_formicigenerans.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11183877.sig.gz
+    output: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR11183877.txt
+    jobid: 1954
+    reason: Missing output files: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR11183877.txt
+    wildcards: folder_species=compare_pig, species=Dorea_formicigenerans, metag=SRR11183877
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:38:25 2024]
+Finished job 1303.
+294 of 1051 steps (28%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:38:25 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499475.sig
+    output: ../results/pangenome/compare_pig/Escherichia_colixSRR10499475.txt
+    jobid: 304
+    reason: Missing output files: ../results/pangenome/compare_pig/Escherichia_colixSRR10499475.txt
+    wildcards: folder_species=compare_pig, species=Escherichia_coli, metag=SRR10499475
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:38:25 2024]
+Finished job 799.
+295 of 1051 steps (28%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:38:26 2024]
+localrule classify:
+    input: ../results/pangenome/Faecalibacterium_prausnitzii_E.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR2329775.sig.gz
+    output: ../results/pangenome/compare_pig/Faecalibacterium_prausnitzii_ExSRR2329775.txt
+    jobid: 1579
+    reason: Missing output files: ../results/pangenome/compare_pig/Faecalibacterium_prausnitzii_ExSRR2329775.txt
+    wildcards: folder_species=compare_pig, species=Faecalibacterium_prausnitzii_E, metag=SRR2329775
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:38:27 2024]
+Finished job 2192.
+296 of 1051 steps (28%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:38:27 2024]
+localrule classify:
+    input: ../results/pangenome/Dorea_formicigenerans.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499724.sig
+    output: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR10499724.txt
+    jobid: 1834
+    reason: Missing output files: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR10499724.txt
+    wildcards: folder_species=compare_pig, species=Dorea_formicigenerans, metag=SRR10499724
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:38:31 2024]
+Finished job 381.
+297 of 1051 steps (28%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:38:31 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR8960412.sig.gz
+    output: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR8960412.txt
+    jobid: 1189
+    reason: Missing output files: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR8960412.txt
+    wildcards: folder_species=compare_pig, species=Blautia_A_sp003471165, metag=SRR8960412
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:38:34 2024]
+Finished job 304.
+298 of 1051 steps (28%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:38:34 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11183364.sig.gz
+    output: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR11183364.txt
+    jobid: 2344
+    reason: Missing output files: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR11183364.txt
+    wildcards: folder_species=compare_pig, species=Anaerobutyricum_soehngenii, metag=SRR11183364
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:38:35 2024]
+Finished job 1590.
+299 of 1051 steps (28%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:38:36 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11183364.sig.gz
+    output: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR11183364.txt
+    jobid: 544
+    reason: Missing output files: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR11183364.txt
+    wildcards: folder_species=compare_human, species=Gemmiger_formicilis, metag=SRR11183364
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:38:36 2024]
+Finished job 1834.
+300 of 1051 steps (29%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:38:36 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499735.sig
+    output: ../results/pangenome/compare_human/Escherichia_colixSRR10499735.txt
+    jobid: 94
+    reason: Missing output files: ../results/pangenome/compare_human/Escherichia_colixSRR10499735.txt
+    wildcards: folder_species=compare_human, species=Escherichia_coli, metag=SRR10499735
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:38:42 2024]
+Finished job 1954.
+301 of 1051 steps (29%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:38:42 2024]
+localrule classify:
+    input: ../results/pangenome/Faecalibacterium_prausnitzii_E.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR8960913.sig.gz
+    output: ../results/pangenome/compare_pig/Faecalibacterium_prausnitzii_ExSRR8960913.txt
+    jobid: 1609
+    reason: Missing output files: ../results/pangenome/compare_pig/Faecalibacterium_prausnitzii_ExSRR8960913.txt
+    wildcards: folder_species=compare_pig, species=Faecalibacterium_prausnitzii_E, metag=SRR8960913
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:38:56 2024]
+Finished job 964.
+302 of 1051 steps (29%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:38:56 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11183589.sig.gz
+    output: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR11183589.txt
+    jobid: 949
+    reason: Missing output files: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR11183589.txt
+    wildcards: folder_species=compare_human, species=Blautia_A_sp003471165, metag=SRR11183589
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:38:58 2024]
+Finished job 544.
+303 of 1051 steps (29%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:38:59 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499735.sig
+    output: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR10499735.txt
+    jobid: 694
+    reason: Missing output files: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR10499735.txt
+    wildcards: folder_species=compare_pig, species=Gemmiger_formicilis, metag=SRR10499735
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:38:59 2024]
+Finished job 2344.
+304 of 1051 steps (29%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:38:59 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR21357639.sig.gz
+    output: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR21357639.txt
+    jobid: 574
+    reason: Missing output files: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR21357639.txt
+    wildcards: folder_species=compare_human, species=Gemmiger_formicilis, metag=SRR21357639
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:39:02 2024]
+Finished job 94.
+305 of 1051 steps (29%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:39:02 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/ERR3211781.sig.gz
+    output: ../results/pangenome/compare_pig/Blautia_A_sp003471165xERR3211781.txt
+    jobid: 1114
+    reason: Missing output files: ../results/pangenome/compare_pig/Blautia_A_sp003471165xERR3211781.txt
+    wildcards: folder_species=compare_pig, species=Blautia_A_sp003471165, metag=ERR3211781
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:39:13 2024]
+Finished job 919.
+306 of 1051 steps (29%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:39:13 2024]
+localrule classify:
+    input: ../results/pangenome/Faecalibacterium_prausnitzii_E.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11125890.sig.gz
+    output: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExSRR11125890.txt
+    jobid: 1339
+    reason: Missing output files: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExSRR11125890.txt
+    wildcards: folder_species=compare_human, species=Faecalibacterium_prausnitzii_E, metag=SRR11125890
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:39:18 2024]
+Finished job 1189.
+307 of 1051 steps (29%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:39:18 2024]
+localrule classify:
+    input: ../results/pangenome/Dorea_formicigenerans.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499494.sig
+    output: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR10499494.txt
+    jobid: 1879
+    reason: Missing output files: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR10499494.txt
+    wildcards: folder_species=compare_pig, species=Dorea_formicigenerans, metag=SRR10499494
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:39:19 2024]
+Finished job 949.
+308 of 1051 steps (29%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:39:19 2024]
+localrule classify:
+    input: ../results/pangenome/Faecalibacterium_prausnitzii_E.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR8960562.sig.gz
+    output: ../results/pangenome/compare_pig/Faecalibacterium_prausnitzii_ExSRR8960562.txt
+    jobid: 1594
+    reason: Missing output files: ../results/pangenome/compare_pig/Faecalibacterium_prausnitzii_ExSRR8960562.txt
+    wildcards: folder_species=compare_pig, species=Faecalibacterium_prausnitzii_E, metag=SRR8960562
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:39:23 2024]
+Finished job 1579.
+309 of 1051 steps (29%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:39:23 2024]
+localrule classify:
+    input: ../results/pangenome/Faecalibacterium_prausnitzii_E.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499650.sig
+    output: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExSRR10499650.txt
+    jobid: 1264
+    reason: Missing output files: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExSRR10499650.txt
+    wildcards: folder_species=compare_human, species=Faecalibacterium_prausnitzii_E, metag=SRR10499650
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:39:23 2024]
+Finished job 694.
+310 of 1051 steps (29%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:39:23 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR8960206.sig.gz
+    output: ../results/pangenome/compare_pig/Escherichia_colixSRR8960206.txt
+    jobid: 384
+    reason: Missing output files: ../results/pangenome/compare_pig/Escherichia_colixSRR8960206.txt
+    wildcards: folder_species=compare_pig, species=Escherichia_coli, metag=SRR8960206
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:39:27 2024]
+Finished job 1183.
+311 of 1051 steps (30%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:39:28 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499657.sig
+    output: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR10499657.txt
+    jobid: 828
+    reason: Missing output files: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR10499657.txt
+    wildcards: folder_species=compare_human, species=Blautia_A_sp003471165, metag=SRR10499657
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:39:29 2024]
+Finished job 1879.
+312 of 1051 steps (30%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:39:29 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR8960440.sig.gz
+    output: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR8960440.txt
+    jobid: 1190
+    reason: Missing output files: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR8960440.txt
+    wildcards: folder_species=compare_pig, species=Blautia_A_sp003471165, metag=SRR8960440
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:39:29 2024]
+Finished job 1264.
+313 of 1051 steps (30%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:39:30 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR2329775.sig.gz
+    output: ../results/pangenome/compare_pig/Escherichia_colixSRR2329775.txt
+    jobid: 379
+    reason: Missing output files: ../results/pangenome/compare_pig/Escherichia_colixSRR2329775.txt
+    wildcards: folder_species=compare_pig, species=Escherichia_coli, metag=SRR2329775
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:39:33 2024]
+Finished job 1339.
+314 of 1051 steps (30%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:39:33 2024]
+localrule classify:
+    input: ../results/pangenome/Dorea_formicigenerans.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499477.sig
+    output: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR10499477.txt
+    jobid: 1820
+    reason: Missing output files: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR10499477.txt
+    wildcards: folder_species=compare_pig, species=Dorea_formicigenerans, metag=SRR10499477
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:39:37 2024]
+Finished job 828.
+315 of 1051 steps (30%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:39:37 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR8960731.sig.gz
+    output: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR8960731.txt
+    jobid: 604
+    reason: Missing output files: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR8960731.txt
+    wildcards: folder_species=compare_human, species=Gemmiger_formicilis, metag=SRR8960731
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:39:40 2024]
+Finished job 1820.
+316 of 1051 steps (30%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:39:40 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174585.sig
+    output: ../results/pangenome/compare_human/Blautia_A_sp003471165xDRR174585.txt
+    jobid: 869
+    reason: Missing output files: ../results/pangenome/compare_human/Blautia_A_sp003471165xDRR174585.txt
+    wildcards: folder_species=compare_human, species=Blautia_A_sp003471165, metag=DRR174585
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:39:42 2024]
+Finished job 1609.
+317 of 1051 steps (30%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:39:42 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR8960412.sig.gz
+    output: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR8960412.txt
+    jobid: 589
+    reason: Missing output files: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR8960412.txt
+    wildcards: folder_species=compare_human, species=Gemmiger_formicilis, metag=SRR8960412
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:39:49 2024]
+Finished job 869.
+318 of 1051 steps (30%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:39:49 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11124700.sig.gz
+    output: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR11124700.txt
+    jobid: 1124
+    reason: Missing output files: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR11124700.txt
+    wildcards: folder_species=compare_pig, species=Blautia_A_sp003471165, metag=SRR11124700
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:39:51 2024]
+Finished job 1114.
+319 of 1051 steps (30%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:39:51 2024]
+localrule classify:
+    input: ../results/pangenome/Dorea_formicigenerans.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499672.sig
+    output: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR10499672.txt
+    jobid: 1889
+    reason: Missing output files: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR10499672.txt
+    wildcards: folder_species=compare_pig, species=Dorea_formicigenerans, metag=SRR10499672
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:00 2024]
+Finished job 1889.
+320 of 1051 steps (30%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:00 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11183364.sig.gz
+    output: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR11183364.txt
+    jobid: 2144
+    reason: Missing output files: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR11183364.txt
+    wildcards: folder_species=compare_human, species=Anaerobutyricum_soehngenii, metag=SRR11183364
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:06 2024]
+Finished job 1124.
+321 of 1051 steps (31%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:06 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499672.sig
+    output: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR10499672.txt
+    jobid: 2289
+    reason: Missing output files: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR10499672.txt
+    wildcards: folder_species=compare_pig, species=Anaerobutyricum_soehngenii, metag=SRR10499672
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:16 2024]
+Finished job 2289.
+322 of 1051 steps (31%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:16 2024]
+localrule classify:
+    input: ../results/pangenome/Dorea_formicigenerans.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11183578.sig.gz
+    output: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR11183578.txt
+    jobid: 1948
+    reason: Missing output files: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR11183578.txt
+    wildcards: folder_species=compare_pig, species=Dorea_formicigenerans, metag=SRR11183578
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:18 2024]
+Finished job 1190.
+323 of 1051 steps (31%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:18 2024]
+localrule classify:
+    input: ../results/pangenome/Dorea_formicigenerans.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499657.sig
+    output: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR10499657.txt
+    jobid: 1828
+    reason: Missing output files: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR10499657.txt
+    wildcards: folder_species=compare_pig, species=Dorea_formicigenerans, metag=SRR10499657
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:19 2024]
+Finished job 384.
+324 of 1051 steps (31%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:19 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11125785.sig.gz
+    output: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR11125785.txt
+    jobid: 2338
+    reason: Missing output files: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR11125785.txt
+    wildcards: folder_species=compare_pig, species=Anaerobutyricum_soehngenii, metag=SRR11125785
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:24 2024]
+Finished job 2144.
+325 of 1051 steps (31%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:24 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174596.sig
+    output: ../results/pangenome/compare_human/Blautia_A_sp003471165xDRR174596.txt
+    jobid: 872
+    reason: Missing output files: ../results/pangenome/compare_human/Blautia_A_sp003471165xDRR174596.txt
+    wildcards: folder_species=compare_human, species=Blautia_A_sp003471165, metag=DRR174596
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:26 2024]
+Finished job 589.
+326 of 1051 steps (31%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:26 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11124973.sig.gz
+    output: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR11124973.txt
+    jobid: 1127
+    reason: Missing output files: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR11124973.txt
+    wildcards: folder_species=compare_pig, species=Blautia_A_sp003471165, metag=SRR11124973
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:27 2024]
+Finished job 1828.
+327 of 1051 steps (31%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:27 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11183533.sig.gz
+    output: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR11183533.txt
+    jobid: 2147
+    reason: Missing output files: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR11183533.txt
+    wildcards: folder_species=compare_human, species=Anaerobutyricum_soehngenii, metag=SRR11183533
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:29 2024]
+Finished job 1948.
+328 of 1051 steps (31%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:30 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499623.sig
+    output: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR10499623.txt
+    jobid: 510
+    reason: Missing output files: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR10499623.txt
+    wildcards: folder_species=compare_human, species=Gemmiger_formicilis, metag=SRR10499623
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:30 2024]
+Finished job 604.
+329 of 1051 steps (31%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:30 2024]
+localrule classify:
+    input: ../results/pangenome/Dorea_formicigenerans.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499517.sig
+    output: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR10499517.txt
+    jobid: 1823
+    reason: Missing output files: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR10499517.txt
+    wildcards: folder_species=compare_pig, species=Dorea_formicigenerans, metag=SRR10499517
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:31 2024]
+Finished job 872.
+330 of 1051 steps (31%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:31 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR11047646.sig
+    output: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR11047646.txt
+    jobid: 2298
+    reason: Missing output files: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR11047646.txt
+    wildcards: folder_species=compare_pig, species=Anaerobutyricum_soehngenii, metag=SRR11047646
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:32 2024]
+Finished job 379.
+331 of 1051 steps (31%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:32 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR12795745.sig.gz
+    output: ../results/pangenome/compare_pig/Escherichia_colixSRR12795745.txt
+    jobid: 360
+    reason: Missing output files: ../results/pangenome/compare_pig/Escherichia_colixSRR12795745.txt
+    wildcards: folder_species=compare_pig, species=Escherichia_coli, metag=SRR12795745
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:36 2024]
+Finished job 510.
+332 of 1051 steps (32%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:36 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/ERR3211988.sig.gz
+    output: ../results/pangenome/compare_pig/Escherichia_colixERR3211988.txt
+    jobid: 320
+    reason: Missing output files: ../results/pangenome/compare_pig/Escherichia_colixERR3211988.txt
+    wildcards: folder_species=compare_pig, species=Escherichia_coli, metag=ERR3211988
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:37 2024]
+Finished job 1594.
+333 of 1051 steps (32%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:37 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499518.sig
+    output: ../results/pangenome/compare_pig/Escherichia_colixSRR10499518.txt
+    jobid: 281
+    reason: Missing output files: ../results/pangenome/compare_pig/Escherichia_colixSRR10499518.txt
+    wildcards: folder_species=compare_pig, species=Escherichia_coli, metag=SRR10499518
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:39 2024]
+Finished job 2298.
+334 of 1051 steps (32%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:39 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499715.sig
+    output: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR10499715.txt
+    jobid: 2232
+    reason: Missing output files: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR10499715.txt
+    wildcards: folder_species=compare_pig, species=Anaerobutyricum_soehngenii, metag=SRR10499715
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:39 2024]
+Finished job 1823.
+335 of 1051 steps (32%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:39 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499447.sig
+    output: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR10499447.txt
+    jobid: 1102
+    reason: Missing output files: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR10499447.txt
+    wildcards: folder_species=compare_pig, species=Blautia_A_sp003471165, metag=SRR10499447
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:41 2024]
+Finished job 2147.
+336 of 1051 steps (32%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:41 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499629.sig
+    output: ../results/pangenome/compare_human/Escherichia_colixSRR10499629.txt
+    jobid: 61
+    reason: Missing output files: ../results/pangenome/compare_human/Escherichia_colixSRR10499629.txt
+    wildcards: folder_species=compare_human, species=Escherichia_coli, metag=SRR10499629
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:44 2024]
+Finished job 1102.
+337 of 1051 steps (32%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:44 2024]
+localrule classify:
+    input: ../results/pangenome/Dorea_formicigenerans.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR8960761.sig.gz
+    output: ../results/pangenome/compare_human/Dorea_formicigeneransxSRR8960761.txt
+    jobid: 1805
+    reason: Missing output files: ../results/pangenome/compare_human/Dorea_formicigeneransxSRR8960761.txt
+    wildcards: folder_species=compare_human, species=Dorea_formicigenerans, metag=SRR8960761
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:45 2024]
+Finished job 574.
+338 of 1051 steps (32%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:45 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499554.sig
+    output: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR10499554.txt
+    jobid: 1105
+    reason: Missing output files: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR10499554.txt
+    wildcards: folder_species=compare_pig, species=Blautia_A_sp003471165, metag=SRR10499554
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:47 2024]
+Finished job 360.
+339 of 1051 steps (32%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:47 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499455.sig
+    output: ../results/pangenome/compare_pig/Escherichia_colixSRR10499455.txt
+    jobid: 275
+    reason: Missing output files: ../results/pangenome/compare_pig/Escherichia_colixSRR10499455.txt
+    wildcards: folder_species=compare_pig, species=Escherichia_coli, metag=SRR10499455
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:48 2024]
+Finished job 281.
+340 of 1051 steps (32%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:48 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11124752.sig.gz
+    output: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR11124752.txt
+    jobid: 2125
+    reason: Missing output files: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR11124752.txt
+    wildcards: folder_species=compare_human, species=Anaerobutyricum_soehngenii, metag=SRR11124752
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:50 2024]
+Finished job 61.
+341 of 1051 steps (32%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:50 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11183364.sig.gz
+    output: ../results/pangenome/compare_human/Escherichia_colixSRR11183364.txt
+    jobid: 144
+    reason: Missing output files: ../results/pangenome/compare_human/Escherichia_colixSRR11183364.txt
+    wildcards: folder_species=compare_human, species=Escherichia_coli, metag=SRR11183364
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:51 2024]
+Finished job 2338.
+342 of 1051 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:51 2024]
+localrule classify:
+    input: ../results/pangenome/Faecalibacterium_prausnitzii_E.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/ERR3211942.sig.gz
+    output: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExERR3211942.txt
+    jobid: 1319
+    reason: Missing output files: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExERR3211942.txt
+    wildcards: folder_species=compare_human, species=Faecalibacterium_prausnitzii_E, metag=ERR3211942
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:51 2024]
+Finished job 2232.
+343 of 1051 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:51 2024]
+localrule classify:
+    input: ../results/pangenome/Dorea_formicigenerans.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR14369150.sig.gz
+    output: ../results/pangenome/compare_human/Dorea_formicigeneransxSRR14369150.txt
+    jobid: 1763
+    reason: Missing output files: ../results/pangenome/compare_human/Dorea_formicigeneransxSRR14369150.txt
+    wildcards: folder_species=compare_human, species=Dorea_formicigenerans, metag=SRR14369150
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:54 2024]
+Finished job 1105.
+344 of 1051 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:54 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499654.sig
+    output: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR10499654.txt
+    jobid: 488
+    reason: Missing output files: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR10499654.txt
+    wildcards: folder_species=compare_human, species=Gemmiger_formicilis, metag=SRR10499654
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:40:56 2024]
+Finished job 275.
+345 of 1051 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:40:56 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499433.sig
+    output: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR10499433.txt
+    jobid: 700
+    reason: Missing output files: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR10499433.txt
+    wildcards: folder_species=compare_pig, species=Gemmiger_formicilis, metag=SRR10499433
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:41:00 2024]
+Finished job 1127.
+346 of 1051 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:41:00 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499612.sig
+    output: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR10499612.txt
+    jobid: 509
+    reason: Missing output files: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR10499612.txt
+    wildcards: folder_species=compare_human, species=Gemmiger_formicilis, metag=SRR10499612
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:41:02 2024]
+Finished job 488.
+347 of 1051 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:41:02 2024]
+localrule classify:
+    input: ../results/pangenome/Faecalibacterium_prausnitzii_E.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11125084.sig.gz
+    output: ../results/pangenome/compare_pig/Faecalibacterium_prausnitzii_ExSRR11125084.txt
+    jobid: 1529
+    reason: Missing output files: ../results/pangenome/compare_pig/Faecalibacterium_prausnitzii_ExSRR11125084.txt
+    wildcards: folder_species=compare_pig, species=Faecalibacterium_prausnitzii_E, metag=SRR11125084
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:41:04 2024]
+Finished job 2323.
+348 of 1051 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:41:04 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11183877.sig.gz
+    output: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR11183877.txt
+    jobid: 1154
+    reason: Missing output files: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR11183877.txt
+    wildcards: folder_species=compare_pig, species=Blautia_A_sp003471165, metag=SRR11183877
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:41:07 2024]
+Finished job 509.
+349 of 1051 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:41:07 2024]
+localrule classify:
+    input: ../results/pangenome/Dorea_formicigenerans.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/ERR3211942.sig.gz
+    output: ../results/pangenome/compare_pig/Dorea_formicigeneransxERR3211942.txt
+    jobid: 1919
+    reason: Missing output files: ../results/pangenome/compare_pig/Dorea_formicigeneransxERR3211942.txt
+    wildcards: folder_species=compare_pig, species=Dorea_formicigenerans, metag=ERR3211942
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:41:11 2024]
+Finished job 700.
+350 of 1051 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:41:11 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11125642.sig.gz
+    output: ../results/pangenome/compare_human/Escherichia_colixSRR11125642.txt
+    jobid: 134
+    reason: Missing output files: ../results/pangenome/compare_human/Escherichia_colixSRR11125642.txt
+    wildcards: folder_species=compare_human, species=Escherichia_coli, metag=SRR11125642
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:41:15 2024]
+Finished job 320.
+351 of 1051 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:41:15 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11805640.sig.gz
+    output: ../results/pangenome/compare_pig/Escherichia_colixSRR11805640.txt
+    jobid: 359
+    reason: Missing output files: ../results/pangenome/compare_pig/Escherichia_colixSRR11805640.txt
+    wildcards: folder_species=compare_pig, species=Escherichia_coli, metag=SRR11805640
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:41:16 2024]
+Finished job 2125.
+352 of 1051 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:41:16 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR2329775.sig.gz
+    output: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR2329775.txt
+    jobid: 779
+    reason: Missing output files: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR2329775.txt
+    wildcards: folder_species=compare_pig, species=Gemmiger_formicilis, metag=SRR2329775
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:41:16 2024]
+Finished job 144.
+353 of 1051 steps (34%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:41:16 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499654.sig
+    output: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR10499654.txt
+    jobid: 688
+    reason: Missing output files: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR10499654.txt
+    wildcards: folder_species=compare_pig, species=Gemmiger_formicilis, metag=SRR10499654
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:41:23 2024]
+Finished job 688.
+354 of 1051 steps (34%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:41:24 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499517.sig
+    output: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR10499517.txt
+    jobid: 823
+    reason: Missing output files: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR10499517.txt
+    wildcards: folder_species=compare_human, species=Blautia_A_sp003471165, metag=SRR10499517
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:41:24 2024]
+Finished job 1154.
+355 of 1051 steps (34%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:41:24 2024]
+localrule classify:
+    input: ../results/pangenome/Faecalibacterium_prausnitzii_E.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR8960392.sig.gz
+    output: ../results/pangenome/compare_pig/Faecalibacterium_prausnitzii_ExSRR8960392.txt
+    jobid: 1588
+    reason: Missing output files: ../results/pangenome/compare_pig/Faecalibacterium_prausnitzii_ExSRR8960392.txt
+    wildcards: folder_species=compare_pig, species=Faecalibacterium_prausnitzii_E, metag=SRR8960392
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:41:24 2024]
+Finished job 1529.
+356 of 1051 steps (34%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:41:25 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11183869.sig.gz
+    output: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR11183869.txt
+    jobid: 2353
+    reason: Missing output files: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR11183869.txt
+    wildcards: folder_species=compare_pig, species=Anaerobutyricum_soehngenii, metag=SRR11183869
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:41:26 2024]
+Finished job 134.
+357 of 1051 steps (34%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:41:26 2024]
+localrule classify:
+    input: ../results/pangenome/Dorea_formicigenerans.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499724.sig
+    output: ../results/pangenome/compare_human/Dorea_formicigeneransxSRR10499724.txt
+    jobid: 1634
+    reason: Missing output files: ../results/pangenome/compare_human/Dorea_formicigeneransxSRR10499724.txt
+    wildcards: folder_species=compare_human, species=Dorea_formicigenerans, metag=SRR10499724
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:41:33 2024]
+Finished job 823.
+358 of 1051 steps (34%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:41:33 2024]
+localrule classify:
+    input: ../results/pangenome/Faecalibacterium_prausnitzii_E.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/ERR3211781.sig.gz
+    output: ../results/pangenome/compare_pig/Faecalibacterium_prausnitzii_ExERR3211781.txt
+    jobid: 1514
+    reason: Missing output files: ../results/pangenome/compare_pig/Faecalibacterium_prausnitzii_ExERR3211781.txt
+    wildcards: folder_species=compare_pig, species=Faecalibacterium_prausnitzii_E, metag=ERR3211781
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:41:35 2024]
+Finished job 1634.
+359 of 1051 steps (34%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:41:35 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11185261.sig.gz
+    output: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR11185261.txt
+    jobid: 2355
+    reason: Missing output files: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR11185261.txt
+    wildcards: folder_species=compare_pig, species=Anaerobutyricum_soehngenii, metag=SRR11185261
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:41:44 2024]
+Finished job 2353.
+360 of 1051 steps (34%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:41:45 2024]
+localrule classify:
+    input: ../results/pangenome/Faecalibacterium_prausnitzii_E.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR8960721.sig.gz
+    output: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExSRR8960721.txt
+    jobid: 1401
+    reason: Missing output files: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExSRR8960721.txt
+    wildcards: folder_species=compare_human, species=Faecalibacterium_prausnitzii_E, metag=SRR8960721
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:41:57 2024]
+Finished job 1805.
+361 of 1051 steps (34%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:41:57 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499702.sig
+    output: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR10499702.txt
+    jobid: 629
+    reason: Missing output files: ../results/pangenome/compare_pig/Gemmiger_formicilisxSRR10499702.txt
+    wildcards: folder_species=compare_pig, species=Gemmiger_formicilis, metag=SRR10499702
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:42:01 2024]
+Finished job 359.
+362 of 1051 steps (34%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:42:01 2024]
+localrule classify:
+    input: ../results/pangenome/Dorea_formicigenerans.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499541.sig
+    output: ../results/pangenome/compare_human/Dorea_formicigeneransxSRR10499541.txt
+    jobid: 1656
+    reason: Missing output files: ../results/pangenome/compare_human/Dorea_formicigeneransxSRR10499541.txt
+    wildcards: folder_species=compare_human, species=Dorea_formicigenerans, metag=SRR10499541
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:42:04 2024]
+Finished job 629.
+363 of 1051 steps (35%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:42:04 2024]
+localrule classify:
+    input: ../results/pangenome/Dorea_formicigenerans.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499482.sig
+    output: ../results/pangenome/compare_human/Dorea_formicigeneransxSRR10499482.txt
+    jobid: 1649
+    reason: Missing output files: ../results/pangenome/compare_human/Dorea_formicigeneransxSRR10499482.txt
+    wildcards: folder_species=compare_human, species=Dorea_formicigenerans, metag=SRR10499482
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:42:05 2024]
+Finished job 1588.
+364 of 1051 steps (35%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:42:05 2024]
+localrule classify:
+    input: ../results/pangenome/Dorea_formicigenerans.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499592.sig
+    output: ../results/pangenome/compare_human/Dorea_formicigeneransxSRR10499592.txt
+    jobid: 1659
+    reason: Missing output files: ../results/pangenome/compare_human/Dorea_formicigeneransxSRR10499592.txt
+    wildcards: folder_species=compare_human, species=Dorea_formicigenerans, metag=SRR10499592
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:42:10 2024]
+Finished job 1319.
+365 of 1051 steps (35%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:42:10 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499468.sig
+    output: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR10499468.txt
+    jobid: 1019
+    reason: Missing output files: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR10499468.txt
+    wildcards: folder_species=compare_pig, species=Blautia_A_sp003471165, metag=SRR10499468
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:42:10 2024]
+Finished job 1656.
+366 of 1051 steps (35%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:42:10 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR8960668.sig.gz
+    output: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR8960668.txt
+    jobid: 1199
+    reason: Missing output files: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR8960668.txt
+    wildcards: folder_species=compare_pig, species=Blautia_A_sp003471165, metag=SRR8960668
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:42:12 2024]
+Finished job 779.
+367 of 1051 steps (35%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:42:12 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/ERR3211781.sig.gz
+    output: ../results/pangenome/compare_pig/Escherichia_colixERR3211781.txt
+    jobid: 314
+    reason: Missing output files: ../results/pangenome/compare_pig/Escherichia_colixERR3211781.txt
+    wildcards: folder_species=compare_pig, species=Escherichia_coli, metag=ERR3211781
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:42:14 2024]
+Finished job 1649.
+368 of 1051 steps (35%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:42:14 2024]
+localrule classify:
+    input: ../results/pangenome/Dorea_formicigenerans.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499417.sig
+    output: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR10499417.txt
+    jobid: 1844
+    reason: Missing output files: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR10499417.txt
+    wildcards: folder_species=compare_pig, species=Dorea_formicigenerans, metag=SRR10499417
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:42:14 2024]
+Finished job 1763.
+369 of 1051 steps (35%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:42:14 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499494.sig
+    output: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR10499494.txt
+    jobid: 479
+    reason: Missing output files: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR10499494.txt
+    wildcards: folder_species=compare_human, species=Gemmiger_formicilis, metag=SRR10499494
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:42:14 2024]
+Finished job 1659.
+370 of 1051 steps (35%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:42:14 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499482.sig
+    output: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR10499482.txt
+    jobid: 449
+    reason: Missing output files: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR10499482.txt
+    wildcards: folder_species=compare_human, species=Gemmiger_formicilis, metag=SRR10499482
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:42:21 2024]
+Finished job 1019.
+371 of 1051 steps (35%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:42:21 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR8960731.sig.gz
+    output: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR8960731.txt
+    jobid: 1004
+    reason: Missing output files: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR8960731.txt
+    wildcards: folder_species=compare_human, species=Blautia_A_sp003471165, metag=SRR8960731
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:42:24 2024]
+Finished job 449.
+372 of 1051 steps (35%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:42:24 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR8960562.sig.gz
+    output: ../results/pangenome/compare_human/Escherichia_colixSRR8960562.txt
+    jobid: 194
+    reason: Missing output files: ../results/pangenome/compare_human/Escherichia_colixSRR8960562.txt
+    wildcards: folder_species=compare_human, species=Escherichia_coli, metag=SRR8960562
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:42:24 2024]
+Finished job 479.
+373 of 1051 steps (35%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:42:24 2024]
+localrule classify:
+    input: ../results/pangenome/Faecalibacterium_prausnitzii_E.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR2329775.sig.gz
+    output: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExSRR2329775.txt
+    jobid: 1379
+    reason: Missing output files: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExSRR2329775.txt
+    wildcards: folder_species=compare_human, species=Faecalibacterium_prausnitzii_E, metag=SRR2329775
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:42:24 2024]
+Finished job 1844.
+374 of 1051 steps (36%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:42:25 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11125084.sig.gz
+    output: ../results/pangenome/compare_pig/Escherichia_colixSRR11125084.txt
+    jobid: 329
+    reason: Missing output files: ../results/pangenome/compare_pig/Escherichia_colixSRR11125084.txt
+    wildcards: folder_species=compare_pig, species=Escherichia_coli, metag=SRR11125084
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:42:27 2024]
+Finished job 1919.
+375 of 1051 steps (36%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:42:28 2024]
+localrule classify:
+    input: ../results/pangenome/Faecalibacterium_prausnitzii_E.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR11183589.sig.gz
+    output: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExSRR11183589.txt
+    jobid: 1349
+    reason: Missing output files: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExSRR11183589.txt
+    wildcards: folder_species=compare_human, species=Faecalibacterium_prausnitzii_E, metag=SRR11183589
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:42:28 2024]
+Finished job 1514.
+376 of 1051 steps (36%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:42:28 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR17241544.sig.gz
+    output: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR17241544.txt
+    jobid: 2369
+    reason: Missing output files: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR17241544.txt
+    wildcards: folder_species=compare_pig, species=Anaerobutyricum_soehngenii, metag=SRR17241544
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:42:41 2024]
+Finished job 1401.
+377 of 1051 steps (36%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:42:41 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499498.sig
+    output: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR10499498.txt
+    jobid: 2021
+    reason: Missing output files: ../results/pangenome/compare_human/Anaerobutyricum_soehngeniixSRR10499498.txt
+    wildcards: folder_species=compare_human, species=Anaerobutyricum_soehngenii, metag=SRR10499498
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:42:41 2024]
+Finished job 1199.
+378 of 1051 steps (36%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:42:41 2024]
+localrule classify:
+    input: ../results/pangenome/Dorea_formicigenerans.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR16235699.sig.gz
+    output: ../results/pangenome/compare_human/Dorea_formicigeneransxSRR16235699.txt
+    jobid: 1766
+    reason: Missing output files: ../results/pangenome/compare_human/Dorea_formicigeneransxSRR16235699.txt
+    wildcards: folder_species=compare_human, species=Dorea_formicigenerans, metag=SRR16235699
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:42:50 2024]
+Finished job 329.
+379 of 1051 steps (36%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:42:50 2024]
+localrule classify:
+    input: ../results/pangenome/Dorea_formicigenerans.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499592.sig
+    output: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR10499592.txt
+    jobid: 1859
+    reason: Missing output files: ../results/pangenome/compare_pig/Dorea_formicigeneransxSRR10499592.txt
+    wildcards: folder_species=compare_pig, species=Dorea_formicigenerans, metag=SRR10499592
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:42:50 2024]
+Finished job 2021.
+380 of 1051 steps (36%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:42:50 2024]
+localrule classify:
+    input: ../results/pangenome/Escherichia_coli.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/ERR3211942.sig.gz
+    output: ../results/pangenome/compare_human/Escherichia_colixERR3211942.txt
+    jobid: 119
+    reason: Missing output files: ../results/pangenome/compare_human/Escherichia_colixERR3211942.txt
+    wildcards: folder_species=compare_human, species=Escherichia_coli, metag=ERR3211942
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:42:51 2024]
+Finished job 1349.
+381 of 1051 steps (36%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:42:51 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/SRR8960412.sig.gz
+    output: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR8960412.txt
+    jobid: 989
+    reason: Missing output files: ../results/pangenome/compare_human/Blautia_A_sp003471165xSRR8960412.txt
+    wildcards: folder_species=compare_human, species=Blautia_A_sp003471165, metag=SRR8960412
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:42:51 2024]
+Finished job 2355.
+382 of 1051 steps (36%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:42:51 2024]
+localrule classify:
+    input: ../results/pangenome/Blautia_A_sp003471165.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499400.sig
+    output: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR10499400.txt
+    jobid: 1042
+    reason: Missing output files: ../results/pangenome/compare_pig/Blautia_A_sp003471165xSRR10499400.txt
+    wildcards: folder_species=compare_pig, species=Blautia_A_sp003471165, metag=SRR10499400
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:42:57 2024]
+Finished job 1042.
+383 of 1051 steps (36%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:42:57 2024]
+localrule classify:
+    input: ../results/pangenome/Faecalibacterium_prausnitzii_E.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/DRR174608.sig
+    output: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExDRR174608.txt
+    jobid: 1297
+    reason: Missing output files: ../results/pangenome/compare_human/Faecalibacterium_prausnitzii_ExDRR174608.txt
+    wildcards: folder_species=compare_human, species=Faecalibacterium_prausnitzii_E, metag=DRR174608
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:43:00 2024]
+Finished job 1859.
+384 of 1051 steps (37%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:43:00 2024]
+localrule classify:
+    input: ../results/pangenome/Gemmiger_formicilis.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499557.sig
+    output: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR10499557.txt
+    jobid: 425
+    reason: Missing output files: ../results/pangenome/compare_human/Gemmiger_formicilisxSRR10499557.txt
+    wildcards: folder_species=compare_human, species=Gemmiger_formicilis, metag=SRR10499557
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:43:04 2024]
+Finished job 314.
+385 of 1051 steps (37%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:43:04 2024]
+localrule classify:
+    input: ../results/pangenome/Dorea_formicigenerans.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499623.sig
+    output: ../results/pangenome/compare_human/Dorea_formicigeneransxSRR10499623.txt
+    jobid: 1710
+    reason: Missing output files: ../results/pangenome/compare_human/Dorea_formicigeneransxSRR10499623.txt
+    wildcards: folder_species=compare_human, species=Dorea_formicigenerans, metag=SRR10499623
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:43:04 2024]
+Finished job 1297.
+386 of 1051 steps (37%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Jul 19 16:43:05 2024]
+localrule classify:
+    input: ../results/pangenome/Anaerobutyricum_soehngenii.rankt.csv, /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/SRR10499722.sig
+    output: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR10499722.txt
+    jobid: 2233
+    reason: Missing output files: ../results/pangenome/compare_pig/Anaerobutyricum_soehngeniixSRR10499722.txt
+    wildcards: folder_species=compare_pig, species=Anaerobutyricum_soehngenii, metag=SRR10499722
+    resources: tmpdir=/tmp
+
+Activating conda environment: branchwater
+[Fri Jul 19 16:43:08 2024]
+Finished job 1004.
+387 of 1051 steps (37%) done
+Select jobs to execute...
