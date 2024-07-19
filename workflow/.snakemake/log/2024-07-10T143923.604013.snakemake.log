@@ -1,3 +1,0 @@
-NameError in file /group/ctbrowngrp2/scratch/annie/2024-pigparadigm/workflow/Snakefile_comphuman, line 18:
-name 'METAG' is not defined
-  File "/group/ctbrowngrp2/scratch/annie/2024-pigparadigm/workflow/Snakefile_comphuman", line 18, in <module>
