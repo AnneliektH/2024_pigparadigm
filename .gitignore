@@ -1,4 +1,4 @@
-./results/
-./resources/
-./workflow/.snakemake/
+results/
+resources/
+workflow/.snakemake/
 2024-pigparadigm.code-workspace

@@ -30,12 +30,19 @@ def format_species_name(species):
 
 # for creatong the dmp files
 # we want all signatures of metaGs x one microbial species
-def calc_hash_input(wildcards):
-    files = expand("/group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/{metag}.sig", metag=METAGS)
-    with open("input_files.txt", "w") as f:
+def calc_hash_input_human(wildcards):
+    files = expand("/group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/{metag}.sig", metag=HUMAN_METAG)
+    with open("input_files_human.txt", "w") as f:
         for file in files:
             f.write(f"{file}\n")
-    return "input_files.txt"
+    return "input_files_human.txt"
+
+def calc_hash_input_pig(wildcards):
+    files = expand("/group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/{metag}.sig.gz", metag=PIG_METAG)
+    with open("input_files_pig.txt", "w") as f:
+        for file in files:
+            f.write(f"{file}\n")
+    return "input_files_pig.txt"
 
 # Get input for signatures, either human or pig
 # Human are in wort data, pig are in own sketch files
@@ -61,6 +68,10 @@ include: "rules/pangenome.smk"
 
 rule all:
     input:
+        expand("../results/pangenome/dmp/{species}.cmp.tsv", 
+        species=[format_species_name(species) for species in PANG_SPECIES]),
+        expand("../results/pangenome/dmp_human/{species}.x.human.dump", 
+        species=[format_species_name(species) for species in PANG_SPECIES]),
         expand("../results/pangenome/{species}.pang.sig.gz", 
         species=[format_species_name(species) for species in PANG_SPECIES]),
         expand('../results/pangenome/{folder_species}/{species}x{metag}.txt', 

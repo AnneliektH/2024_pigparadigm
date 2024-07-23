@@ -53,18 +53,47 @@ rule classify:
 
 
 
-# rule calc_hash_presence:
-#     input:
-#        rankt = "../results/microbial_pangenomic_test/{ident}.rankt.csv",
-#        sig = calc_hash_input
-#     output:
-#         dmp = "../results/compare_human/dmp/{ident}.x.pig.dump",
-#     conda: 
-#         "branchwater"
-#     threads: 1
-#     shell:
-#         """ 
-#         python scripts/calc-hash-presence.py \
-#         {input.rankt} {input.sig} --scaled=1000 -k 21 -o {output.dmp}
-#         """
-
+rule calc_hash_presence_h:
+    input:
+       rankt = "../results/pangenome/{species}.rankt.csv",
+       sig = calc_hash_input_human
+    output:
+        dmp = "../results/pangenome/dmp_human/{species}.x.human.dump",
+    conda: 
+        "branchwater"
+    threads: 1
+    shell:
+        """ 
+        python scripts/calc-hash-presence.py \
+        {input.rankt} {input.sig} --scaled=1000 -k {KSIZE} -o {output.dmp}
+        """
+rule calc_hash_presence_p:
+    input:
+       rankt = "../results/pangenome/{species}.rankt.csv",
+       sig = calc_hash_input_pig
+    output:
+        dmp = "../results/pangenome/dmp_pig/{species}.x.pig.dump",
+    conda: 
+        "branchwater"
+    threads: 1
+    shell:
+        """ 
+        python scripts/calc-hash-presence.py \
+        {input.rankt} {input.sig} --scaled=1000 -k {KSIZE} -o {output.dmp}
+        """
+## Compare dmp files
+rule compare_dmp:
+    input:
+       dmp1 = "../results/pangenome/dmp_human/{species}.x.human.dump",
+       dmp2 = '../results/pangenome/dmp_pig/{species}.x.pig.dump'
+    output:
+        cmp = "../results/pangenome/dmp/{species}.cmp.tsv",
+    conda: 
+        "branchwater"
+    threads: 1
+    shell:
+        """ 
+        python scripts/parse-dump.py \
+        --dump-files-1 {input.dmp1} \
+        --dump-files-2 {input.dmp2} > {output.cmp}
+        """
