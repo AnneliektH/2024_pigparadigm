@@ -1,0 +1,2 @@
+/group/ctbrowngrp/sourmash-db/gtdb-rs214/gtdb-rs214-reps.k21.zip
+/group/ctbrowngrp2/scratch/annie/2024-pigparadigm/results/sourmash/sketches/MAGs.drep95.zip

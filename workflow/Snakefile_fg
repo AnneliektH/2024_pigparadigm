@@ -4,6 +4,8 @@ import pandas as pd
 # gtdb paths
 GTDB = '/group/ctbrowngrp/sourmash-db/gtdb-rs214/gtdb-rs214-reps.k21.zip'
 GTDB_TAX  = '/group/ctbrowngrp/sourmash-db/gtdb-rs214/gtdb-rs214.lineages.csv'
+#DREP = [999, 99, 95]
+KSIZE = 21
 
 # set configfile
 configfile: "../config/config.yaml"
@@ -17,6 +19,23 @@ samples_pig = metadata_pig['acc'].tolist()
 HUMAN_METAG = config.get('samples', samples_human)
 PIG_METAG = config.get('samples', samples_pig)
 
+# Human are in wort data, pig are in own sketch files
+def get_input_file_path(metag):
+    if metag in samples_human:
+        return "/group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/{metag}.sig"
+    elif metag in samples_pig:
+        return "/group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/{metag}.sig.gz"
+    else:
+        raise ValueError(f"Unknown sample type: {metag}")
+
+# Function to determine the output directory based on the sample type
+def get_output_name(metag):
+    if metag in samples_human:
+        return "human"
+    elif metag in samples_pig:
+        return "pig"
+    else:
+        raise ValueError(f"Unknown sample type: {metag}")
 
 # include snakefiles
 include: "rules/fastgather.smk"
@@ -25,8 +44,12 @@ include: "rules/sourmash_tax.smk"
 
 rule all:
     input:
-        expand('../results/sourmash/fastgather/tax/check/{metag_p}.pig.tax', metag_p=PIG_METAG),
-        expand('../results/sourmash/fastgather/tax/check/{metag_h}.human.tax', metag_h=HUMAN_METAG),
+        # expand('../results/sourmash/fastgather/concat/{metag}.{outputname}.csv', 
+        # outputname=[get_output_name(metag) for metag in HUMAN_METAG + PIG_METAG], metag=HUMAN_METAG + PIG_METAG,),
+        expand('../results/sourmash/fastgather_compare/{metag}.{outputname}.999.csv', 
+        outputname=[get_output_name(metag) for metag in PIG_METAG], metag=PIG_METAG,),
+        expand('../results/sourmash/fastgather_compare/{metag}.{outputname}.999.csv', 
+        outputname=[get_output_name(metag) for metag in HUMAN_METAG], metag=HUMAN_METAG,),
 
 
 

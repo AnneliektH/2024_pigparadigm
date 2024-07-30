@@ -1,7 +1,7 @@
 # filter contigs per bacterial species table
 rule pick_species:
     output: 
-        sig = "../results/pangenome/{species}.gtdb.csv"
+        sig = "../results/pangenome/pangenome_sketch/{species}.gtdb.csv"
     conda: 
         "branchwater"
     params:
@@ -16,11 +16,11 @@ rule pick_species:
 #filter contigs per bacterial species table
 rule pang_sketch:
     input: 
-        picklist = "../results/pangenome/{species}.gtdb.csv"
+        picklist = "../results/pangenome/pangenome_sketch/{species}.gtdb.csv"
     output: 
-        sig = "../results/pangenome/{species}.zip",
-        pang = "../results/pangenome/{species}.pang.sig.gz",
-        rankt = "../results/pangenome/rankt/{species}.rankt.csv"
+        sig = "../results/pangenome/pangenome_sketch/{species}.zip",
+        pang = "../results/pangenome/pangenome_sketch/{species}.pang.sig.gz",
+        rankt = "../results/pangenome/pangenome_sketch/{species}.rankt.csv"
     conda: 
         "branchwater"
     shell:
@@ -32,30 +32,29 @@ rule pang_sketch:
         sourmash scripts pangenome_ranktable {output.pang} -o {output.rankt} -k {KSIZE}
         """
 
-# Now do the pangenome classify for 10 metagenomes
-rule classify:
-    input:
-       rankt = "../results/pangenome/{species}.rankt.csv",
-       metag = lambda wildcards: get_input_file_path(wildcards.metag) 
-    output:
-        txt="../results/pangenome/{folder_species}/{species}x{metag}.txt"
-    params:
-        # Use the function to determine the output directory
-        folder_species=lambda wildcards: get_output_dir(wildcards.metag)
-    conda: 
-        "branchwater"
-    threads: 1
-    shell:
-        """ 
-        sourmash scripts pangenome_classify \
-        {input.metag} {input.rankt} -k {KSIZE} > {output.txt}
-        """
+# # Now do the pangenome classify for 10 metagenomes
+# rule classify:
+#     input:
+#        rankt = "../results/pangenome/pangenome_sketch/{species}.rankt.csv",
+#        metag = lambda wildcards: get_input_file_path(wildcards.metag) 
+#     output:
+#         txt="../results/pangenome/{folder_species}/{species}x{metag}.txt"
+#     params:
+#         # Use the function to determine the output directory
+#         folder_species=lambda wildcards: get_output_dir(wildcards.metag)
+#     conda: 
+#         "branchwater"
+#     threads: 1
+#     shell:
+#         """ 
+#         sourmash scripts pangenome_classify \
+#         {input.metag} {input.rankt} -k {KSIZE} > {output.txt}
+#         """
 
-
-
+# calculate hash presence
 rule calc_hash_presence_h:
     input:
-       rankt = "../results/pangenome/{species}.rankt.csv",
+       rankt = "../results/pangenome/pangenome_sketch/{species}.rankt.csv",
        sig = calc_hash_input_human
     output:
         dmp = "../results/pangenome/dmp_human/{species}.x.human.dump",
@@ -67,9 +66,10 @@ rule calc_hash_presence_h:
         python scripts/calc-hash-presence.py \
         {input.rankt} {input.sig} --scaled=1000 -k {KSIZE} -o {output.dmp}
         """
+
 rule calc_hash_presence_p:
     input:
-       rankt = "../results/pangenome/{species}.rankt.csv",
+       rankt = "../results/pangenome/pangenome_sketch/{species}.rankt.csv",
        sig = calc_hash_input_pig
     output:
         dmp = "../results/pangenome/dmp_pig/{species}.x.pig.dump",
@@ -81,6 +81,7 @@ rule calc_hash_presence_p:
         python scripts/calc-hash-presence.py \
         {input.rankt} {input.sig} --scaled=1000 -k {KSIZE} -o {output.dmp}
         """
+
 ## Compare dmp files
 rule compare_dmp:
     input:

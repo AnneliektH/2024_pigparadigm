@@ -47,18 +47,18 @@ def calc_hash_input_pig(wildcards):
 # Get input for signatures, either human or pig
 # Human are in wort data, pig are in own sketch files
 def get_input_file_path(metag):
-    if metag in HUMAN_METAG:
+    if metag in samples_human:
         return "/group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs/{metag}.sig"
-    elif metag in PIG_METAG:
+    elif metag in samples_pig:
         return "/group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/{metag}.sig.gz"
     else:
         raise ValueError(f"Unknown sample type: {metag}")
 
 # Function to determine the output directory based on the sample type
 def get_output_dir(metag):
-    if metag in HUMAN_METAG:
+    if metag in samples_human:
         return "compare_human"
-    elif metag in PIG_METAG:
+    elif metag in samples_pig:
         return "compare_pig"
     else:
         raise ValueError(f"Unknown sample type: {metag}")
@@ -66,7 +66,7 @@ def get_output_dir(metag):
 # include rules
 include: "rules/pangenome.smk"
 
-rule all:
+rule all: 
     input:
         expand("../results/pangenome/dmp/{species}.cmp.tsv", 
         species=[format_species_name(species) for species in PANG_SPECIES]),
@@ -74,10 +74,12 @@ rule all:
         species=[format_species_name(species) for species in PANG_SPECIES]),
         expand("../results/pangenome/{species}.pang.sig.gz", 
         species=[format_species_name(species) for species in PANG_SPECIES]),
-        expand('../results/pangenome/{folder_species}/{species}x{metag}.txt', 
-        species=[format_species_name(species) for species in PANG_SPECIES], 
-        folder_species=[get_output_dir(sample) for sample in HUMAN_METAG + PIG_METAG], metag=HUMAN_METAG + PIG_METAG,)
-
+        # expand('../results/pangenome/{folder_species}/{species}x{metag}.txt', 
+        # species=[format_species_name(species) for species in PANG_SPECIES], 
+        # folder_species=[get_output_dir(sample) for sample in HUMAN_METAG], metag=HUMAN_METAG,)
+        # expand('../results/pangenome/{folder_species}/{species}x{metag}.txt', 
+        # species=[format_species_name(species) for species in PANG_SPECIES], 
+        # folder_species=[get_output_dir(sample) for sample in PIG_METAG], metag=PIG_METAG,)
 
 
 
