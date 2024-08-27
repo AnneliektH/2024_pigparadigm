@@ -10,7 +10,7 @@ rule pick_species:
     shell:
         """
         sourmash tax grep -i "{params.species}" \
-        -t {GTDB_TAX} -o {output.sig}
+        -t {GTDB_TAX} -o {output.sig} 
         """
 
 #filter contigs per bacterial species table
@@ -60,7 +60,7 @@ rule calc_hash_presence_h:
         dmp = "../results/pangenome/dmp_human/{species}.x.human.dump",
     conda: 
         "branchwater"
-    threads: 1
+    threads: 1 
     shell:
         """ 
         python scripts/calc-hash-presence.py \

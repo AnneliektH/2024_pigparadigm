@@ -38,7 +38,7 @@ def calc_hash_input_human(wildcards):
     return "input_files_human.txt"
 
 def calc_hash_input_pig(wildcards):
-    files = expand("/group/ctbrowngrp2/scratch/annie/2023-swine-sra/sourmash/sig_files/sketch_reads_s100/{metag}.sig.gz", metag=PIG_METAG)
+    files = expand("/group/ctbrowngrp2/scratch/annie/2024-pigparadigm/results/sourmash/sketches/read_s100/{metag}.sig.gz", metag=PIG_METAG)
     with open("input_files_pig.txt", "w") as f:
         for file in files:
             f.write(f"{file}\n")
@@ -72,7 +72,7 @@ rule all:
         species=[format_species_name(species) for species in PANG_SPECIES]),
         expand("../results/pangenome/dmp_human/{species}.x.human.dump", 
         species=[format_species_name(species) for species in PANG_SPECIES]),
-        expand("../results/pangenome/{species}.pang.sig.gz", 
+        expand("../results/pangenome/pangenome_sketch/{species}.pang.sig.gz", 
         species=[format_species_name(species) for species in PANG_SPECIES]),
         # expand('../results/pangenome/{folder_species}/{species}x{metag}.txt', 
         # species=[format_species_name(species) for species in PANG_SPECIES], 

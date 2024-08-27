@@ -1,0 +1,65 @@
+# Define samples, dbs
+SAMPLES, = glob_wildcards('../results/vOTUs/vOTU_contigs/{ident}.fa')
+VMR_DB = '/home/ntpierce/2023-spillover/output.vmr/vmr_MSL38_v1.dna.k21.zip'
+VMR_TAX  = '/home/ntpierce/2023-spillover/output.vmr/vmr_MSL38_v1.taxonomy.csv'
+
+rule all:
+    input:
+        expand("../results/vOTUs/sourmash_tax/{ident}.csv", ident=SAMPLES),
+
+# sketch first
+rule sketch:
+    input:
+        fa = '../results/vOTUs/vOTU_contigs/{ident}.fa'
+    output:
+        sig = "../results/sourmash/sketches/vOTU/{ident}.sig.gz",
+    conda: 
+        "branchwater"
+    threads: 1
+    shell:
+        """ 
+        sourmash sketch dna \
+        {input.fa} \
+        -p abund,k=21,k=15,scaled=100 \
+        -o {output.sig}
+        """
+
+rule fastgather:
+# works
+    input:
+       sig="../results/sourmash/sketches/vOTU/{ident}.sig.gz",
+    output:
+        csv = "../results/vOTUs/sourmash_tax/{ident}.csv",
+        check = "../results/vOTUs/sourmash_tax/check/{ident}.done"
+    conda: 
+        "branchwater"
+    threads: 5
+    shell:
+        """ 
+        sourmash scripts fastgather \
+        {input.sig} {VMR_DB} \
+        -k 21 --scaled 100 \        
+        -m DNA -c {threads} -t 100 -o {output.csv} && \
+        touch {output.csv}
+        """
+
+# rule tax:
+# # taxonomy for multifastgather output
+#     input:
+#        csv="../results/vOTUs/sourmash_tax/{ident}.csv",
+#     output:
+#         list_gather_out = "../results/multifastgather/refseq.k{ksize}.s{scaled}.gather.txt",
+#         check = "../results/tax/refseq.k{ksize}.s{scaled}.tax.done"
+#     params:
+#         output_folder = '../results/tax/refseq.k{ksize}.s{scaled}'
+#     conda: 
+#         "branchwater"
+#     threads: 1
+#     shell:
+#         """ 
+#         mkdir -p {params.output_folder}
+#         readlink -f /group/ctbrowngrp2/scratch/annie/2023-sourmash-viruses/results/multifastgather/refseq.k{wildcards.ksize}.s{wildcards.scaled}/*.gather.csv \
+#         > {output.list_gather_out} && \
+#         sourmash tax annotate --from-file {output.list_gather_out} \
+#         -t {VMR_TAX} -o {params.output_folder} --ictv && touch {output.check}
+#         """

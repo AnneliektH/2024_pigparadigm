@@ -1,7 +1,2 @@
 species
-Escherichia coli
-Gemmiger formicilis
-Blautia_A sp003471165
-Faecalibacterium prausnitzii_E
-Dorea formicigenerans
-Anaerobutyricum soehngenii
+Lactobacillus amylovorus

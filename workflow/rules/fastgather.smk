@@ -1,4 +1,4 @@
-rule fastgather_MAGs: 
+rule fastgather_MAGs:  
 # works
     input:
        sig = lambda wildcards: get_input_file_path(wildcards.metag),
@@ -7,7 +7,7 @@ rule fastgather_MAGs:
         csv = "../results/sourmash/fastgather/{metag}.{outputname}.999.csv",
     conda: 
         "branchwater"
-    threads: 10
+    threads: 7
     shell:
         """ 
         sourmash scripts fastgather \
@@ -76,7 +76,7 @@ rule fastgather_both:
         csv = "../results/sourmash/fastgather_compare/{metag}.{outputname}.999.csv",
     conda: 
         "branchwater"
-    threads: 5
+    threads: 7
     shell:
         """ 
         sourmash scripts fastgather \
