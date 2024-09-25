@@ -1,0 +1,67 @@
+import os
+import pandas as pd
+
+# set configfile
+configfile: "../config/config.yaml"
+
+# Set samples for human and pig
+metadata_pig = pd.read_csv(config['pig_test'], usecols=['acc'])
+# Create a list of run ids
+samples_pig = metadata_pig['acc'].tolist()
+
+# Define samples
+PIG_METAG = config.get('samples', samples_pig)
+
+#BAM_DONE, = glob_wildcards('../results/bowtie2/mapping/{sample}.bam')
+
+
+rule all:
+    input:
+        expand("../results/instrain/check/{ident}.txt", ident=PIG_METAG),
+
+rule bowtie:
+    input:
+        fw = "/group/ctbrowngrp2/scratch/annie/2023-swine-sra/results/atlas/reads/{sample}_QC_R1.fastq.gz", 
+        rv = "/group/ctbrowngrp2/scratch/annie/2023-swine-sra/results/atlas/reads/{sample}_QC_R2.fastq.gz",
+    output:
+        samfile = temporary("../results/bowtie2/mapping/{sample}.sam"),
+    conda: 
+        "bowtie2"
+    threads: 10
+    shell:
+        """
+        bowtie2 --threads {threads} \
+        -x ../results/bowtie2/hq_virseqs.bowtie2 \
+        -1 {input.fw} -2 {input.rv} \
+        -S {output.samfile} --no-unal --sensitive
+        """
+
+rule samtools:
+    input:
+        samfile = temporary("../results/bowtie2/mapping/{sample}.sam"),
+    output:
+        bamfile = "../results/bowtie2/mapping/{sample}.bam",
+    conda: 
+        "samtools"
+    threads: 5
+    shell:
+        """
+        samtools view -@ {threads} -F 4 -bS {input.samfile} | samtools sort > {output.bamfile} && \
+        samtools index {output.bamfile} 
+        """
+
+rule instrain:
+    input:
+        bamfile = "../results/bowtie2/mapping/{sample}.bam",
+    output:
+        check = "../results/instrain/check/{sample}.txt",
+    conda: 
+        "instrain"
+    threads: 5
+    shell:
+        """
+        inStrain profile {input.bamfile} ../results/vOTUs/hq_virseqs.fa \
+        -o ../results/instrain/{wildcards.sample} -p {threads} \
+        && touch {output.check}
+        """
+

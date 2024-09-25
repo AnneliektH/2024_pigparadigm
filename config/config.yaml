@@ -1,5 +1,6 @@
 human_SRA: "../config/human_SRA.txt"
 pig_SRA: "../config/pig_SRA.txt"
 pang_species: "../config/pangenome_species.txt"
-human_test: "../config/human_test.txt"
 pig_test: "../config/pig_test.txt"
+pig_nomag: "../config/pig_not_used_mags.txt"
+pig_100: "../config/pig_100.txt"
